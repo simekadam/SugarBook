@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Database\Selector\GroupedTableSelection</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" class="active">Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Database.Selector.GroupedTableSelection.html" class="active">GroupedTableSelection</a></li>
+		<li><a href="Nette.Database.Selector.TableRow.html" >TableRow</a></li>
+		<li><a href="Nette.Database.Selector.TableSelection.html" >TableSelection</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Database.Selector.html" title="Summary of Nette\Database\Selector">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Database.Selector.html">Nette\Database\Selector</a></p>
+
+		<h1>Class GroupedTableSelection</h1>
+		<div class="classDescription">
+
+		
+<p>Representation of filtered table grouped by some column. Selector is based on
+the great library NotORM <a
+href="http://www.notorm.com">http://www.notorm.com</a> written by
+Jakub Vrana.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Database.Selector.TableSelection.html">Nette\Database\Selector\TableSelection</a>
+				 implements <a href="Iterator.html">Iterator</a>, <a href="Traversable.html">Traversable</a>, <a href="ArrayAccess.html">ArrayAccess</a>, <a href="Countable.html">Countable</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Database\Selector\GroupedTableSelection</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> Jakub Vrana<br />
+			<b>Located at</b> <a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#18">/libs/Nette/Database/Selector/GroupedTableSelection.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#36" title="go to source code"><b>__construct</b></a>(
+					
+					<var>$name</var>, 
+					<a href="Nette.Database.Selector.TableSelection.html">TableSelection</a>
+					
+					<var>$refTable</var>, 
+					
+					<var>$column</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 through" id="_through">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.Selector.GroupedTableSelection.html">GroupedTableSelection</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_through">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#46" title="go to source code"><b>through</b></a>(
+					string
+					<var>$column</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Specify referencing column.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Specify referencing column.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$column</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">GroupedTableSelection provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 select" id="_select">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_select">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#58" title="go to source code"><b>select</b></a>(
+					
+					<var>$columns</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 order" id="_order">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_order">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#68" title="go to source code"><b>order</b></a>(
+					
+					<var>$columns</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 aggregation" id="_aggregation">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_aggregation">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#78" title="go to source code"><b>aggregation</b></a>(
+					
+					<var>$function</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 insert" id="_insert">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_insert">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#100" title="go to source code"><b>insert</b></a>(
+					
+					<var>$data</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 update" id="_update">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_update">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#110" title="go to source code"><b>update</b></a>(
+					array
+					
+					<var>$data</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 delete" id="_delete">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_delete">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#121" title="go to source code"><b>delete</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 execute" id="_execute">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_execute">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Selector.GroupedTableSelection.php.html#132" title="go to source code"><b>execute</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Database.Selector.TableSelection.html#methodSummary">TableSelection</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Database.Selector.TableSelection.html#___construct">__construct()</a>, <a href="Nette.Database.Selector.TableSelection.html#___destruct">__destruct()</a>, <a href="Nette.Database.Selector.TableSelection.html#_get">get()</a>, <a href="Nette.Database.Selector.TableSelection.html#_select">select()</a>, <a href="Nette.Database.Selector.TableSelection.html#_find">find()</a>, <a href="Nette.Database.Selector.TableSelection.html#_where">where()</a>, <a href="Nette.Database.Selector.TableSelection.html#_order">order()</a>, <a href="Nette.Database.Selector.TableSelection.html#_limit">limit()</a>, <a href="Nette.Database.Selector.TableSelection.html#_group">group()</a>, <a href="Nette.Database.Selector.TableSelection.html#_aggregation">aggregation()</a>, <a href="Nette.Database.Selector.TableSelection.html#_count">count()</a>, <a href="Nette.Database.Selector.TableSelection.html#_min">min()</a>, <a href="Nette.Database.Selector.TableSelection.html#_max">max()</a>, <a href="Nette.Database.Selector.TableSelection.html#_sum">sum()</a>, <a href="Nette.Database.Selector.TableSelection.html#___toString">__toString()</a>, <a href="Nette.Database.Selector.TableSelection.html#_execute">execute()</a>, <a href="Nette.Database.Selector.TableSelection.html#_whereString">whereString()</a>, <a href="Nette.Database.Selector.TableSelection.html#_topString">topString()</a>, <a href="Nette.Database.Selector.TableSelection.html#_query">query()</a>, <a href="Nette.Database.Selector.TableSelection.html#_access">access()</a>, <a href="Nette.Database.Selector.TableSelection.html#_insert">insert()</a>, <a href="Nette.Database.Selector.TableSelection.html#_update">update()</a>, <a href="Nette.Database.Selector.TableSelection.html#_delete">delete()</a>, <a href="Nette.Database.Selector.TableSelection.html#_getReferencedTable">getReferencedTable()</a>, <a href="Nette.Database.Selector.TableSelection.html#_getReferencingTable">getReferencingTable()</a>, <a href="Nette.Database.Selector.TableSelection.html#_rewind">rewind()</a>, <a href="Nette.Database.Selector.TableSelection.html#_current">current()</a>, <a href="Nette.Database.Selector.TableSelection.html#_key">key()</a>, <a href="Nette.Database.Selector.TableSelection.html#_next">next()</a>, <a href="Nette.Database.Selector.TableSelection.html#_valid">valid()</a>, <a href="Nette.Database.Selector.TableSelection.html#_offsetSet">offsetSet()</a>, <a href="Nette.Database.Selector.TableSelection.html#_offsetGet">offsetGet()</a>, <a href="Nette.Database.Selector.TableSelection.html#_offsetExists">offsetExists()</a>, <a href="Nette.Database.Selector.TableSelection.html#_offsetUnset">offsetUnset()</a>, <a href="Nette.Database.Selector.TableSelection.html#_fetch">fetch()</a>, <a href="Nette.Database.Selector.TableSelection.html#_fetchPairs">fetchPairs()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="active" id="$active">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				1
+			</code></td>
+
+			<td width="1%"><var>$active</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$active" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+	<h2>Properties Inherited From <a href="Nette.Database.Selector.TableSelection.html#propertySummary">TableSelection</a></h2>
+	<div class="box"><code><var>$connection</var>, <var>$name</var>, <var>$primary</var>, <var>$rows</var>, <var>$data</var>, <var>$select</var>, <var>$where</var>, <var>$conditions</var>, <var>$parameters</var>, <var>$order</var>, <var>$limit</var>, <var>$offset</var>, <var>$group</var>, <var>$having</var>, <var>$referenced</var>, <var>$referencing</var>, <var>$aggregation</var>, <var>$accessed</var>, <var>$prevAccessed</var>, <var>$keys</var></code></div>
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

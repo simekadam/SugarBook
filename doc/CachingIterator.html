@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class CachingIterator</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" class="active">PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArrayObject.html" >ArrayObject</a></li>
+		<li><a href="CachingIterator.html" class="active">CachingIterator</a></li>
+		<li><a href="ErrorException.html" >ErrorException</a></li>
+		<li><a href="Exception.html" >Exception</a></li>
+		<li><a href="FilterIterator.html" >FilterIterator</a></li>
+		<li><a href="InvalidArgumentException.html" >InvalidArgumentException</a></li>
+		<li><a href="IteratorIterator.html" >IteratorIterator</a></li>
+		<li><a href="LogicException.html" >LogicException</a></li>
+		<li><a href="PDO.html" >PDO</a></li>
+		<li><a href="PDOStatement.html" >PDOStatement</a></li>
+		<li><a href="ReflectionClass.html" >ReflectionClass</a></li>
+		<li><a href="ReflectionExtension.html" >ReflectionExtension</a></li>
+		<li><a href="ReflectionFunction.html" >ReflectionFunction</a></li>
+		<li><a href="ReflectionFunctionAbstract.html" >ReflectionFunctionAbstract</a></li>
+		<li><a href="ReflectionMethod.html" >ReflectionMethod</a></li>
+		<li><a href="ReflectionParameter.html" >ReflectionParameter</a></li>
+		<li><a href="ReflectionProperty.html" >ReflectionProperty</a></li>
+		<li><a href="RuntimeException.html" >RuntimeException</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="ArrayAccess.html" >ArrayAccess</a></li>
+		<li><a href="Countable.html" >Countable</a></li>
+		<li><a href="Iterator.html" >Iterator</a></li>
+		<li><a href="IteratorAggregate.html" >IteratorAggregate</a></li>
+		<li><a href="OuterIterator.html" >OuterIterator</a></li>
+		<li><a href="RecursiveIterator.html" >RecursiveIterator</a></li>
+		<li><a href="Reflector.html" >Reflector</a></li>
+		<li><a href="Serializable.html" >Serializable</a></li>
+		<li><a href="Traversable.html" >Traversable</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>PHP – SPL</p>
+
+		<h1>Class CachingIterator</h1>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="IteratorIterator.html">IteratorIterator</a>
+				 implements <a href="Iterator.html">Iterator</a>, <a href="Traversable.html">Traversable</a>, <a href="OuterIterator.html">OuterIterator</a>
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>CachingIterator</b>				 implements <a href="ArrayAccess.html">ArrayAccess</a>, <a href="Countable.html">Countable</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.SmartCachingIterator.html">Nette\SmartCachingIterator</a>
+		</div>
+
+		<div class="classInfo">
+			
+			<b>Documented at</b> <a href="http://php.net/manual/class.cachingiterator.php">php.net</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.construct.php" title="go to PHP documentation"><b>__construct</b></a>(
+					<a href="Iterator.html">Iterator</a>
+					
+					<var>$iterator</var>, 
+					
+					<var>$flags</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 rewind" id="_rewind">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_rewind">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.rewind.php" title="go to PHP documentation"><b>rewind</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Iterator.html#_rewind">Iterator::rewind</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 valid" id="_valid">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_valid">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.valid.php" title="go to PHP documentation"><b>valid</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Iterator.html#_valid">Iterator::valid</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 key" id="_key">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_key">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.key.php" title="go to PHP documentation"><b>key</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Iterator.html#_key">Iterator::key</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 current" id="_current">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_current">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.current.php" title="go to PHP documentation"><b>current</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Iterator.html#_current">Iterator::current</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 next" id="_next">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_next">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.next.php" title="go to PHP documentation"><b>next</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Iterator.html#_next">Iterator::next</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 hasNext" id="_hasNext">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_hasNext">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.hasnext.php" title="go to PHP documentation"><b>hasNext</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __toString" id="___toString">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___toString">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.tostring.php" title="go to PHP documentation"><b>__toString</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getInnerIterator" id="_getInnerIterator">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getInnerIterator">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.getinneriterator.php" title="go to PHP documentation"><b>getInnerIterator</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="OuterIterator.html#_getInnerIterator">OuterIterator::getInnerIterator</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFlags" id="_getFlags">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFlags">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.getflags.php" title="go to PHP documentation"><b>getFlags</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setFlags" id="_setFlags">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setFlags">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.setflags.php" title="go to PHP documentation"><b>setFlags</b></a>(
+					
+					<var>$flags</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetGet" id="_offsetGet">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.offsetget.php" title="go to PHP documentation"><b>offsetGet</b></a>(
+					
+					<var>$index</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetSet" id="_offsetSet">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.offsetset.php" title="go to PHP documentation"><b>offsetSet</b></a>(
+					
+					<var>$index</var>, 
+					
+					<var>$newval</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetUnset" id="_offsetUnset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.offsetunset.php" title="go to PHP documentation"><b>offsetUnset</b></a>(
+					
+					<var>$index</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetExists" id="_offsetExists">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.offsetexists.php" title="go to PHP documentation"><b>offsetExists</b></a>(
+					
+					<var>$index</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCache" id="_getCache">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCache">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.getcache.php" title="go to PHP documentation"><b>getCache</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 count" id="_count">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_count">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/cachingiterator.count.php" title="go to PHP documentation"><b>count</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Countable.html#_count">Countable::count</a></code></div>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="IteratorIterator.html#methodSummary">IteratorIterator</a></h2>
+	<div class="box"><code>
+		<a href="IteratorIterator.html#___construct">__construct()</a>, <a href="IteratorIterator.html#_rewind">rewind()</a>, <a href="IteratorIterator.html#_valid">valid()</a>, <a href="IteratorIterator.html#_key">key()</a>, <a href="IteratorIterator.html#_current">current()</a>, <a href="IteratorIterator.html#_next">next()</a>, <a href="IteratorIterator.html#_getInnerIterator">getInnerIterator()</a>
+	</code></div>
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="CALL_TOSTRING" id="CALL_TOSTRING">
+			<td align="right" width="1%"><code><b>CALL_TOSTRING</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#CALL_TOSTRING" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CATCH_GET_CHILD" id="CATCH_GET_CHILD">
+			<td align="right" width="1%"><code><b>CATCH_GET_CHILD</b></code></td>
+			<td><code><span class="php-num">16</span></code> <a href="#CATCH_GET_CHILD" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="TOSTRING_USE_KEY" id="TOSTRING_USE_KEY">
+			<td align="right" width="1%"><code><b>TOSTRING_USE_KEY</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#TOSTRING_USE_KEY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="TOSTRING_USE_CURRENT" id="TOSTRING_USE_CURRENT">
+			<td align="right" width="1%"><code><b>TOSTRING_USE_CURRENT</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#TOSTRING_USE_CURRENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="TOSTRING_USE_INNER" id="TOSTRING_USE_INNER">
+			<td align="right" width="1%"><code><b>TOSTRING_USE_INNER</b></code></td>
+			<td><code><span class="php-num">8</span></code> <a href="#TOSTRING_USE_INNER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FULL_CACHE" id="FULL_CACHE">
+			<td align="right" width="1%"><code><b>FULL_CACHE</b></code></td>
+			<td><code><span class="php-num">256</span></code> <a href="#FULL_CACHE" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

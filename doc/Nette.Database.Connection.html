@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Database\Connection</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" class="active">Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Database.Connection.html" class="active">Connection</a></li>
+		<li><a href="Nette.Database.DatabasePanel.html" >DatabasePanel</a></li>
+		<li><a href="Nette.Database.Row.html" >Row</a></li>
+		<li><a href="Nette.Database.SqlLiteral.html" >SqlLiteral</a></li>
+		<li><a href="Nette.Database.SqlPreprocessor.html" >SqlPreprocessor</a></li>
+		<li><a href="Nette.Database.Statement.html" >Statement</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Database.ISupplementalDriver.html" >ISupplementalDriver</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Database.html" title="Summary of Nette\Database">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Database.html">Nette\Database</a></p>
+
+		<h1>Class Connection</h1>
+		<div class="classDescription">
+
+		
+<p>Represents a connection between PHP and a database server.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="PDO.html">PDO</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Database\Connection</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Database.Connection.php.html#20">/libs/Nette/Database/Connection.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#46" title="go to source code"><b>__construct</b></a>(
+					
+					<var>$dsn</var>, 
+					
+					<var>$username</var> = <span class="php-keyword1">NULL</span>, 
+					
+					<var>$password</var> = <span class="php-keyword1">NULL</span>, 
+					array
+					
+					<var>$options</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getSupplementalDriver" id="_getSupplementalDriver">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.ISupplementalDriver.html">ISupplementalDriver</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getSupplementalDriver">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#70" title="go to source code"><b>getSupplementalDriver</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 query" id="_query">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.Statement.html">Statement</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_query">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#78" title="go to source code"><b>query</b></a>(
+					string
+					<var>$statement</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Generates and executes SQL query.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Generates and executes SQL query.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$statement</code> string  statement<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 exec" id="_exec">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_exec">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#92" title="go to source code"><b>exec</b></a>(
+					string
+					<var>$statement</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Generates and executes SQL query.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Generates and executes SQL query.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$statement</code> string  statement<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">int     number of affected rows</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 queryArgs" id="_queryArgs">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.Statement.html">Statement</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_queryArgs">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#106" title="go to source code"><b>queryArgs</b></a>(
+					string
+					<var>$statement</var>, 
+					array
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$statement</code> string  statement<br />
+						<code>$params</code> array<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetch" id="_fetch">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.Row.html">Row</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetch">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#131" title="go to source code"><b>fetch</b></a>(
+					string
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Shortcut for query()-&gt;fetch()</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Shortcut for query()-&gt;fetch()</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$args</code> string  statement<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchColumn" id="_fetchColumn">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchColumn">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#145" title="go to source code"><b>fetchColumn</b></a>(
+					string
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Shortcut for query()-&gt;fetchColumn()</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Shortcut for query()-&gt;fetchColumn()</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$args</code> string  statement<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchPairs" id="_fetchPairs">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchPairs">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#159" title="go to source code"><b>fetchPairs</b></a>(
+					string
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Shortcut for query()-&gt;fetchPairs()</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Shortcut for query()-&gt;fetchPairs()</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$args</code> string  statement<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 table" id="_table">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Database.Selector.TableSelection.html">Nette\Database\Selector\TableSelection</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_table">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#177" title="go to source code"><b>table</b></a>(
+					string
+					<var>$table</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Creates selector for table.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Creates selector for table.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$table</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 loadFile" id="_loadFile">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_loadFile">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#193" title="go to source code"><b>loadFile</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Import SQL dump from file – extreme fast.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Import SQL dump from file – extreme fast.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">int  count of commands</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 highlightSql" id="_highlightSql">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_highlightSql">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#224" title="go to source code"><b>highlightSql</b></a>(
+					string
+					<var>$sql</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns syntax highlighted SQL command.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns syntax highlighted SQL command.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$sql</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 getReflection" id="_getReflection">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				<a href="Nette.Reflection.ClassReflection.html">Nette\Reflection\ClassReflection</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getReflection">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#269" title="go to source code"><b>getReflection</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __call" id="___call">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___call">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#278" title="go to source code"><b>__call</b></a>(
+					
+					<var>$name</var>, 
+					
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __get" id="___get">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				&amp;
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___get">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#285" title="go to source code"><b>__get</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __set" id="___set">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___set">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#292" title="go to source code"><b>__set</b></a>(
+					
+					<var>$name</var>, 
+					
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __isset" id="___isset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___isset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#299" title="go to source code"><b>__isset</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __unset" id="___unset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___unset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Database.Connection.php.html#306" title="go to source code"><b>__unset</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="PDO.html#methodSummary">PDO</a></h2>
+	<div class="box"><code>
+		<a href="PDO.html#___construct">__construct()</a>, <a href="PDO.html#_prepare">prepare()</a>, <a href="PDO.html#_beginTransaction">beginTransaction()</a>, <a href="PDO.html#_commit">commit()</a>, <a href="PDO.html#_rollBack">rollBack()</a>, <a href="PDO.html#_inTransaction">inTransaction()</a>, <a href="PDO.html#_setAttribute">setAttribute()</a>, <a href="PDO.html#_exec">exec()</a>, <a href="PDO.html#_query">query()</a>, <a href="PDO.html#_lastInsertId">lastInsertId()</a>, <a href="PDO.html#_errorCode">errorCode()</a>, <a href="PDO.html#_errorInfo">errorInfo()</a>, <a href="PDO.html#_getAttribute">getAttribute()</a>, <a href="PDO.html#_quote">quote()</a>, <a href="PDO.html#___wakeup">__wakeup()</a>, <a href="PDO.html#___sleep">__sleep()</a>, <a href="PDO.html#_getAvailableDrivers">getAvailableDrivers()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="PDO.html#constantSummary">PDO</a></h2>
+	<div class="box"><code>PARAM_BOOL, PARAM_NULL, PARAM_INT, PARAM_STR, PARAM_LOB, PARAM_STMT, PARAM_INPUT_OUTPUT, PARAM_EVT_ALLOC, PARAM_EVT_FREE, PARAM_EVT_EXEC_PRE, PARAM_EVT_EXEC_POST, PARAM_EVT_FETCH_PRE, PARAM_EVT_FETCH_POST, PARAM_EVT_NORMALIZE, FETCH_LAZY, FETCH_ASSOC, FETCH_NUM, FETCH_BOTH, FETCH_OBJ, FETCH_BOUND, FETCH_COLUMN, FETCH_CLASS, FETCH_INTO, FETCH_FUNC, FETCH_GROUP, FETCH_UNIQUE, FETCH_KEY_PAIR, FETCH_CLASSTYPE, FETCH_SERIALIZE, FETCH_PROPS_LATE, FETCH_NAMED, ATTR_AUTOCOMMIT, ATTR_PREFETCH, ATTR_TIMEOUT, ATTR_ERRMODE, ATTR_SERVER_VERSION, ATTR_CLIENT_VERSION, ATTR_SERVER_INFO, ATTR_CONNECTION_STATUS, ATTR_CASE, ATTR_CURSOR_NAME, ATTR_CURSOR, ATTR_ORACLE_NULLS, ATTR_PERSISTENT, ATTR_STATEMENT_CLASS, ATTR_FETCH_TABLE_NAMES, ATTR_FETCH_CATALOG_NAMES, ATTR_DRIVER_NAME, ATTR_STRINGIFY_FETCHES, ATTR_MAX_COLUMN_LEN, ATTR_EMULATE_PREPARES, ATTR_DEFAULT_FETCH_MODE, ERRMODE_SILENT, ERRMODE_WARNING, ERRMODE_EXCEPTION, CASE_NATURAL, CASE_LOWER, CASE_UPPER, NULL_NATURAL, NULL_EMPTY_STRING, NULL_TO_STRING, ERR_NONE, FETCH_ORI_NEXT, FETCH_ORI_PRIOR, FETCH_ORI_FIRST, FETCH_ORI_LAST, FETCH_ORI_ABS, FETCH_ORI_REL, CURSOR_FWDONLY, CURSOR_SCROLL, MYSQL_ATTR_USE_BUFFERED_QUERY, MYSQL_ATTR_LOCAL_INFILE, MYSQL_ATTR_INIT_COMMAND, MYSQL_ATTR_DIRECT_QUERY, MYSQL_ATTR_FOUND_ROWS, MYSQL_ATTR_IGNORE_SPACE</code></div>
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="databaseReflection" id="$databaseReflection">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				<a href="Nette.Database.Reflection.DatabaseReflection.html">Nette\Database\Reflection\DatabaseReflection</a>
+			</code></td>
+
+			<td width="1%"><var>$databaseReflection</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$databaseReflection" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="cache" id="$cache">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				<a href="Nette.Caching.Cache.html">Nette\Caching\Cache</a>
+			</code></td>
+
+			<td width="1%"><var>$cache</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$cache" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="substitutions" id="$substitutions">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				array
+			</code></td>
+
+			<td width="1%"><var>$substitutions</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+)</pre></td>
+			<td> <a href="#$substitutions" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="onQuery" id="$onQuery">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				array
+			</code></td>
+
+			<td width="1%"><var>$onQuery</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>of function(Statement $result, $params); Occurs after query is executed <a href="#$onQuery" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

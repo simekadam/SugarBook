@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class PDOStatement</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" class="active">PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArrayObject.html" >ArrayObject</a></li>
+		<li><a href="CachingIterator.html" >CachingIterator</a></li>
+		<li><a href="ErrorException.html" >ErrorException</a></li>
+		<li><a href="Exception.html" >Exception</a></li>
+		<li><a href="FilterIterator.html" >FilterIterator</a></li>
+		<li><a href="InvalidArgumentException.html" >InvalidArgumentException</a></li>
+		<li><a href="IteratorIterator.html" >IteratorIterator</a></li>
+		<li><a href="LogicException.html" >LogicException</a></li>
+		<li><a href="PDO.html" >PDO</a></li>
+		<li><a href="PDOStatement.html" class="active">PDOStatement</a></li>
+		<li><a href="ReflectionClass.html" >ReflectionClass</a></li>
+		<li><a href="ReflectionExtension.html" >ReflectionExtension</a></li>
+		<li><a href="ReflectionFunction.html" >ReflectionFunction</a></li>
+		<li><a href="ReflectionFunctionAbstract.html" >ReflectionFunctionAbstract</a></li>
+		<li><a href="ReflectionMethod.html" >ReflectionMethod</a></li>
+		<li><a href="ReflectionParameter.html" >ReflectionParameter</a></li>
+		<li><a href="ReflectionProperty.html" >ReflectionProperty</a></li>
+		<li><a href="RuntimeException.html" >RuntimeException</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="ArrayAccess.html" >ArrayAccess</a></li>
+		<li><a href="Countable.html" >Countable</a></li>
+		<li><a href="Iterator.html" >Iterator</a></li>
+		<li><a href="IteratorAggregate.html" >IteratorAggregate</a></li>
+		<li><a href="OuterIterator.html" >OuterIterator</a></li>
+		<li><a href="RecursiveIterator.html" >RecursiveIterator</a></li>
+		<li><a href="Reflector.html" >Reflector</a></li>
+		<li><a href="Serializable.html" >Serializable</a></li>
+		<li><a href="Traversable.html" >Traversable</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>PHP – PDO</p>
+
+		<h1>Class PDOStatement</h1>
+		<dl class="tree">
+
+			<dd style="padding-left:0px"><b>PDOStatement</b>				 implements <a href="Traversable.html">Traversable</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Database.Statement.html">Nette\Database\Statement</a>
+		</div>
+
+		<div class="classInfo">
+			
+			<b>Documented at</b> <a href="http://php.net/manual/class.pdostatement.php">php.net</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 execute" id="_execute">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_execute">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.execute.php" title="go to PHP documentation"><b>execute</b></a>(
+					
+					<var>$bound_input_params</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetch" id="_fetch">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetch">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.fetch.php" title="go to PHP documentation"><b>fetch</b></a>(
+					
+					<var>$how</var>, 
+					
+					<var>$orientation</var>, 
+					
+					<var>$offset</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 bindParam" id="_bindParam">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_bindParam">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.bindparam.php" title="go to PHP documentation"><b>bindParam</b></a>(
+					
+					<var>$paramno</var>, 
+					
+					<var>&amp; $param</var>, 
+					
+					<var>$type</var>, 
+					
+					<var>$maxlen</var>, 
+					
+					<var>$driverdata</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 bindColumn" id="_bindColumn">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_bindColumn">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.bindcolumn.php" title="go to PHP documentation"><b>bindColumn</b></a>(
+					
+					<var>$column</var>, 
+					
+					<var>&amp; $param</var>, 
+					
+					<var>$type</var>, 
+					
+					<var>$maxlen</var>, 
+					
+					<var>$driverdata</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 bindValue" id="_bindValue">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_bindValue">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.bindvalue.php" title="go to PHP documentation"><b>bindValue</b></a>(
+					
+					<var>$paramno</var>, 
+					
+					<var>$param</var>, 
+					
+					<var>$type</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 rowCount" id="_rowCount">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_rowCount">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.rowcount.php" title="go to PHP documentation"><b>rowCount</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchColumn" id="_fetchColumn">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchColumn">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.fetchcolumn.php" title="go to PHP documentation"><b>fetchColumn</b></a>(
+					
+					<var>$column_number</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchAll" id="_fetchAll">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchAll">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.fetchall.php" title="go to PHP documentation"><b>fetchAll</b></a>(
+					
+					<var>$how</var>, 
+					
+					<var>$class_name</var>, 
+					
+					<var>$ctor_args</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchObject" id="_fetchObject">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchObject">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.fetchobject.php" title="go to PHP documentation"><b>fetchObject</b></a>(
+					
+					<var>$class_name</var>, 
+					
+					<var>$ctor_args</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 errorCode" id="_errorCode">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_errorCode">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.errorcode.php" title="go to PHP documentation"><b>errorCode</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 errorInfo" id="_errorInfo">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_errorInfo">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.errorinfo.php" title="go to PHP documentation"><b>errorInfo</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setAttribute" id="_setAttribute">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setAttribute">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.setattribute.php" title="go to PHP documentation"><b>setAttribute</b></a>(
+					
+					<var>$attribute</var>, 
+					
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getAttribute" id="_getAttribute">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getAttribute">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.getattribute.php" title="go to PHP documentation"><b>getAttribute</b></a>(
+					
+					<var>$attribute</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 columnCount" id="_columnCount">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_columnCount">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.columncount.php" title="go to PHP documentation"><b>columnCount</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getColumnMeta" id="_getColumnMeta">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getColumnMeta">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.getcolumnmeta.php" title="go to PHP documentation"><b>getColumnMeta</b></a>(
+					
+					<var>$column</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setFetchMode" id="_setFetchMode">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setFetchMode">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.setfetchmode.php" title="go to PHP documentation"><b>setFetchMode</b></a>(
+					
+					<var>$mode</var>, 
+					
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 nextRowset" id="_nextRowset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_nextRowset">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.nextrowset.php" title="go to PHP documentation"><b>nextRowset</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 closeCursor" id="_closeCursor">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_closeCursor">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.closecursor.php" title="go to PHP documentation"><b>closeCursor</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 debugDumpParams" id="_debugDumpParams">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_debugDumpParams">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.debugdumpparams.php" title="go to PHP documentation"><b>debugDumpParams</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __wakeup" id="___wakeup">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___wakeup">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.wakeup.php" title="go to PHP documentation"><b>__wakeup</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __sleep" id="___sleep">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___sleep">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdostatement.sleep.php" title="go to PHP documentation"><b>__sleep</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="queryString" id="$queryString">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				
+			</code></td>
+
+			<td width="1%"><var>$queryString</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$queryString" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

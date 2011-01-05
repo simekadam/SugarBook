@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Interface Nette\Security\IAuthorizator</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" class="active">Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Security.AuthenticationException.html" >AuthenticationException</a></li>
+		<li><a href="Nette.Security.Identity.html" >Identity</a></li>
+		<li><a href="Nette.Security.Permission.html" >Permission</a></li>
+		<li><a href="Nette.Security.SimpleAuthenticator.html" >SimpleAuthenticator</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Security.IAuthenticator.html" >IAuthenticator</a></li>
+		<li><a href="Nette.Security.IAuthorizator.html" class="active">IAuthorizator</a></li>
+		<li><a href="Nette.Security.IIdentity.html" >IIdentity</a></li>
+		<li><a href="Nette.Security.IResource.html" >IResource</a></li>
+		<li><a href="Nette.Security.IRole.html" >IRole</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Security.html" title="Summary of Nette\Security">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Security.html">Nette\Security</a></p>
+
+		<h1>Interface IAuthorizator</h1>
+		<div class="classDescription">
+
+		
+<p>Authorizator checks if a given role has authorization to access a given
+resource.</p>
+
+		</div>
+		<div>
+
+			<h4>Direct Known Implementers</h4>
+			<a href="Nette.Security.Permission.html">Permission</a>
+		</div>
+
+		<div class="classInfo">
+			<b>Abstract Interface</b><br />
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Security.IAuthorizator.php.html#18">/libs/Nette/Security/IAuthorizator.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 isAllowed" id="_isAllowed">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isAllowed">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.IAuthorizator.php.html#36" title="go to source code"><b>isAllowed</b></a>(
+					string
+					<var>$role</var>, 
+					string
+					<var>$resource</var>, 
+					string
+					<var>$privilege</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Performs a role-based authorization.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Performs a role-based authorization.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$role</code> string  role<br />
+						<code>$resource</code> string  resource<br />
+						<code>$privilege</code> string  privilege<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="ALL" id="ALL">
+			<td align="right" width="1%"><code><b>ALL</b></code></td>
+			<td><code><span class="php-keyword1">NULL</span></code> <a href="#ALL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ALLOW" id="ALLOW">
+			<td align="right" width="1%"><code><b>ALLOW</b></code></td>
+			<td><code><span class="php-keyword1">true</span></code> <a href="#ALLOW" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="DENY" id="DENY">
+			<td align="right" width="1%"><code><b>DENY</b></code></td>
+			<td><code><span class="php-keyword1">false</span></code> <a href="#DENY" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

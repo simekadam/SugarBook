@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Interface Nette\Web\IHttpResponse</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" class="active">Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Web.Html.html" >Html</a></li>
+		<li><a href="Nette.Web.HttpContext.html" >HttpContext</a></li>
+		<li><a href="Nette.Web.HttpRequest.html" >HttpRequest</a></li>
+		<li><a href="Nette.Web.HttpRequestFactory.html" >HttpRequestFactory</a></li>
+		<li><a href="Nette.Web.HttpResponse.html" >HttpResponse</a></li>
+		<li><a href="Nette.Web.HttpUploadedFile.html" >HttpUploadedFile</a></li>
+		<li><a href="Nette.Web.Session.html" >Session</a></li>
+		<li><a href="Nette.Web.SessionNamespace.html" >SessionNamespace</a></li>
+		<li><a href="Nette.Web.Uri.html" >Uri</a></li>
+		<li><a href="Nette.Web.UriScript.html" >UriScript</a></li>
+		<li><a href="Nette.Web.User.html" >User</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Web.IHttpRequest.html" >IHttpRequest</a></li>
+		<li><a href="Nette.Web.IHttpResponse.html" class="active">IHttpResponse</a></li>
+		<li><a href="Nette.Web.IUser.html" >IUser</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Web.html" title="Summary of Nette\Web">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Web.html">Nette\Web</a></p>
+
+		<h1>Interface IHttpResponse</h1>
+		<div class="classDescription">
+
+		
+<p>IHttpResponse interface.</p>
+
+		</div>
+		<div>
+
+			<h4>Direct Known Implementers</h4>
+			<a href="Nette.Web.HttpResponse.html">HttpResponse</a>
+		</div>
+
+		<div class="classInfo">
+			<b>Abstract Interface</b><br />
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Web.IHttpResponse.php.html#18">/libs/Nette/Web/IHttpResponse.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 setCode" id="_setCode">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setCode">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#53" title="go to source code"><b>setCode</b></a>(
+					int
+					<var>$code</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets HTTP response code.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets HTTP response code.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$code</code> int<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCode" id="_getCode">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCode">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#60" title="go to source code"><b>getCode</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns HTTP response code.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns HTTP response code.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setHeader" id="_setHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#66" title="go to source code"><b>setHeader</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sends a HTTP header and replaces a previous one.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sends a HTTP header and replaces a previous one.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  header name<br />
+						<code>$value</code> string  header value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addHeader" id="_addHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#74" title="go to source code"><b>addHeader</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds HTTP header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds HTTP header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  header name<br />
+						<code>$value</code> string  header value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setContentType" id="_setContentType">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setContentType">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#82" title="go to source code"><b>setContentType</b></a>(
+					string
+					<var>$type</var>, 
+					string
+					<var>$charset</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sends a Content-type HTTP header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sends a Content-type HTTP header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$type</code> string  mime-type<br />
+						<code>$charset</code> string  charset<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 redirect" id="_redirect">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_redirect">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#90" title="go to source code"><b>redirect</b></a>(
+					string
+					<var>$url</var>, 
+					int
+					<var>$code</var> = <span class="php-num">302</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Redirects to a new URL.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Redirects to a new URL.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$url</code> string  URL<br />
+						<code>$code</code> int     HTTP code<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setExpiration" id="_setExpiration">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setExpiration">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#98" title="go to source code"><b>setExpiration</b></a>(
+					mixed
+					<var>$seconds</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the number of seconds before a page cached on a browser expires.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the number of seconds before a page cached on a browser expires.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$seconds</code> mixed  timestamp or number of seconds<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isSent" id="_isSent">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isSent">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#105" title="go to source code"><b>isSent</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Checks if headers have been sent.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Checks if headers have been sent.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeaders" id="_getHeaders">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#111" title="go to source code"><b>getHeaders</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a list of headers to sent.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a list of headers to sent.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setCookie" id="_setCookie">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setCookie">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#117" title="go to source code"><b>setCookie</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$value</var>, 
+					mixed
+					<var>$expire</var>, 
+					string
+					<var>$path</var> = <span class="php-keyword1">NULL</span>, 
+					string
+					<var>$domain</var> = <span class="php-keyword1">NULL</span>, 
+					bool
+					<var>$secure</var> = <span class="php-keyword1">NULL</span>, 
+					bool
+					<var>$httpOnly</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sends a cookie.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sends a cookie.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string name of the cookie<br />
+						<code>$value</code> string value<br />
+						<code>$expire</code> mixed expiration as unix timestamp or number of seconds; Value 0 means &quot;until the browser is closed&quot;<br />
+						<code>$path</code> string<br />
+						<code>$domain</code> string<br />
+						<code>$secure</code> bool<br />
+						<code>$httpOnly</code> bool<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 deleteCookie" id="_deleteCookie">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_deleteCookie">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpResponse.php.html#130" title="go to source code"><b>deleteCookie</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$path</var> = <span class="php-keyword1">NULL</span>, 
+					string
+					<var>$domain</var> = <span class="php-keyword1">NULL</span>, 
+					bool
+					<var>$secure</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Deletes a cookie.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Deletes a cookie.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string name of the cookie.<br />
+						<code>$path</code> string<br />
+						<code>$domain</code> string<br />
+						<code>$secure</code> bool<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="PERMANENT" id="PERMANENT">
+			<td align="right" width="1%"><code><b>PERMANENT</b></code></td>
+			<td><code><span class="php-num">2116333333</span></code> <a href="#PERMANENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="BROWSER" id="BROWSER">
+			<td align="right" width="1%"><code><b>BROWSER</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#BROWSER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S200_OK" id="S200_OK">
+			<td align="right" width="1%"><code><b>S200_OK</b></code></td>
+			<td><code><span class="php-num">200</span></code> <a href="#S200_OK" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S204_NO_CONTENT" id="S204_NO_CONTENT">
+			<td align="right" width="1%"><code><b>S204_NO_CONTENT</b></code></td>
+			<td><code><span class="php-num">204</span></code> <a href="#S204_NO_CONTENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S300_MULTIPLE_CHOICES" id="S300_MULTIPLE_CHOICES">
+			<td align="right" width="1%"><code><b>S300_MULTIPLE_CHOICES</b></code></td>
+			<td><code><span class="php-num">300</span></code> <a href="#S300_MULTIPLE_CHOICES" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S301_MOVED_PERMANENTLY" id="S301_MOVED_PERMANENTLY">
+			<td align="right" width="1%"><code><b>S301_MOVED_PERMANENTLY</b></code></td>
+			<td><code><span class="php-num">301</span></code> <a href="#S301_MOVED_PERMANENTLY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S302_FOUND" id="S302_FOUND">
+			<td align="right" width="1%"><code><b>S302_FOUND</b></code></td>
+			<td><code><span class="php-num">302</span></code> <a href="#S302_FOUND" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S303_SEE_OTHER" id="S303_SEE_OTHER">
+			<td align="right" width="1%"><code><b>S303_SEE_OTHER</b></code></td>
+			<td><code><span class="php-num">303</span></code> <a href="#S303_SEE_OTHER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S303_POST_GET" id="S303_POST_GET">
+			<td align="right" width="1%"><code><b>S303_POST_GET</b></code></td>
+			<td><code><span class="php-num">303</span></code> <a href="#S303_POST_GET" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S304_NOT_MODIFIED" id="S304_NOT_MODIFIED">
+			<td align="right" width="1%"><code><b>S304_NOT_MODIFIED</b></code></td>
+			<td><code><span class="php-num">304</span></code> <a href="#S304_NOT_MODIFIED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S307_TEMPORARY_REDIRECT" id="S307_TEMPORARY_REDIRECT">
+			<td align="right" width="1%"><code><b>S307_TEMPORARY_REDIRECT</b></code></td>
+			<td><code><span class="php-num">307</span></code> <a href="#S307_TEMPORARY_REDIRECT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S400_BAD_REQUEST" id="S400_BAD_REQUEST">
+			<td align="right" width="1%"><code><b>S400_BAD_REQUEST</b></code></td>
+			<td><code><span class="php-num">400</span></code> <a href="#S400_BAD_REQUEST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S401_UNAUTHORIZED" id="S401_UNAUTHORIZED">
+			<td align="right" width="1%"><code><b>S401_UNAUTHORIZED</b></code></td>
+			<td><code><span class="php-num">401</span></code> <a href="#S401_UNAUTHORIZED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S403_FORBIDDEN" id="S403_FORBIDDEN">
+			<td align="right" width="1%"><code><b>S403_FORBIDDEN</b></code></td>
+			<td><code><span class="php-num">403</span></code> <a href="#S403_FORBIDDEN" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S404_NOT_FOUND" id="S404_NOT_FOUND">
+			<td align="right" width="1%"><code><b>S404_NOT_FOUND</b></code></td>
+			<td><code><span class="php-num">404</span></code> <a href="#S404_NOT_FOUND" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S405_METHOD_NOT_ALLOWED" id="S405_METHOD_NOT_ALLOWED">
+			<td align="right" width="1%"><code><b>S405_METHOD_NOT_ALLOWED</b></code></td>
+			<td><code><span class="php-num">405</span></code> <a href="#S405_METHOD_NOT_ALLOWED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S410_GONE" id="S410_GONE">
+			<td align="right" width="1%"><code><b>S410_GONE</b></code></td>
+			<td><code><span class="php-num">410</span></code> <a href="#S410_GONE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S500_INTERNAL_SERVER_ERROR" id="S500_INTERNAL_SERVER_ERROR">
+			<td align="right" width="1%"><code><b>S500_INTERNAL_SERVER_ERROR</b></code></td>
+			<td><code><span class="php-num">500</span></code> <a href="#S500_INTERNAL_SERVER_ERROR" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S501_NOT_IMPLEMENTED" id="S501_NOT_IMPLEMENTED">
+			<td align="right" width="1%"><code><b>S501_NOT_IMPLEMENTED</b></code></td>
+			<td><code><span class="php-num">501</span></code> <a href="#S501_NOT_IMPLEMENTED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="S503_SERVICE_UNAVAILABLE" id="S503_SERVICE_UNAVAILABLE">
+			<td align="right" width="1%"><code><b>S503_SERVICE_UNAVAILABLE</b></code></td>
+			<td><code><span class="php-num">503</span></code> <a href="#S503_SERVICE_UNAVAILABLE" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

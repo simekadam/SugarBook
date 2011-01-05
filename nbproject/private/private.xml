@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/simekadam/Sites/SugarBook/app/bootstrap.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/index.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/presenters/BasePresenter.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/presenters/DefaultPresenter.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/.htaccess</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/libs/facebook_sdk/facebook.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/models/FConfig.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/models/User.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Presenter.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/presenters/NewsFeedPresenter.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/js/jquery.nette.js</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/Default/default.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/components/AddStatus.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/components/statusForm.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/js/jquery.ajaxform.js</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/presenters/LogoutPresenter.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/Logout/default.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/Logout/@layout.latte</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/config.ini</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/js/javascriptStuff.js</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/models/ThiefModel.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/document_root/js/jquery-1.4.4.js</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/exceptions.php</file>
+        <file>file:/Users/simekadam/Sites/SugarBook/app/templates/Default/photos.latte</file>
+    </open-files>
+</project-private>

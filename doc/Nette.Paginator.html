@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Paginator</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" class="active">Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.AmbiguousServiceException.html" >AmbiguousServiceException</a></li>
+		<li><a href="Nette.ArrayList.html" >ArrayList</a></li>
+		<li><a href="Nette.ArrayTools.html" >ArrayTools</a></li>
+		<li><a href="Nette.Callback.html" >Callback</a></li>
+		<li><a href="Nette.CallbackFilterIterator.html" >CallbackFilterIterator</a></li>
+		<li><a href="Nette.Component.html" >Component</a></li>
+		<li><a href="Nette.ComponentContainer.html" >ComponentContainer</a></li>
+		<li><a href="Nette.Configurator.html" >Configurator</a></li>
+		<li><a href="Nette.Context.html" >Context</a></li>
+		<li><a href="Nette.Debug.html" >Debug</a></li>
+		<li><a href="Nette.DebugPanel.html" >DebugPanel</a></li>
+		<li><a href="Nette.Environment.html" >Environment</a></li>
+		<li><a href="Nette.Finder.html" >Finder</a></li>
+		<li><a href="Nette.Framework.html" >Framework</a></li>
+		<li><a href="Nette.FreezableObject.html" >FreezableObject</a></li>
+		<li><a href="Nette.GenericRecursiveIterator.html" >GenericRecursiveIterator</a></li>
+		<li><a href="Nette.Image.html" >Image</a></li>
+		<li><a href="Nette.ImageMagick.html" >ImageMagick</a></li>
+		<li><a href="Nette.InstanceFilterIterator.html" >InstanceFilterIterator</a></li>
+		<li><a href="Nette.Json.html" >Json</a></li>
+		<li><a href="Nette.JsonException.html" >JsonException</a></li>
+		<li><a href="Nette.MapIterator.html" >MapIterator</a></li>
+		<li><a href="Nette.NeonException.html" >NeonException</a></li>
+		<li><a href="Nette.NeonParser.html" >NeonParser</a></li>
+		<li><a href="Nette.Object.html" >Object</a></li>
+		<li><a href="Nette.ObjectMixin.html" >ObjectMixin</a></li>
+		<li><a href="Nette.Paginator.html" class="active">Paginator</a></li>
+		<li><a href="Nette.RecursiveCallbackFilterIterator.html" >RecursiveCallbackFilterIterator</a></li>
+		<li><a href="Nette.RegexpException.html" >RegexpException</a></li>
+		<li><a href="Nette.SafeStream.html" >SafeStream</a></li>
+		<li><a href="Nette.SmartCachingIterator.html" >SmartCachingIterator</a></li>
+		<li><a href="Nette.String.html" >String</a></li>
+		<li><a href="Nette.Tokenizer.html" >Tokenizer</a></li>
+		<li><a href="Nette.TokenizerException.html" >TokenizerException</a></li>
+		<li><a href="Nette.Tools.html" >Tools</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.IComponent.html" >IComponent</a></li>
+		<li><a href="Nette.IComponentContainer.html" >IComponentContainer</a></li>
+		<li><a href="Nette.IContext.html" >IContext</a></li>
+		<li><a href="Nette.IDebugPanel.html" >IDebugPanel</a></li>
+		<li><a href="Nette.IFreezable.html" >IFreezable</a></li>
+		<li><a href="Nette.ITranslator.html" >ITranslator</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.html" title="Summary of Nette">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.html">Nette</a></p>
+
+		<h1>Class Paginator</h1>
+		<div class="classDescription">
+
+		
+<p>Paginating math.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Paginator</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Utils.Paginator.php.html#18">/libs/Nette/Utils/Paginator.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 setPage" id="_setPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Paginator.html">Paginator</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#52" title="go to source code"><b>setPage</b></a>(
+					int
+					<var>$page</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets current page number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets current page number.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$page</code> int<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Paginator  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPage" id="_getPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#65" title="go to source code"><b>getPage</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns current page number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns current page number.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFirstPage" id="_getFirstPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFirstPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#76" title="go to source code"><b>getFirstPage</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns first page number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns first page number.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getLastPage" id="_getLastPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getLastPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#87" title="go to source code"><b>getLastPage</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns last page number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns last page number.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setBase" id="_setBase">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Paginator.html">Paginator</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setBase">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#98" title="go to source code"><b>setBase</b></a>(
+					int
+					<var>$base</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets first page (base) number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets first page (base) number.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$base</code> int<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Paginator  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getBase" id="_getBase">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getBase">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#111" title="go to source code"><b>getBase</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns first page (base) number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns first page (base) number.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPageIndex" id="_getPageIndex">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPageIndex">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#122" title="go to source code"><b>getPageIndex</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns zero-based page number.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns zero-based page number.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isFirst" id="_isFirst">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isFirst">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#133" title="go to source code"><b>isFirst</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Is the current page the first one?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is the current page the first one?</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isLast" id="_isLast">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isLast">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#144" title="go to source code"><b>isLast</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Is the current page the last one?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is the current page the last one?</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPageCount" id="_getPageCount">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPageCount">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#155" title="go to source code"><b>getPageCount</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the total number of pages.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the total number of pages.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setItemsPerPage" id="_setItemsPerPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Paginator.html">Paginator</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setItemsPerPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#166" title="go to source code"><b>setItemsPerPage</b></a>(
+					int
+					<var>$itemsPerPage</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the number of items to display on a single page.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the number of items to display on a single page.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$itemsPerPage</code> int<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Paginator  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getItemsPerPage" id="_getItemsPerPage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getItemsPerPage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#179" title="go to source code"><b>getItemsPerPage</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the number of items to display on a single page.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the number of items to display on a single page.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setItemCount" id="_setItemCount">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Paginator.html">Paginator</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setItemCount">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#190" title="go to source code"><b>setItemCount</b></a>(
+					int
+					<var>$itemCount</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the total number of items.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the total number of items.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$itemCount</code> int (or FALSE as infinity)<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Paginator  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getItemCount" id="_getItemCount">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getItemCount">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#203" title="go to source code"><b>getItemCount</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the total number of items.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the total number of items.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getOffset" id="_getOffset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getOffset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#214" title="go to source code"><b>getOffset</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the absolute index of the first item on current page.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the absolute index of the first item on current page.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCountdownOffset" id="_getCountdownOffset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCountdownOffset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#225" title="go to source code"><b>getCountdownOffset</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the absolute index of the first item on current page in countdown
+paging.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the absolute index of the first item on current page in countdown
+paging.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getLength" id="_getLength">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getLength">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.Paginator.php.html#236" title="go to source code"><b>getLength</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the number of items on current page.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the number of items on current page.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

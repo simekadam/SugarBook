@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class PDO</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" class="active">PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArrayObject.html" >ArrayObject</a></li>
+		<li><a href="CachingIterator.html" >CachingIterator</a></li>
+		<li><a href="ErrorException.html" >ErrorException</a></li>
+		<li><a href="Exception.html" >Exception</a></li>
+		<li><a href="FilterIterator.html" >FilterIterator</a></li>
+		<li><a href="InvalidArgumentException.html" >InvalidArgumentException</a></li>
+		<li><a href="IteratorIterator.html" >IteratorIterator</a></li>
+		<li><a href="LogicException.html" >LogicException</a></li>
+		<li><a href="PDO.html" class="active">PDO</a></li>
+		<li><a href="PDOStatement.html" >PDOStatement</a></li>
+		<li><a href="ReflectionClass.html" >ReflectionClass</a></li>
+		<li><a href="ReflectionExtension.html" >ReflectionExtension</a></li>
+		<li><a href="ReflectionFunction.html" >ReflectionFunction</a></li>
+		<li><a href="ReflectionFunctionAbstract.html" >ReflectionFunctionAbstract</a></li>
+		<li><a href="ReflectionMethod.html" >ReflectionMethod</a></li>
+		<li><a href="ReflectionParameter.html" >ReflectionParameter</a></li>
+		<li><a href="ReflectionProperty.html" >ReflectionProperty</a></li>
+		<li><a href="RuntimeException.html" >RuntimeException</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="ArrayAccess.html" >ArrayAccess</a></li>
+		<li><a href="Countable.html" >Countable</a></li>
+		<li><a href="Iterator.html" >Iterator</a></li>
+		<li><a href="IteratorAggregate.html" >IteratorAggregate</a></li>
+		<li><a href="OuterIterator.html" >OuterIterator</a></li>
+		<li><a href="RecursiveIterator.html" >RecursiveIterator</a></li>
+		<li><a href="Reflector.html" >Reflector</a></li>
+		<li><a href="Serializable.html" >Serializable</a></li>
+		<li><a href="Traversable.html" >Traversable</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>PHP – PDO</p>
+
+		<h1>Class PDO</h1>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Database.Connection.html">Nette\Database\Connection</a>
+		</div>
+
+		<div class="classInfo">
+			
+			<b>Documented at</b> <a href="http://php.net/manual/class.pdo.php">php.net</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.construct.php" title="go to PHP documentation"><b>__construct</b></a>(
+					
+					<var>$dsn</var>, 
+					
+					<var>$username</var>, 
+					
+					<var>$passwd</var>, 
+					
+					<var>$options</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 prepare" id="_prepare">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_prepare">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.prepare.php" title="go to PHP documentation"><b>prepare</b></a>(
+					
+					<var>$statment</var>, 
+					
+					<var>$options</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 beginTransaction" id="_beginTransaction">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_beginTransaction">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.begintransaction.php" title="go to PHP documentation"><b>beginTransaction</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 commit" id="_commit">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_commit">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.commit.php" title="go to PHP documentation"><b>commit</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 rollBack" id="_rollBack">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_rollBack">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.rollback.php" title="go to PHP documentation"><b>rollBack</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 inTransaction" id="_inTransaction">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_inTransaction">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.intransaction.php" title="go to PHP documentation"><b>inTransaction</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setAttribute" id="_setAttribute">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setAttribute">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.setattribute.php" title="go to PHP documentation"><b>setAttribute</b></a>(
+					
+					<var>$attribute</var>, 
+					
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 exec" id="_exec">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_exec">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.exec.php" title="go to PHP documentation"><b>exec</b></a>(
+					
+					<var>$query</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 query" id="_query">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_query">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.query.php" title="go to PHP documentation"><b>query</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 lastInsertId" id="_lastInsertId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_lastInsertId">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.lastinsertid.php" title="go to PHP documentation"><b>lastInsertId</b></a>(
+					
+					<var>$seqname</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 errorCode" id="_errorCode">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_errorCode">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.errorcode.php" title="go to PHP documentation"><b>errorCode</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 errorInfo" id="_errorInfo">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_errorInfo">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.errorinfo.php" title="go to PHP documentation"><b>errorInfo</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getAttribute" id="_getAttribute">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getAttribute">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.getattribute.php" title="go to PHP documentation"><b>getAttribute</b></a>(
+					
+					<var>$attribute</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 quote" id="_quote">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_quote">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.quote.php" title="go to PHP documentation"><b>quote</b></a>(
+					
+					<var>$string</var>, 
+					
+					<var>$paramtype</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __wakeup" id="___wakeup">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___wakeup">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.wakeup.php" title="go to PHP documentation"><b>__wakeup</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __sleep" id="___sleep">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___sleep">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.sleep.php" title="go to PHP documentation"><b>__sleep</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 getAvailableDrivers" id="_getAvailableDrivers">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getAvailableDrivers">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/pdo.getavailabledrivers.php" title="go to PHP documentation"><b>getAvailableDrivers</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="PARAM_BOOL" id="PARAM_BOOL">
+			<td align="right" width="1%"><code><b>PARAM_BOOL</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#PARAM_BOOL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_NULL" id="PARAM_NULL">
+			<td align="right" width="1%"><code><b>PARAM_NULL</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#PARAM_NULL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_INT" id="PARAM_INT">
+			<td align="right" width="1%"><code><b>PARAM_INT</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#PARAM_INT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_STR" id="PARAM_STR">
+			<td align="right" width="1%"><code><b>PARAM_STR</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#PARAM_STR" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_LOB" id="PARAM_LOB">
+			<td align="right" width="1%"><code><b>PARAM_LOB</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#PARAM_LOB" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_STMT" id="PARAM_STMT">
+			<td align="right" width="1%"><code><b>PARAM_STMT</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#PARAM_STMT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_INPUT_OUTPUT" id="PARAM_INPUT_OUTPUT">
+			<td align="right" width="1%"><code><b>PARAM_INPUT_OUTPUT</b></code></td>
+			<td><code><span class="php-num">2147483648</span></code> <a href="#PARAM_INPUT_OUTPUT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_ALLOC" id="PARAM_EVT_ALLOC">
+			<td align="right" width="1%"><code><b>PARAM_EVT_ALLOC</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#PARAM_EVT_ALLOC" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_FREE" id="PARAM_EVT_FREE">
+			<td align="right" width="1%"><code><b>PARAM_EVT_FREE</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#PARAM_EVT_FREE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_EXEC_PRE" id="PARAM_EVT_EXEC_PRE">
+			<td align="right" width="1%"><code><b>PARAM_EVT_EXEC_PRE</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#PARAM_EVT_EXEC_PRE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_EXEC_POST" id="PARAM_EVT_EXEC_POST">
+			<td align="right" width="1%"><code><b>PARAM_EVT_EXEC_POST</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#PARAM_EVT_EXEC_POST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_FETCH_PRE" id="PARAM_EVT_FETCH_PRE">
+			<td align="right" width="1%"><code><b>PARAM_EVT_FETCH_PRE</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#PARAM_EVT_FETCH_PRE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_FETCH_POST" id="PARAM_EVT_FETCH_POST">
+			<td align="right" width="1%"><code><b>PARAM_EVT_FETCH_POST</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#PARAM_EVT_FETCH_POST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PARAM_EVT_NORMALIZE" id="PARAM_EVT_NORMALIZE">
+			<td align="right" width="1%"><code><b>PARAM_EVT_NORMALIZE</b></code></td>
+			<td><code><span class="php-num">6</span></code> <a href="#PARAM_EVT_NORMALIZE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_LAZY" id="FETCH_LAZY">
+			<td align="right" width="1%"><code><b>FETCH_LAZY</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#FETCH_LAZY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ASSOC" id="FETCH_ASSOC">
+			<td align="right" width="1%"><code><b>FETCH_ASSOC</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#FETCH_ASSOC" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_NUM" id="FETCH_NUM">
+			<td align="right" width="1%"><code><b>FETCH_NUM</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#FETCH_NUM" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_BOTH" id="FETCH_BOTH">
+			<td align="right" width="1%"><code><b>FETCH_BOTH</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#FETCH_BOTH" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_OBJ" id="FETCH_OBJ">
+			<td align="right" width="1%"><code><b>FETCH_OBJ</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#FETCH_OBJ" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_BOUND" id="FETCH_BOUND">
+			<td align="right" width="1%"><code><b>FETCH_BOUND</b></code></td>
+			<td><code><span class="php-num">6</span></code> <a href="#FETCH_BOUND" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_COLUMN" id="FETCH_COLUMN">
+			<td align="right" width="1%"><code><b>FETCH_COLUMN</b></code></td>
+			<td><code><span class="php-num">7</span></code> <a href="#FETCH_COLUMN" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_CLASS" id="FETCH_CLASS">
+			<td align="right" width="1%"><code><b>FETCH_CLASS</b></code></td>
+			<td><code><span class="php-num">8</span></code> <a href="#FETCH_CLASS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_INTO" id="FETCH_INTO">
+			<td align="right" width="1%"><code><b>FETCH_INTO</b></code></td>
+			<td><code><span class="php-num">9</span></code> <a href="#FETCH_INTO" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_FUNC" id="FETCH_FUNC">
+			<td align="right" width="1%"><code><b>FETCH_FUNC</b></code></td>
+			<td><code><span class="php-num">10</span></code> <a href="#FETCH_FUNC" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_GROUP" id="FETCH_GROUP">
+			<td align="right" width="1%"><code><b>FETCH_GROUP</b></code></td>
+			<td><code><span class="php-num">65536</span></code> <a href="#FETCH_GROUP" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_UNIQUE" id="FETCH_UNIQUE">
+			<td align="right" width="1%"><code><b>FETCH_UNIQUE</b></code></td>
+			<td><code><span class="php-num">196608</span></code> <a href="#FETCH_UNIQUE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_KEY_PAIR" id="FETCH_KEY_PAIR">
+			<td align="right" width="1%"><code><b>FETCH_KEY_PAIR</b></code></td>
+			<td><code><span class="php-num">12</span></code> <a href="#FETCH_KEY_PAIR" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_CLASSTYPE" id="FETCH_CLASSTYPE">
+			<td align="right" width="1%"><code><b>FETCH_CLASSTYPE</b></code></td>
+			<td><code><span class="php-num">262144</span></code> <a href="#FETCH_CLASSTYPE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_SERIALIZE" id="FETCH_SERIALIZE">
+			<td align="right" width="1%"><code><b>FETCH_SERIALIZE</b></code></td>
+			<td><code><span class="php-num">524288</span></code> <a href="#FETCH_SERIALIZE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_PROPS_LATE" id="FETCH_PROPS_LATE">
+			<td align="right" width="1%"><code><b>FETCH_PROPS_LATE</b></code></td>
+			<td><code><span class="php-num">1048576</span></code> <a href="#FETCH_PROPS_LATE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_NAMED" id="FETCH_NAMED">
+			<td align="right" width="1%"><code><b>FETCH_NAMED</b></code></td>
+			<td><code><span class="php-num">11</span></code> <a href="#FETCH_NAMED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_AUTOCOMMIT" id="ATTR_AUTOCOMMIT">
+			<td align="right" width="1%"><code><b>ATTR_AUTOCOMMIT</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#ATTR_AUTOCOMMIT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_PREFETCH" id="ATTR_PREFETCH">
+			<td align="right" width="1%"><code><b>ATTR_PREFETCH</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#ATTR_PREFETCH" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_TIMEOUT" id="ATTR_TIMEOUT">
+			<td align="right" width="1%"><code><b>ATTR_TIMEOUT</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#ATTR_TIMEOUT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_ERRMODE" id="ATTR_ERRMODE">
+			<td align="right" width="1%"><code><b>ATTR_ERRMODE</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#ATTR_ERRMODE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_SERVER_VERSION" id="ATTR_SERVER_VERSION">
+			<td align="right" width="1%"><code><b>ATTR_SERVER_VERSION</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#ATTR_SERVER_VERSION" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_CLIENT_VERSION" id="ATTR_CLIENT_VERSION">
+			<td align="right" width="1%"><code><b>ATTR_CLIENT_VERSION</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#ATTR_CLIENT_VERSION" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_SERVER_INFO" id="ATTR_SERVER_INFO">
+			<td align="right" width="1%"><code><b>ATTR_SERVER_INFO</b></code></td>
+			<td><code><span class="php-num">6</span></code> <a href="#ATTR_SERVER_INFO" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_CONNECTION_STATUS" id="ATTR_CONNECTION_STATUS">
+			<td align="right" width="1%"><code><b>ATTR_CONNECTION_STATUS</b></code></td>
+			<td><code><span class="php-num">7</span></code> <a href="#ATTR_CONNECTION_STATUS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_CASE" id="ATTR_CASE">
+			<td align="right" width="1%"><code><b>ATTR_CASE</b></code></td>
+			<td><code><span class="php-num">8</span></code> <a href="#ATTR_CASE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_CURSOR_NAME" id="ATTR_CURSOR_NAME">
+			<td align="right" width="1%"><code><b>ATTR_CURSOR_NAME</b></code></td>
+			<td><code><span class="php-num">9</span></code> <a href="#ATTR_CURSOR_NAME" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_CURSOR" id="ATTR_CURSOR">
+			<td align="right" width="1%"><code><b>ATTR_CURSOR</b></code></td>
+			<td><code><span class="php-num">10</span></code> <a href="#ATTR_CURSOR" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_ORACLE_NULLS" id="ATTR_ORACLE_NULLS">
+			<td align="right" width="1%"><code><b>ATTR_ORACLE_NULLS</b></code></td>
+			<td><code><span class="php-num">11</span></code> <a href="#ATTR_ORACLE_NULLS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_PERSISTENT" id="ATTR_PERSISTENT">
+			<td align="right" width="1%"><code><b>ATTR_PERSISTENT</b></code></td>
+			<td><code><span class="php-num">12</span></code> <a href="#ATTR_PERSISTENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_STATEMENT_CLASS" id="ATTR_STATEMENT_CLASS">
+			<td align="right" width="1%"><code><b>ATTR_STATEMENT_CLASS</b></code></td>
+			<td><code><span class="php-num">13</span></code> <a href="#ATTR_STATEMENT_CLASS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_FETCH_TABLE_NAMES" id="ATTR_FETCH_TABLE_NAMES">
+			<td align="right" width="1%"><code><b>ATTR_FETCH_TABLE_NAMES</b></code></td>
+			<td><code><span class="php-num">14</span></code> <a href="#ATTR_FETCH_TABLE_NAMES" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_FETCH_CATALOG_NAMES" id="ATTR_FETCH_CATALOG_NAMES">
+			<td align="right" width="1%"><code><b>ATTR_FETCH_CATALOG_NAMES</b></code></td>
+			<td><code><span class="php-num">15</span></code> <a href="#ATTR_FETCH_CATALOG_NAMES" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_DRIVER_NAME" id="ATTR_DRIVER_NAME">
+			<td align="right" width="1%"><code><b>ATTR_DRIVER_NAME</b></code></td>
+			<td><code><span class="php-num">16</span></code> <a href="#ATTR_DRIVER_NAME" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_STRINGIFY_FETCHES" id="ATTR_STRINGIFY_FETCHES">
+			<td align="right" width="1%"><code><b>ATTR_STRINGIFY_FETCHES</b></code></td>
+			<td><code><span class="php-num">17</span></code> <a href="#ATTR_STRINGIFY_FETCHES" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_MAX_COLUMN_LEN" id="ATTR_MAX_COLUMN_LEN">
+			<td align="right" width="1%"><code><b>ATTR_MAX_COLUMN_LEN</b></code></td>
+			<td><code><span class="php-num">18</span></code> <a href="#ATTR_MAX_COLUMN_LEN" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_EMULATE_PREPARES" id="ATTR_EMULATE_PREPARES">
+			<td align="right" width="1%"><code><b>ATTR_EMULATE_PREPARES</b></code></td>
+			<td><code><span class="php-num">20</span></code> <a href="#ATTR_EMULATE_PREPARES" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ATTR_DEFAULT_FETCH_MODE" id="ATTR_DEFAULT_FETCH_MODE">
+			<td align="right" width="1%"><code><b>ATTR_DEFAULT_FETCH_MODE</b></code></td>
+			<td><code><span class="php-num">19</span></code> <a href="#ATTR_DEFAULT_FETCH_MODE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ERRMODE_SILENT" id="ERRMODE_SILENT">
+			<td align="right" width="1%"><code><b>ERRMODE_SILENT</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#ERRMODE_SILENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ERRMODE_WARNING" id="ERRMODE_WARNING">
+			<td align="right" width="1%"><code><b>ERRMODE_WARNING</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#ERRMODE_WARNING" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ERRMODE_EXCEPTION" id="ERRMODE_EXCEPTION">
+			<td align="right" width="1%"><code><b>ERRMODE_EXCEPTION</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#ERRMODE_EXCEPTION" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CASE_NATURAL" id="CASE_NATURAL">
+			<td align="right" width="1%"><code><b>CASE_NATURAL</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#CASE_NATURAL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CASE_LOWER" id="CASE_LOWER">
+			<td align="right" width="1%"><code><b>CASE_LOWER</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#CASE_LOWER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CASE_UPPER" id="CASE_UPPER">
+			<td align="right" width="1%"><code><b>CASE_UPPER</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#CASE_UPPER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="NULL_NATURAL" id="NULL_NATURAL">
+			<td align="right" width="1%"><code><b>NULL_NATURAL</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#NULL_NATURAL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="NULL_EMPTY_STRING" id="NULL_EMPTY_STRING">
+			<td align="right" width="1%"><code><b>NULL_EMPTY_STRING</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#NULL_EMPTY_STRING" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="NULL_TO_STRING" id="NULL_TO_STRING">
+			<td align="right" width="1%"><code><b>NULL_TO_STRING</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#NULL_TO_STRING" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ERR_NONE" id="ERR_NONE">
+			<td align="right" width="1%"><code><b>ERR_NONE</b></code></td>
+			<td><code><span class="php-quote">'00000'</span></code> <a href="#ERR_NONE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_NEXT" id="FETCH_ORI_NEXT">
+			<td align="right" width="1%"><code><b>FETCH_ORI_NEXT</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#FETCH_ORI_NEXT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_PRIOR" id="FETCH_ORI_PRIOR">
+			<td align="right" width="1%"><code><b>FETCH_ORI_PRIOR</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#FETCH_ORI_PRIOR" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_FIRST" id="FETCH_ORI_FIRST">
+			<td align="right" width="1%"><code><b>FETCH_ORI_FIRST</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#FETCH_ORI_FIRST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_LAST" id="FETCH_ORI_LAST">
+			<td align="right" width="1%"><code><b>FETCH_ORI_LAST</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#FETCH_ORI_LAST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_ABS" id="FETCH_ORI_ABS">
+			<td align="right" width="1%"><code><b>FETCH_ORI_ABS</b></code></td>
+			<td><code><span class="php-num">4</span></code> <a href="#FETCH_ORI_ABS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="FETCH_ORI_REL" id="FETCH_ORI_REL">
+			<td align="right" width="1%"><code><b>FETCH_ORI_REL</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#FETCH_ORI_REL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CURSOR_FWDONLY" id="CURSOR_FWDONLY">
+			<td align="right" width="1%"><code><b>CURSOR_FWDONLY</b></code></td>
+			<td><code><span class="php-num">0</span></code> <a href="#CURSOR_FWDONLY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="CURSOR_SCROLL" id="CURSOR_SCROLL">
+			<td align="right" width="1%"><code><b>CURSOR_SCROLL</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#CURSOR_SCROLL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_USE_BUFFERED_QUERY" id="MYSQL_ATTR_USE_BUFFERED_QUERY">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_USE_BUFFERED_QUERY</b></code></td>
+			<td><code><span class="php-num">1000</span></code> <a href="#MYSQL_ATTR_USE_BUFFERED_QUERY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_LOCAL_INFILE" id="MYSQL_ATTR_LOCAL_INFILE">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_LOCAL_INFILE</b></code></td>
+			<td><code><span class="php-num">1001</span></code> <a href="#MYSQL_ATTR_LOCAL_INFILE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_INIT_COMMAND" id="MYSQL_ATTR_INIT_COMMAND">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_INIT_COMMAND</b></code></td>
+			<td><code><span class="php-num">1002</span></code> <a href="#MYSQL_ATTR_INIT_COMMAND" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_DIRECT_QUERY" id="MYSQL_ATTR_DIRECT_QUERY">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_DIRECT_QUERY</b></code></td>
+			<td><code><span class="php-num">1003</span></code> <a href="#MYSQL_ATTR_DIRECT_QUERY" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_FOUND_ROWS" id="MYSQL_ATTR_FOUND_ROWS">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_FOUND_ROWS</b></code></td>
+			<td><code><span class="php-num">1004</span></code> <a href="#MYSQL_ATTR_FOUND_ROWS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="MYSQL_ATTR_IGNORE_SPACE" id="MYSQL_ATTR_IGNORE_SPACE">
+			<td align="right" width="1%"><code><b>MYSQL_ATTR_IGNORE_SPACE</b></code></td>
+			<td><code><span class="php-num">1005</span></code> <a href="#MYSQL_ATTR_IGNORE_SPACE" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

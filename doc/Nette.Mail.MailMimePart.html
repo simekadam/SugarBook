@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Mail\MailMimePart</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" class="active">Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Mail.Mail.html" >Mail</a></li>
+		<li><a href="Nette.Mail.MailMimePart.html" class="active">MailMimePart</a></li>
+		<li><a href="Nette.Mail.SendmailMailer.html" >SendmailMailer</a></li>
+		<li><a href="Nette.Mail.SmtpException.html" >SmtpException</a></li>
+		<li><a href="Nette.Mail.SmtpMailer.html" >SmtpMailer</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Mail.IMailer.html" >IMailer</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Mail.html" title="Summary of Nette\Mail">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Mail.html">Nette\Mail</a></p>
+
+		<h1>Class MailMimePart</h1>
+		<div class="classDescription">
+
+		
+<p>MIME message part.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Mail\MailMimePart</b>				
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Mail.Mail.html">Mail</a>
+		</div>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Mail.MailMimePart.php.html#18">/libs/Nette/Mail/MailMimePart.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 setHeader" id="_setHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#52" title="go to source code"><b>setHeader</b></a>(
+					string
+					<var>$name</var>, 
+					string|array
+					<var>$value</var>, 
+					bool
+					<var>$append</var> = <span class="php-keyword1">false</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets a header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets a header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+						<code>$value</code> string|array  value or pair email =&gt; name<br />
+						<code>$append</code> bool<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">MailMimePart  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeader" id="_getHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#103" title="go to source code"><b>getHeader</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 clearHeader" id="_clearHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_clearHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#115" title="go to source code"><b>clearHeader</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes a header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes a header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">MailMimePart  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getEncodedHeader" id="_getEncodedHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getEncodedHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#128" title="go to source code"><b>getEncodedHeader</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns an encoded header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns an encoded header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeaders" id="_getHeaders">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#168" title="go to source code"><b>getHeaders</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns all headers.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns all headers.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setContentType" id="_setContentType">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setContentType">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#179" title="go to source code"><b>setContentType</b></a>(
+					string
+					<var>$contentType</var>, 
+					string
+					<var>$charset</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets Content-Type header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets Content-Type header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$contentType</code> string<br />
+						<code>$charset</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">MailMimePart  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setEncoding" id="_setEncoding">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setEncoding">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#193" title="go to source code"><b>setEncoding</b></a>(
+					string
+					<var>$encoding</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets Content-Transfer-Encoding header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets Content-Transfer-Encoding header.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$encoding</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">MailMimePart  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getEncoding" id="_getEncoding">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getEncoding">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#206" title="go to source code"><b>getEncoding</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns Content-Transfer-Encoding header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns Content-Transfer-Encoding header.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addPart" id="_addPart">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addPart">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#217" title="go to source code"><b>addPart</b></a>(
+					<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+					
+					<var>$part</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds or creates new multipart.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds or creates new multipart.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$part</code> MailMimePart<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setBody" id="_setBody">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setBody">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#229" title="go to source code"><b>setBody</b></a>(
+					mixed
+					<var>$body</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets textual body.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets textual body.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$body</code> mixed<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">MailMimePart  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getBody" id="_getBody">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getBody">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#242" title="go to source code"><b>getBody</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Gets textual body.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Gets textual body.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 generateMessage" id="_generateMessage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_generateMessage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.MailMimePart.php.html#257" title="go to source code"><b>generateMessage</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns encoded message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns encoded message.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="ENCODING_BASE64" id="ENCODING_BASE64">
+			<td align="right" width="1%"><code><b>ENCODING_BASE64</b></code></td>
+			<td><code><span class="php-quote">'base64'</span></code> <a href="#ENCODING_BASE64" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ENCODING_7BIT" id="ENCODING_7BIT">
+			<td align="right" width="1%"><code><b>ENCODING_7BIT</b></code></td>
+			<td><code><span class="php-quote">'7bit'</span></code> <a href="#ENCODING_7BIT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ENCODING_8BIT" id="ENCODING_8BIT">
+			<td align="right" width="1%"><code><b>ENCODING_8BIT</b></code></td>
+			<td><code><span class="php-quote">'8bit'</span></code> <a href="#ENCODING_8BIT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="ENCODING_QUOTED_PRINTABLE" id="ENCODING_QUOTED_PRINTABLE">
+			<td align="right" width="1%"><code><b>ENCODING_QUOTED_PRINTABLE</b></code></td>
+			<td><code><span class="php-quote">'quoted-printable'</span></code> <a href="#ENCODING_QUOTED_PRINTABLE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="EOL" id="EOL">
+			<td align="right" width="1%"><code><b>EOL</b></code></td>
+			<td><code><span class="php-quote">'
+'</span></code> <a href="#EOL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="LINE_LENGTH" id="LINE_LENGTH">
+			<td align="right" width="1%"><code><b>LINE_LENGTH</b></code></td>
+			<td><code><span class="php-num">76</span></code> <a href="#LINE_LENGTH" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

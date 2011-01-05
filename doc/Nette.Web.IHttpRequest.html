@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Interface Nette\Web\IHttpRequest</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" class="active">Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Web.Html.html" >Html</a></li>
+		<li><a href="Nette.Web.HttpContext.html" >HttpContext</a></li>
+		<li><a href="Nette.Web.HttpRequest.html" >HttpRequest</a></li>
+		<li><a href="Nette.Web.HttpRequestFactory.html" >HttpRequestFactory</a></li>
+		<li><a href="Nette.Web.HttpResponse.html" >HttpResponse</a></li>
+		<li><a href="Nette.Web.HttpUploadedFile.html" >HttpUploadedFile</a></li>
+		<li><a href="Nette.Web.Session.html" >Session</a></li>
+		<li><a href="Nette.Web.SessionNamespace.html" >SessionNamespace</a></li>
+		<li><a href="Nette.Web.Uri.html" >Uri</a></li>
+		<li><a href="Nette.Web.UriScript.html" >UriScript</a></li>
+		<li><a href="Nette.Web.User.html" >User</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Web.IHttpRequest.html" class="active">IHttpRequest</a></li>
+		<li><a href="Nette.Web.IHttpResponse.html" >IHttpResponse</a></li>
+		<li><a href="Nette.Web.IUser.html" >IUser</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Web.html" title="Summary of Nette\Web">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Web.html">Nette\Web</a></p>
+
+		<h1>Interface IHttpRequest</h1>
+		<div class="classDescription">
+
+		
+<p>IHttpRequest provides access scheme for request sent via HTTP.</p>
+
+		</div>
+		<div>
+
+			<h4>Direct Known Implementers</h4>
+			<a href="Nette.Web.HttpRequest.html">HttpRequest</a>
+		</div>
+
+		<div class="classInfo">
+			<b>Abstract Interface</b><br />
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Web.IHttpRequest.php.html#18">/libs/Nette/Web/IHttpRequest.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 getUri" id="_getUri">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Web.UriScript.html">UriScript</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getUri">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#34" title="go to source code"><b>getUri</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns URL object.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns URL object.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getQuery" id="_getQuery">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getQuery">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#42" title="go to source code"><b>getQuery</b></a>(
+					string
+					<var>$key</var> = <span class="php-keyword1">NULL</span>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns variable provided to the script via URL query ($_GET).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns variable provided to the script via URL query ($_GET). If no key is
+passed, returns the entire array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+						<code>$default</code> mixed  default value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPost" id="_getPost">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPost">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#51" title="go to source code"><b>getPost</b></a>(
+					string
+					<var>$key</var> = <span class="php-keyword1">NULL</span>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns variable provided to the script via POST method ($_POST).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns variable provided to the script via POST method ($_POST). If no key
+is passed, returns the entire array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+						<code>$default</code> mixed  default value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFile" id="_getFile">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Web.HttpUploadedFile.html">HttpUploadedFile</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFile">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#60" title="go to source code"><b>getFile</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns uploaded file.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns uploaded file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key (or more keys)<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFiles" id="_getFiles">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFiles">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#67" title="go to source code"><b>getFiles</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns uploaded files.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns uploaded files.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCookie" id="_getCookie">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCookie">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#73" title="go to source code"><b>getCookie</b></a>(
+					string
+					<var>$key</var>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns variable provided to the script via HTTP cookies.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns variable provided to the script via HTTP cookies.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+						<code>$default</code> mixed  default value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCookies" id="_getCookies">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCookies">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#81" title="go to source code"><b>getCookies</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns variables provided to the script via HTTP cookies.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns variables provided to the script via HTTP cookies.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getMethod" id="_getMethod">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getMethod">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#89" title="go to source code"><b>getMethod</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns HTTP request method (GET, POST, HEAD, PUT, …). The method is
+case-sensitive.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns HTTP request method (GET, POST, HEAD, PUT, …). The method is
+case-sensitive.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isMethod" id="_isMethod">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isMethod">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#95" title="go to source code"><b>isMethod</b></a>(
+					string
+					<var>$method</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Checks HTTP request method.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Checks HTTP request method.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$method</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeader" id="_getHeader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#102" title="go to source code"><b>getHeader</b></a>(
+					string
+					<var>$header</var>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Return the value of the HTTP header. Pass the header name as the</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Return the value of the HTTP header. Pass the header name as the plain,
+HTTP-specified header name (e.g. ‚Accept-Encoding‘).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$header</code> string<br />
+						<code>$default</code> mixed<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeaders" id="_getHeaders">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#111" title="go to source code"><b>getHeaders</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns all HTTP headers.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns all HTTP headers.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isSecured" id="_isSecured">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isSecured">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#117" title="go to source code"><b>isSecured</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Is the request is sent via secure channel (https).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is the request is sent via secure channel (https).</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isAjax" id="_isAjax">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isAjax">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#123" title="go to source code"><b>isAjax</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Is AJAX request?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is AJAX request?</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getRemoteAddress" id="_getRemoteAddress">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getRemoteAddress">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#129" title="go to source code"><b>getRemoteAddress</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the IP address of the remote client.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the IP address of the remote client.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getRemoteHost" id="_getRemoteHost">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getRemoteHost">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Web.IHttpRequest.php.html#135" title="go to source code"><b>getRemoteHost</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the host of the remote client.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the host of the remote client.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="GET" id="GET">
+			<td align="right" width="1%"><code><b>GET</b></code></td>
+			<td><code><span class="php-quote">'GET'</span></code> <a href="#GET" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="POST" id="POST">
+			<td align="right" width="1%"><code><b>POST</b></code></td>
+			<td><code><span class="php-quote">'POST'</span></code> <a href="#POST" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="HEAD" id="HEAD">
+			<td align="right" width="1%"><code><b>HEAD</b></code></td>
+			<td><code><span class="php-quote">'HEAD'</span></code> <a href="#HEAD" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="PUT" id="PUT">
+			<td align="right" width="1%"><code><b>PUT</b></code></td>
+			<td><code><span class="php-quote">'PUT'</span></code> <a href="#PUT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="DELETE" id="DELETE">
+			<td align="right" width="1%"><code><b>DELETE</b></code></td>
+			<td><code><span class="php-quote">'DELETE'</span></code> <a href="#DELETE" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

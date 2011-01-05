@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Application\AppForm</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" class="active">Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Application.AbortException.html" >AbortException</a></li>
+		<li><a href="Nette.Application.AppForm.html" class="active">AppForm</a></li>
+		<li><a href="Nette.Application.Application.html" >Application</a></li>
+		<li><a href="Nette.Application.ApplicationException.html" >ApplicationException</a></li>
+		<li><a href="Nette.Application.BadRequestException.html" >BadRequestException</a></li>
+		<li><a href="Nette.Application.BadSignalException.html" >BadSignalException</a></li>
+		<li><a href="Nette.Application.CliRouter.html" >CliRouter</a></li>
+		<li><a href="Nette.Application.Control.html" >Control</a></li>
+		<li><a href="Nette.Application.DownloadResponse.html" >DownloadResponse</a></li>
+		<li><a href="Nette.Application.ForbiddenRequestException.html" >ForbiddenRequestException</a></li>
+		<li><a href="Nette.Application.ForwardingResponse.html" >ForwardingResponse</a></li>
+		<li><a href="Nette.Application.InvalidLinkException.html" >InvalidLinkException</a></li>
+		<li><a href="Nette.Application.InvalidPresenterException.html" >InvalidPresenterException</a></li>
+		<li><a href="Nette.Application.JsonResponse.html" >JsonResponse</a></li>
+		<li><a href="Nette.Application.Link.html" >Link</a></li>
+		<li><a href="Nette.Application.MultiRouter.html" >MultiRouter</a></li>
+		<li><a href="Nette.Application.Presenter.html" >Presenter</a></li>
+		<li><a href="Nette.Application.PresenterComponent.html" >PresenterComponent</a></li>
+		<li><a href="Nette.Application.PresenterLoader.html" >PresenterLoader</a></li>
+		<li><a href="Nette.Application.PresenterRequest.html" >PresenterRequest</a></li>
+		<li><a href="Nette.Application.RedirectingResponse.html" >RedirectingResponse</a></li>
+		<li><a href="Nette.Application.RenderResponse.html" >RenderResponse</a></li>
+		<li><a href="Nette.Application.Route.html" >Route</a></li>
+		<li><a href="Nette.Application.RoutingDebugger.html" >RoutingDebugger</a></li>
+		<li><a href="Nette.Application.SimpleRouter.html" >SimpleRouter</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Application.IPartiallyRenderable.html" >IPartiallyRenderable</a></li>
+		<li><a href="Nette.Application.IPresenter.html" >IPresenter</a></li>
+		<li><a href="Nette.Application.IPresenterLoader.html" >IPresenterLoader</a></li>
+		<li><a href="Nette.Application.IPresenterResponse.html" >IPresenterResponse</a></li>
+		<li><a href="Nette.Application.IRenderable.html" >IRenderable</a></li>
+		<li><a href="Nette.Application.IRouter.html" >IRouter</a></li>
+		<li><a href="Nette.Application.ISignalReceiver.html" >ISignalReceiver</a></li>
+		<li><a href="Nette.Application.IStatePersistent.html" >IStatePersistent</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Application.html" title="Summary of Nette\Application">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Application.html">Nette\Application</a></p>
+
+		<h1>Class AppForm</h1>
+		<div class="classDescription">
+
+		
+<p>Web form as presenter component.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Component.html">Nette\Component</a>
+				 implements <a href="Nette.IComponent.html">Nette\IComponent</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.ComponentContainer.html">Nette\ComponentContainer</a>
+				 implements <a href="Nette.IComponentContainer.html">Nette\IComponentContainer</a>
+			</dd>
+			<dd style="padding-left:90px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Forms.FormContainer.html">Nette\Forms\FormContainer</a>
+				 implements <a href="ArrayAccess.html">ArrayAccess</a>
+			</dd>
+			<dd style="padding-left:120px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Forms.Form.html">Nette\Forms\Form</a>
+				
+			</dd>
+			<dd style="padding-left:150px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Application\AppForm</b>				 implements <a href="Nette.Application.ISignalReceiver.html">ISignalReceiver</a>
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Application.AppForm.php.html#18">/libs/Nette/Application/AppForm.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#28" title="go to source code"><b>__construct</b></a>(
+					<a href="Nette.IComponentContainer.html">Nette\IComponentContainer</a>
+					
+					<var>$parent</var> = <span class="php-keyword1">NULL</span>, 
+					
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Application form constructor.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Application form constructor.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPresenter" id="_getPresenter">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Application.Presenter.html">Presenter</a>|NULL
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPresenter">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#42" title="go to source code"><b>getPresenter</b></a>(
+					bool
+					<var>$need</var> = <span class="php-keyword1">true</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the presenter where this component belongs to.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the presenter where this component belongs to.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$need</code> bool   throw exception if presenter doesn&#039;t exist?<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 attached" id="_attached">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_attached">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#54" title="go to source code"><b>attached</b></a>(
+					IComponent
+					<var>$presenter</var>
+			)</code>
+
+			<div class="short">
+				
+<p>This method will be called when the component (or component's parent)</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>This method will be called when the component (or component's parent)
+becomes attached to a monitored object. Do not call this method yourself.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$presenter</code> IComponent<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isAnchored" id="_isAnchored">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isAnchored">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#87" title="go to source code"><b>isAnchored</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Tells if the form is anchored.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Tells if the form is anchored.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 receiveHttpData" id="_receiveHttpData">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_receiveHttpData">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#98" title="go to source code"><b>receiveHttpData</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Internal: receives submitted HTTP data.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Internal: receives submitted HTTP data.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 signalReceived" id="_signalReceived">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_signalReceived">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.AppForm.php.html#128" title="go to source code"><b>signalReceived</b></a>(
+					string
+					<var>$signal</var>
+			)</code>
+
+			<div class="short">
+				
+<p>This method is called by presenter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>This method is called by presenter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$signal</code> string<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Application.ISignalReceiver.html#_signalReceived">ISignalReceiver::signalReceived</a></code></div>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Forms.Form.html#methodSummary">Nette\Forms\Form</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Forms.Form.html#___construct">__construct()</a>, <a href="Nette.Forms.Form.html#_attached">attached()</a>, <a href="Nette.Forms.Form.html#_getForm">getForm()</a>, <a href="Nette.Forms.Form.html#_setAction">setAction()</a>, <a href="Nette.Forms.Form.html#_getAction">getAction()</a>, <a href="Nette.Forms.Form.html#_setMethod">setMethod()</a>, <a href="Nette.Forms.Form.html#_getMethod">getMethod()</a>, <a href="Nette.Forms.Form.html#_addProtection">addProtection()</a>, <a href="Nette.Forms.Form.html#_addGroup">addGroup()</a>, <a href="Nette.Forms.Form.html#_removeGroup">removeGroup()</a>, <a href="Nette.Forms.Form.html#_getGroups">getGroups()</a>, <a href="Nette.Forms.Form.html#_getGroup">getGroup()</a>, <a href="Nette.Forms.Form.html#_setTranslator">setTranslator()</a>, <a href="Nette.Forms.Form.html#_getTranslator">getTranslator()</a>, <a href="Nette.Forms.Form.html#_isAnchored">isAnchored()</a>, <a href="Nette.Forms.Form.html#_isSubmitted">isSubmitted()</a>, <a href="Nette.Forms.Form.html#_setSubmittedBy">setSubmittedBy()</a>, <a href="Nette.Forms.Form.html#_getHttpData">getHttpData()</a>, <a href="Nette.Forms.Form.html#_fireEvents">fireEvents()</a>, <a href="Nette.Forms.Form.html#_receiveHttpData">receiveHttpData()</a>, <a href="Nette.Forms.Form.html#_getValues">getValues()</a>, <a href="Nette.Forms.Form.html#_addError">addError()</a>, <a href="Nette.Forms.Form.html#_getErrors">getErrors()</a>, <a href="Nette.Forms.Form.html#_hasErrors">hasErrors()</a>, <a href="Nette.Forms.Form.html#_cleanErrors">cleanErrors()</a>, <a href="Nette.Forms.Form.html#_getElementPrototype">getElementPrototype()</a>, <a href="Nette.Forms.Form.html#_setRenderer">setRenderer()</a>, <a href="Nette.Forms.Form.html#_getRenderer">getRenderer()</a>, <a href="Nette.Forms.Form.html#_render">render()</a>, <a href="Nette.Forms.Form.html#___toString">__toString()</a>, <a href="Nette.Forms.Form.html#_getHttpRequest">getHttpRequest()</a>, <a href="Nette.Forms.Form.html#_getSession">getSession()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Forms.FormContainer.html#methodSummary">Nette\Forms\FormContainer</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Forms.FormContainer.html#_setDefaults">setDefaults()</a>, <a href="Nette.Forms.FormContainer.html#_setValues">setValues()</a>, <a href="Nette.Forms.FormContainer.html#_getValues">getValues()</a>, <a href="Nette.Forms.FormContainer.html#_isValid">isValid()</a>, <a href="Nette.Forms.FormContainer.html#_validate">validate()</a>, <a href="Nette.Forms.FormContainer.html#_setCurrentGroup">setCurrentGroup()</a>, <a href="Nette.Forms.FormContainer.html#_getCurrentGroup">getCurrentGroup()</a>, <a href="Nette.Forms.FormContainer.html#_addComponent">addComponent()</a>, <a href="Nette.Forms.FormContainer.html#_getControls">getControls()</a>, <a href="Nette.Forms.FormContainer.html#_getForm">getForm()</a>, <a href="Nette.Forms.FormContainer.html#_addText">addText()</a>, <a href="Nette.Forms.FormContainer.html#_addPassword">addPassword()</a>, <a href="Nette.Forms.FormContainer.html#_addTextArea">addTextArea()</a>, <a href="Nette.Forms.FormContainer.html#_addFile">addFile()</a>, <a href="Nette.Forms.FormContainer.html#_addHidden">addHidden()</a>, <a href="Nette.Forms.FormContainer.html#_addCheckbox">addCheckbox()</a>, <a href="Nette.Forms.FormContainer.html#_addRadioList">addRadioList()</a>, <a href="Nette.Forms.FormContainer.html#_addSelect">addSelect()</a>, <a href="Nette.Forms.FormContainer.html#_addMultiSelect">addMultiSelect()</a>, <a href="Nette.Forms.FormContainer.html#_addSubmit">addSubmit()</a>, <a href="Nette.Forms.FormContainer.html#_addButton">addButton()</a>, <a href="Nette.Forms.FormContainer.html#_addImage">addImage()</a>, <a href="Nette.Forms.FormContainer.html#_addContainer">addContainer()</a>, <a href="Nette.Forms.FormContainer.html#_offsetSet">offsetSet()</a>, <a href="Nette.Forms.FormContainer.html#_offsetGet">offsetGet()</a>, <a href="Nette.Forms.FormContainer.html#_offsetExists">offsetExists()</a>, <a href="Nette.Forms.FormContainer.html#_offsetUnset">offsetUnset()</a>, <a href="Nette.Forms.FormContainer.html#___clone">__clone()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.ComponentContainer.html#methodSummary">Nette\ComponentContainer</a></h2>
+	<div class="box"><code>
+		<a href="Nette.ComponentContainer.html#_addComponent">addComponent()</a>, <a href="Nette.ComponentContainer.html#_removeComponent">removeComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponent">getComponent()</a>, <a href="Nette.ComponentContainer.html#_createComponent">createComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponents">getComponents()</a>, <a href="Nette.ComponentContainer.html#_validateChildComponent">validateChildComponent()</a>, <a href="Nette.ComponentContainer.html#___clone">__clone()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Component.html#methodSummary">Nette\Component</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Component.html#___construct">__construct()</a>, <a href="Nette.Component.html#_lookup">lookup()</a>, <a href="Nette.Component.html#_lookupPath">lookupPath()</a>, <a href="Nette.Component.html#_monitor">monitor()</a>, <a href="Nette.Component.html#_unmonitor">unmonitor()</a>, <a href="Nette.Component.html#_attached">attached()</a>, <a href="Nette.Component.html#_detached">detached()</a>, <a href="Nette.Component.html#_getName">getName()</a>, <a href="Nette.Component.html#_getParent">getParent()</a>, <a href="Nette.Component.html#_setParent">setParent()</a>, <a href="Nette.Component.html#_validateParent">validateParent()</a>, <a href="Nette.Component.html#___clone">__clone()</a>, <a href="Nette.Component.html#___wakeup">__wakeup()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="Nette.Forms.Form.html#constantSummary">Nette\Forms\Form</a></h2>
+	<div class="box"><code>EQUAL, IS_IN, FILLED, VALID, PROTECTION, SUBMITTED, MIN_LENGTH, MAX_LENGTH, LENGTH, EMAIL, URL, REGEXP, PATTERN, INTEGER, NUMERIC, FLOAT, RANGE, MAX_FILE_SIZE, MIME_TYPE, IMAGE, GET, POST, TRACKER_ID, PROTECTOR_ID</code></div>
+	<h2>Constants Inherited From <a href="Nette.Component.html#constantSummary">Nette\Component</a></h2>
+	<div class="box"><code>NAME_SEPARATOR</code></div>
+
+
+	<h2>Properties Inherited From <a href="Nette.Forms.Form.html#propertySummary">Nette\Forms\Form</a></h2>
+	<div class="box"><code><var>$onSubmit</var>, <var>$onInvalidSubmit</var></code></div>
+	<h2>Properties Inherited From <a href="Nette.Forms.FormContainer.html#propertySummary">Nette\Forms\FormContainer</a></h2>
+	<div class="box"><code><var>$onValidate</var>, <var>$currentGroup</var>, <var>$valid</var></code></div>
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

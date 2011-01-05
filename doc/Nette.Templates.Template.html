@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Templates\Template</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" class="active">Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Templates.CachingHelper.html" >CachingHelper</a></li>
+		<li><a href="Nette.Templates.FileTemplate.html" >FileTemplate</a></li>
+		<li><a href="Nette.Templates.LatteException.html" >LatteException</a></li>
+		<li><a href="Nette.Templates.LatteFilter.html" >LatteFilter</a></li>
+		<li><a href="Nette.Templates.LatteMacros.html" >LatteMacros</a></li>
+		<li><a href="Nette.Templates.Template.html" class="active">Template</a></li>
+		<li><a href="Nette.Templates.TemplateCacheStorage.html" >TemplateCacheStorage</a></li>
+		<li><a href="Nette.Templates.TemplateException.html" >TemplateException</a></li>
+		<li><a href="Nette.Templates.TemplateFilters.html" >TemplateFilters</a></li>
+		<li><a href="Nette.Templates.TemplateHelpers.html" >TemplateHelpers</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Templates.IFileTemplate.html" >IFileTemplate</a></li>
+		<li><a href="Nette.Templates.ITemplate.html" >ITemplate</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Templates.html" title="Summary of Nette\Templates">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Templates.html">Nette\Templates</a></p>
+
+		<h1>Class Template</h1>
+		<div class="classDescription">
+
+		
+<p>Template.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Templates\Template</b>				 implements <a href="Nette.Templates.ITemplate.html">ITemplate</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Templates.FileTemplate.html">FileTemplate</a>
+		</div>
+
+		<div class="classInfo">
+			<b>Abstract Class</b><br />
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Templates.Template.php.html#18">/libs/Nette/Templates/Template.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 registerFilter" id="_registerFilter">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_registerFilter">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#45" title="go to source code"><b>registerFilter</b></a>(
+					callback
+					<var>$callback</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Registers callback as template compile-time filter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Registers callback as template compile-time filter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$callback</code> callback<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFilters" id="_getFilters">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFilters">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#61" title="go to source code"><b>getFilters</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns all registered compile-time filters.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns all registered compile-time filters.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 render" id="_render">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_render">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#76" title="go to source code"><b>render</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Renders template to output.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Renders template to output.</p>
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Templates.ITemplate.html#_render">ITemplate::render</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 save" id="_save">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_save">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#88" title="go to source code"><b>save</b></a>(
+					string
+					<var>$file</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Renders template to file.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Renders template to file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$file</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __toString" id="___toString">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___toString">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#102" title="go to source code"><b>__toString</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Renders template to string.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Renders template to string.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 compile" id="_compile">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_compile">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#126" title="go to source code"><b>compile</b></a>(
+					string
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Applies filters on template content.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Applies filters on template content.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$content</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 registerHelper" id="_registerHelper">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_registerHelper">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#152" title="go to source code"><b>registerHelper</b></a>(
+					string
+					<var>$name</var>, 
+					callback
+					<var>$callback</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Registers callback as template run-time helper.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Registers callback as template run-time helper.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+						<code>$callback</code> callback<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 registerHelperLoader" id="_registerHelperLoader">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_registerHelperLoader">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#165" title="go to source code"><b>registerHelperLoader</b></a>(
+					callback
+					<var>$callback</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Registers callback as template run-time helpers loader.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Registers callback as template run-time helpers loader.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$callback</code> callback<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHelpers" id="_getHelpers">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHelpers">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#177" title="go to source code"><b>getHelpers</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns all registered run-time helpers.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns all registered run-time helpers.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __call" id="___call">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___call">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#188" title="go to source code"><b>__call</b></a>(
+					string
+					<var>$name</var>, 
+					array
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Call a template run-time helper. Do not call directly.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Call a template run-time helper. Do not call directly.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  helper name<br />
+						<code>$args</code> array   arguments<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setTranslator" id="_setTranslator">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Templates.Template.html">Template</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setTranslator">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#213" title="go to source code"><b>setTranslator</b></a>(
+					<a href="Nette.ITranslator.html">Nette\ITranslator</a>
+					
+					<var>$translator</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets translate adapter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets translate adapter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$translator</code> Nette\ITranslator<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Template  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 add" id="_add">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_add">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#230" title="go to source code"><b>add</b></a>(
+					string
+					<var>$name</var>, 
+					mixed
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds new template parameter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds new template parameter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  name<br />
+						<code>$value</code> mixed   value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setParams" id="_setParams">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Templates.Template.html">Template</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setParams">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#247" title="go to source code"><b>setParams</b></a>(
+					array
+					
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets all parameters.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets all parameters.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> array<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Template  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getParams" id="_getParams">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getParams">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#260" title="go to source code"><b>getParams</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns array of all parameters.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns array of all parameters.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __set" id="___set">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___set">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#271" title="go to source code"><b>__set</b></a>(
+					string
+					<var>$name</var>, 
+					mixed
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets a template parameter. Do not call directly.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets a template parameter. Do not call directly.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  name<br />
+						<code>$value</code> mixed   value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __get" id="___get">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				&amp;
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___get">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#284" title="go to source code"><b>__get</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a template parameter. Do not call directly.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a template parameter. Do not call directly.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  name<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">mixed  value</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __isset" id="___isset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___isset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#300" title="go to source code"><b>__isset</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Determines whether parameter is defined. Do not call directly.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Determines whether parameter is defined. Do not call directly.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string    name<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __unset" id="___unset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___unset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#312" title="go to source code"><b>__unset</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes a template parameter. Do not call directly.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes a template parameter. Do not call directly.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string    name<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 optimizePhp" id="_optimizePhp">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_optimizePhp">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Template.php.html#364" title="go to source code"><b>optimizePhp</b></a>(
+					string
+					<var>$source</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes unnecessary blocks of PHP code.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes unnecessary blocks of PHP code.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$source</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="warnOnUndefined" id="$warnOnUndefined">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				bool
+			</code></td>
+
+			<td width="1%"><var>$warnOnUndefined</var></td>
+			<td><pre><span class="php-keyword1">true</span></pre></td>
+			<td> <a href="#$warnOnUndefined" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="onPrepareFilters" id="$onPrepareFilters">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				array
+			</code></td>
+
+			<td width="1%"><var>$onPrepareFilters</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+)</pre></td>
+			<td>of function(Template $sender); Occurs before a template is compiled –
+implement to customize the filters <a href="#$onPrepareFilters" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />	<meta name="robots" content="noindex" />
+
+	<title>models/User.php</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" class="active">none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArgumentOutOfRangeException.html" >ArgumentOutOfRangeException</a></li>
+		<li><a href="BasePresenter.html" >BasePresenter</a></li>
+		<li><a href="DefaultPresenter.html" >DefaultPresenter</a></li>
+		<li><a href="DeprecatedException.html" >DeprecatedException</a></li>
+		<li><a href="DirectoryNotFoundException.html" >DirectoryNotFoundException</a></li>
+		<li><a href="Facebook.html" >Facebook</a></li>
+		<li><a href="FacebookApiException.html" >FacebookApiException</a></li>
+		<li><a href="FatalErrorException.html" >FatalErrorException</a></li>
+		<li><a href="FConfig.html" >FConfig</a></li>
+		<li><a href="FileNotFoundException.html" >FileNotFoundException</a></li>
+		<li><a href="InvalidStateException.html" >InvalidStateException</a></li>
+		<li><a href="IOException.html" >IOException</a></li>
+		<li><a href="LogoutPresenter.html" >LogoutPresenter</a></li>
+		<li><a href="MemberAccessException.html" >MemberAccessException</a></li>
+		<li><a href="NewsFeedPresenter.html" >NewsFeedPresenter</a></li>
+		<li><a href="NotImplementedException.html" >NotImplementedException</a></li>
+		<li><a href="NotSupportedException.html" >NotSupportedException</a></li>
+		<li><a href="ThiefModel.html" >ThiefModel</a></li>
+		<li><a href="User.html" class="active">User</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
+<a href="#2" id="2" class="l"> 2: </a><span class="php-comment">/* 
+</span><a href="#3" id="3" class="l"> 3: </a><span class="php-comment"> * To change this template, choose Tools | Templates
+</span><a href="#4" id="4" class="l"> 4: </a><span class="php-comment"> * and open the template in the editor.
+</span><a href="#5" id="5" class="l"> 5: </a><span class="php-comment"> */</span>
+<a href="#6" id="6" class="l"> 6: </a>
+<a href="#7" id="7" class="l"> 7: </a><span class="php-comment">/**
+</span><a href="#8" id="8" class="l"> 8: </a><span class="php-comment"> * Description of User
+</span><a href="#9" id="9" class="l"> 9: </a><span class="php-comment"> *
+</span><a href="#10" id="10" class="l">10: </a><span class="php-comment"> * @author simekadam
+</span><a href="#11" id="11" class="l">11: </a><span class="php-comment"> */</span>
+<a href="#12" id="12" class="l">12: </a><span class="php-keyword1">use</span> \FConfig;
+<a href="#13" id="13" class="l">13: </a><span class="php-keyword1">class</span> User {
+<a href="#14" id="14" class="l">14: </a>    <span class="php-comment">//put your code here
+</span><a href="#15" id="15" class="l">15: </a>
+<a href="#16" id="16" class="l">16: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getFUser(){
+<a href="#17" id="17" class="l">17: </a>        <span class="php-var">$user</span> = <span class="php-var">$FConfig</span>-&gt;getFacebook()-&gt;getUser();
+<a href="#18" id="18" class="l">18: </a>        <span class="php-keyword1">return</span> <span class="php-var">$user</span>;
+<a href="#19" id="19" class="l">19: </a>    }
+<a href="#20" id="20" class="l">20: </a>
+<a href="#21" id="21" class="l">21: </a>}
+<a href="#22" id="22" class="l">22: </a><span class="xlang">?&gt;</span>
+<a href="#23" id="23" class="l">23: </a></code></pre>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

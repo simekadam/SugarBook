@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Security\Identity</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" class="active">Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Security.AuthenticationException.html" >AuthenticationException</a></li>
+		<li><a href="Nette.Security.Identity.html" class="active">Identity</a></li>
+		<li><a href="Nette.Security.Permission.html" >Permission</a></li>
+		<li><a href="Nette.Security.SimpleAuthenticator.html" >SimpleAuthenticator</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Security.IAuthenticator.html" >IAuthenticator</a></li>
+		<li><a href="Nette.Security.IAuthorizator.html" >IAuthorizator</a></li>
+		<li><a href="Nette.Security.IIdentity.html" >IIdentity</a></li>
+		<li><a href="Nette.Security.IResource.html" >IResource</a></li>
+		<li><a href="Nette.Security.IRole.html" >IRole</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Security.html" title="Summary of Nette\Security">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Security.html">Nette\Security</a></p>
+
+		<h1>Class Identity</h1>
+		<div class="classDescription">
+
+		
+<p>Default implementation of IIdentity.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.FreezableObject.html">Nette\FreezableObject</a>
+				 implements <a href="Nette.IFreezable.html">Nette\IFreezable</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Security\Identity</b>				 implements <a href="Nette.Security.IIdentity.html">IIdentity</a>
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+				<b>SerializationVersion:</b> 1<br />
+			<b>Located at</b> <a href="source-libs.Nette.Security.Identity.php.html#18">/libs/Nette/Security/Identity.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#40" title="go to source code"><b>__construct</b></a>(
+					mixed
+					<var>$id</var>, 
+					mixed
+					<var>$roles</var> = <span class="php-keyword1">NULL</span>, 
+					array
+					<var>$data</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$id</code> mixed   identity ID<br />
+						<code>$roles</code> mixed   roles<br />
+						<code>$data</code> array   user data<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setId" id="_setId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Security.Identity.html">Identity</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#54" title="go to source code"><b>setId</b></a>(
+					mixed
+					<var>$id</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the ID of user.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the ID of user.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$id</code> mixed<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Identity  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getId" id="_getId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#68" title="go to source code"><b>getId</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the ID of user.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the ID of user.</p>
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Security.IIdentity.html#_getId">IIdentity::getId</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setRoles" id="_setRoles">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Security.Identity.html">Identity</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setRoles">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#79" title="go to source code"><b>setRoles</b></a>(
+					array
+					
+					<var>$roles</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets a list of roles that the user is a member of.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets a list of roles that the user is a member of.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$roles</code> array<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Identity  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getRoles" id="_getRoles">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getRoles">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#93" title="go to source code"><b>getRoles</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a list of roles that the user is a member of.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a list of roles that the user is a member of.</p>
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Security.IIdentity.html#_getRoles">IIdentity::getRoles</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getData" id="_getData">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getData">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#104" title="go to source code"><b>getData</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a user data.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a user data.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __set" id="___set">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___set">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#115" title="go to source code"><b>__set</b></a>(
+					string
+					<var>$key</var>, 
+					mixed
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets user data value.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets user data value.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string  property name<br />
+						<code>$value</code> mixed   property value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __get" id="___get">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				&amp;
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___get">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#134" title="go to source code"><b>__get</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns user data value.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns user data value.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string  property name<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __isset" id="___isset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___isset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#151" title="go to source code"><b>__isset</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Is property defined?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is property defined?</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string  property name<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __unset" id="___unset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___unset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Security.Identity.php.html#163" title="go to source code"><b>__unset</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes property.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes property.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  property name<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="MemberAccessException.html">\MemberAccessException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.FreezableObject.html#methodSummary">Nette\FreezableObject</a></h2>
+	<div class="box"><code>
+		<a href="Nette.FreezableObject.html#_freeze">freeze()</a>, <a href="Nette.FreezableObject.html#_isFrozen">isFrozen()</a>, <a href="Nette.FreezableObject.html#___clone">__clone()</a>, <a href="Nette.FreezableObject.html#_updating">updating()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

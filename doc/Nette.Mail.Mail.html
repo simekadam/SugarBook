@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Mail\Mail</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" class="active">Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Mail.Mail.html" class="active">Mail</a></li>
+		<li><a href="Nette.Mail.MailMimePart.html" >MailMimePart</a></li>
+		<li><a href="Nette.Mail.SendmailMailer.html" >SendmailMailer</a></li>
+		<li><a href="Nette.Mail.SmtpException.html" >SmtpException</a></li>
+		<li><a href="Nette.Mail.SmtpMailer.html" >SmtpMailer</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Mail.IMailer.html" >IMailer</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Mail.html" title="Summary of Nette\Mail">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Mail.html">Nette\Mail</a></p>
+
+		<h1>Class Mail</h1>
+		<div class="classDescription">
+
+		
+<p>Mail provides functionality to compose and send both text and MIME-compliant
+multipart email messages.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Mail.MailMimePart.html">Nette\Mail\MailMimePart</a>
+				
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Mail\Mail</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Mail.Mail.php.html#19">/libs/Nette/Mail/Mail.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#63" title="go to source code"><b>__construct</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setFrom" id="_setFrom">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setFrom">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#74" title="go to source code"><b>setFrom</b></a>(
+					string
+					<var>$email</var>, 
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the sender of the message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the sender of the message.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email or format &quot;John Doe&quot; &lt;doe<br />
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFrom" id="_getFrom">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFrom">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#88" title="go to source code"><b>getFrom</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the sender of the message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the sender of the message.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addReplyTo" id="_addReplyTo">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addReplyTo">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#99" title="go to source code"><b>addReplyTo</b></a>(
+					string
+					<var>$email</var>, 
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds the reply-to address.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds the reply-to address.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email or format &quot;John Doe&quot; &lt;doe<br />
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setSubject" id="_setSubject">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setSubject">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#113" title="go to source code"><b>setSubject</b></a>(
+					string
+					<var>$subject</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the subject of the message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the subject of the message.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$subject</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getSubject" id="_getSubject">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getSubject">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#126" title="go to source code"><b>getSubject</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the subject of the message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the subject of the message.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addTo" id="_addTo">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addTo">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#137" title="go to source code"><b>addTo</b></a>(
+					string
+					<var>$email</var>, 
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds email recipient.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds email recipient.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email or format &quot;John Doe&quot; &lt;doe<br />
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addCc" id="_addCc">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addCc">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#151" title="go to source code"><b>addCc</b></a>(
+					string
+					<var>$email</var>, 
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds carbon copy email recipient.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds carbon copy email recipient.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email or format &quot;John Doe&quot; &lt;doe<br />
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addBcc" id="_addBcc">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addBcc">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#165" title="go to source code"><b>addBcc</b></a>(
+					string
+					<var>$email</var>, 
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds blind carbon copy email recipient.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds blind carbon copy email recipient.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email or format &quot;John Doe&quot; &lt;doe<br />
+						<code>$name</code> string<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setReturnPath" id="_setReturnPath">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setReturnPath">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#196" title="go to source code"><b>setReturnPath</b></a>(
+					string
+					<var>$email</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the Return-Path header of the message.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the Return-Path header of the message.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$email</code> string  email<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getReturnPath" id="_getReturnPath">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getReturnPath">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#209" title="go to source code"><b>getReturnPath</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the Return-Path header.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the Return-Path header.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setPriority" id="_setPriority">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setPriority">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#220" title="go to source code"><b>setPriority</b></a>(
+					int
+					<var>$priority</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets email priority.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets email priority.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$priority</code> int<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPriority" id="_getPriority">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPriority">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#233" title="go to source code"><b>getPriority</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns email priority.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns email priority.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setHtmlBody" id="_setHtmlBody">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setHtmlBody">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#244" title="go to source code"><b>setHtmlBody</b></a>(
+					string|<a href="Nette.Templates.ITemplate.html">Nette\Templates\ITemplate</a>
+					<var>$html</var>, 
+					mixed
+					<var>$basePath</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets HTML body.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets HTML body.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$html</code> string|Nette\Templates\ITemplate<br />
+						<code>$basePath</code> mixed base-path or FALSE to disable parsing<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHtmlBody" id="_getHtmlBody">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHtmlBody">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#259" title="go to source code"><b>getHtmlBody</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Gets HTML body.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Gets HTML body.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addEmbeddedFile" id="_addEmbeddedFile">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addEmbeddedFile">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#270" title="go to source code"><b>addEmbeddedFile</b></a>(
+					string
+					<var>$file</var>, 
+					string
+					<var>$content</var> = <span class="php-keyword1">NULL</span>, 
+					string
+					<var>$contentType</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds embedded file.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds embedded file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$file</code> string<br />
+						<code>$content</code> string<br />
+						<code>$contentType</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addAttachment" id="_addAttachment">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.MailMimePart.html">MailMimePart</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addAttachment">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#285" title="go to source code"><b>addAttachment</b></a>(
+					string
+					<var>$file</var>, 
+					string
+					<var>$content</var> = <span class="php-keyword1">NULL</span>, 
+					string
+					<var>$contentType</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds attachment.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds attachment.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$file</code> string<br />
+						<code>$content</code> string<br />
+						<code>$contentType</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 send" id="_send">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_send">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#329" title="go to source code"><b>send</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Sends email.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sends email.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setMailer" id="_setMailer">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.Mail.html">Mail</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setMailer">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#340" title="go to source code"><b>setMailer</b></a>(
+					<a href="Nette.Mail.IMailer.html">IMailer</a>
+					
+					<var>$mailer</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Sets the mailer.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Sets the mailer.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$mailer</code> IMailer<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Mail  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getMailer" id="_getMailer">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Mail.IMailer.html">IMailer</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getMailer">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#353" title="go to source code"><b>getMailer</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns mailer.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns mailer.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 build" id="_build">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_build">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#367" title="go to source code"><b>build</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Builds email.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Builds email.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 buildHtml" id="_buildHtml">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_buildHtml">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#416" title="go to source code"><b>buildHtml</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Builds HTML content.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Builds HTML content.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 buildText" id="_buildText">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_buildText">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Mail.Mail.php.html#447" title="go to source code"><b>buildText</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Builds text content.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Builds text content.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Mail.MailMimePart.html#methodSummary">MailMimePart</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Mail.MailMimePart.html#_setHeader">setHeader()</a>, <a href="Nette.Mail.MailMimePart.html#_getHeader">getHeader()</a>, <a href="Nette.Mail.MailMimePart.html#_clearHeader">clearHeader()</a>, <a href="Nette.Mail.MailMimePart.html#_getEncodedHeader">getEncodedHeader()</a>, <a href="Nette.Mail.MailMimePart.html#_getHeaders">getHeaders()</a>, <a href="Nette.Mail.MailMimePart.html#_setContentType">setContentType()</a>, <a href="Nette.Mail.MailMimePart.html#_setEncoding">setEncoding()</a>, <a href="Nette.Mail.MailMimePart.html#_getEncoding">getEncoding()</a>, <a href="Nette.Mail.MailMimePart.html#_addPart">addPart()</a>, <a href="Nette.Mail.MailMimePart.html#_setBody">setBody()</a>, <a href="Nette.Mail.MailMimePart.html#_getBody">getBody()</a>, <a href="Nette.Mail.MailMimePart.html#_generateMessage">generateMessage()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="HIGH" id="HIGH">
+			<td align="right" width="1%"><code><b>HIGH</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#HIGH" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="NORMAL" id="NORMAL">
+			<td align="right" width="1%"><code><b>NORMAL</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#NORMAL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="LOW" id="LOW">
+			<td align="right" width="1%"><code><b>LOW</b></code></td>
+			<td><code><span class="php-num">5</span></code> <a href="#LOW" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+	<h2>Constants Inherited From <a href="Nette.Mail.MailMimePart.html#constantSummary">MailMimePart</a></h2>
+	<div class="box"><code>ENCODING_BASE64, ENCODING_7BIT, ENCODING_8BIT, ENCODING_QUOTED_PRINTABLE, EOL, LINE_LENGTH</code></div>
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="defaultMailer" id="$defaultMailer">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				<a href="Nette.Mail.IMailer.html">IMailer</a>
+			</code></td>
+
+			<td width="1%"><var>$defaultMailer</var></td>
+			<td><pre><span class="php-quote">'Nette\\Mail\\SendmailMailer'</span></pre></td>
+			<td> <a href="#$defaultMailer" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="defaultHeaders" id="$defaultHeaders">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				array
+			</code></td>
+
+			<td width="1%"><var>$defaultHeaders</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+  <span class="php-quote">'MIME-Version'</span> =&gt; <span class="php-quote">'1.0'</span>,
+  <span class="php-quote">'X-Mailer'</span> =&gt; <span class="php-quote">'Nette Framework'</span>,
+)</pre></td>
+			<td> <a href="#$defaultHeaders" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

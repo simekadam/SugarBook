@@ -1,0 +1,39 @@
+
+{block #statuses}
+{snippet zkouska}
+{foreach $newsFeedDatas['data'] as $news}
+<div class="post">
+    <img alt=""  class="profilePicture" src="http://graph.facebook.com/{$news['from']['id']}/picture?type=large"/>
+    <div class="postSubDiv">
+    <div class="post_user">{$news['from']['name']}</div>
+    <div class="newsMessage">{$news['message']}</div>
+    <div class="bottomButtons">
+    <div class="likeTag">
+          
+<span class="likeThis"><a class="ajax" id="clickMe" href="{link like!, ($ouser['id'].substr($news['id'],strpos($news['id'],"_")))}">Like</a></span>
+
+    </div>
+<!--    <br />-->
+<!--    <div>
+        <span n:ifset="$news['comments']" class="toggleComments">Show Comments</span>
+
+           {*ifset $news['comments']*}
+    <ul class="ul_comments">
+            {*foreach $news['comments']['data'] as $datas*}
+
+    <li class="li_comments">
+        <img class="commentatorImg" src="http://graph.facebook.com/{*$datas['from']['id']*}/picture" rel="" alt=""/>
+        <div class="commentatorsName">{*$datas['from']['name']*}</div>
+        <div class="commentsContent">{*$datas['message']*}</div>
+    </li>
+            {*/foreach*}
+    </ul>
+          {*/ifset*}
+    </div>-->
+    </div>
+    </div>
+</div>
+<!--<div class="postSpacer"></div>-->
+{/foreach}
+{/snippet}
+{/block}

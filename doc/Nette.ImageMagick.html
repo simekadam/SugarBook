@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\ImageMagick</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" class="active">Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.AmbiguousServiceException.html" >AmbiguousServiceException</a></li>
+		<li><a href="Nette.ArrayList.html" >ArrayList</a></li>
+		<li><a href="Nette.ArrayTools.html" >ArrayTools</a></li>
+		<li><a href="Nette.Callback.html" >Callback</a></li>
+		<li><a href="Nette.CallbackFilterIterator.html" >CallbackFilterIterator</a></li>
+		<li><a href="Nette.Component.html" >Component</a></li>
+		<li><a href="Nette.ComponentContainer.html" >ComponentContainer</a></li>
+		<li><a href="Nette.Configurator.html" >Configurator</a></li>
+		<li><a href="Nette.Context.html" >Context</a></li>
+		<li><a href="Nette.Debug.html" >Debug</a></li>
+		<li><a href="Nette.DebugPanel.html" >DebugPanel</a></li>
+		<li><a href="Nette.Environment.html" >Environment</a></li>
+		<li><a href="Nette.Finder.html" >Finder</a></li>
+		<li><a href="Nette.Framework.html" >Framework</a></li>
+		<li><a href="Nette.FreezableObject.html" >FreezableObject</a></li>
+		<li><a href="Nette.GenericRecursiveIterator.html" >GenericRecursiveIterator</a></li>
+		<li><a href="Nette.Image.html" >Image</a></li>
+		<li><a href="Nette.ImageMagick.html" class="active">ImageMagick</a></li>
+		<li><a href="Nette.InstanceFilterIterator.html" >InstanceFilterIterator</a></li>
+		<li><a href="Nette.Json.html" >Json</a></li>
+		<li><a href="Nette.JsonException.html" >JsonException</a></li>
+		<li><a href="Nette.MapIterator.html" >MapIterator</a></li>
+		<li><a href="Nette.NeonException.html" >NeonException</a></li>
+		<li><a href="Nette.NeonParser.html" >NeonParser</a></li>
+		<li><a href="Nette.Object.html" >Object</a></li>
+		<li><a href="Nette.ObjectMixin.html" >ObjectMixin</a></li>
+		<li><a href="Nette.Paginator.html" >Paginator</a></li>
+		<li><a href="Nette.RecursiveCallbackFilterIterator.html" >RecursiveCallbackFilterIterator</a></li>
+		<li><a href="Nette.RegexpException.html" >RegexpException</a></li>
+		<li><a href="Nette.SafeStream.html" >SafeStream</a></li>
+		<li><a href="Nette.SmartCachingIterator.html" >SmartCachingIterator</a></li>
+		<li><a href="Nette.String.html" >String</a></li>
+		<li><a href="Nette.Tokenizer.html" >Tokenizer</a></li>
+		<li><a href="Nette.TokenizerException.html" >TokenizerException</a></li>
+		<li><a href="Nette.Tools.html" >Tools</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.IComponent.html" >IComponent</a></li>
+		<li><a href="Nette.IComponentContainer.html" >IComponentContainer</a></li>
+		<li><a href="Nette.IContext.html" >IContext</a></li>
+		<li><a href="Nette.IDebugPanel.html" >IDebugPanel</a></li>
+		<li><a href="Nette.IFreezable.html" >IFreezable</a></li>
+		<li><a href="Nette.ITranslator.html" >ITranslator</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.html" title="Summary of Nette">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.html">Nette</a></p>
+
+		<h1>Class ImageMagick</h1>
+		<div class="classDescription">
+
+		
+<p>Manipulation with large images using ImageMagick.</p>
+
+<pre><span class="php-var">$image</span> = Image::fromFile(<span
+class="php-quote">'bigphoto.jpg'</span>);
+<span
+class="php-var">$image</span>-&gt;resize(<span class="php-num">150</span>, <span
+class="php-num">100</span>);
+<span
+class="php-var">$image</span>-&gt;sharpen();
+<span
+class="php-var">$image</span>-&gt;send();</pre>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Image.html">Nette\Image</a>
+				
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\ImageMagick</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Utils.ImageMagick.php.html#18">/libs/Nette/Utils/ImageMagick.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#52" title="go to source code"><b>__construct</b></a>(
+					string
+					<var>$file</var>, 
+					string
+					<var>&amp; $format</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Wraps image file.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Wraps image file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$file</code> string  detected image format<br />
+						<code>$format</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getWidth" id="_getWidth">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getWidth">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#70" title="go to source code"><b>getWidth</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns image width.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns image width.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getHeight" id="_getHeight">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				int
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getHeight">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#81" title="go to source code"><b>getHeight</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns image height.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns image height.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getImageResource" id="_getImageResource">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				resource
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getImageResource">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#92" title="go to source code"><b>getImageResource</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns image GD resource.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns image GD resource.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 resize" id="_resize">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.ImageMagick.html">ImageMagick</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_resize">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#114" title="go to source code"><b>resize</b></a>(
+					mixed
+					<var>$width</var>, 
+					mixed
+					<var>$height</var>, 
+					int
+					<var>$flags</var> = <span class="php-num">0</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Resizes image.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Resizes image.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$width</code> mixed  width in pixels or percent<br />
+						<code>$height</code> mixed  height in pixels or percent<br />
+						<code>$flags</code> int    flags<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">ImageMagick  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 crop" id="_crop">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.ImageMagick.html">ImageMagick</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_crop">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#137" title="go to source code"><b>crop</b></a>(
+					mixed
+					<var>$left</var>, 
+					mixed
+					<var>$top</var>, 
+					mixed
+					<var>$width</var>, 
+					mixed
+					<var>$height</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Crops image.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Crops image.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$left</code> mixed  x-offset in pixels or percent<br />
+						<code>$top</code> mixed  y-offset in pixels or percent<br />
+						<code>$width</code> mixed  width in pixels or percent<br />
+						<code>$height</code> mixed  height in pixels or percent<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">ImageMagick  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 save" id="_save">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_save">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#158" title="go to source code"><b>save</b></a>(
+					string
+					<var>$file</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$quality</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$type</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Saves image to the file.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Saves image to the file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$file</code> string  filename<br />
+						<code>$quality</code> int  quality 0..100 (for JPEG and PNG)<br />
+						<code>$type</code> int  optional image type<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">bool TRUE on success or FALSE on failure.</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __destruct" id="___destruct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___destruct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Utils.ImageMagick.php.html#237" title="go to source code"><b>__destruct</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Delete temporary files.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Delete temporary files.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Image.html#methodSummary">Image</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Image.html#_rgb">rgb()</a>, <a href="Nette.Image.html#_fromFile">fromFile()</a>, <a href="Nette.Image.html#_getFormatFromString">getFormatFromString()</a>, <a href="Nette.Image.html#_fromString">fromString()</a>, <a href="Nette.Image.html#_fromBlank">fromBlank()</a>, <a href="Nette.Image.html#___construct">__construct()</a>, <a href="Nette.Image.html#_getWidth">getWidth()</a>, <a href="Nette.Image.html#_getHeight">getHeight()</a>, <a href="Nette.Image.html#_setImageResource">setImageResource()</a>, <a href="Nette.Image.html#_getImageResource">getImageResource()</a>, <a href="Nette.Image.html#_resize">resize()</a>, <a href="Nette.Image.html#_calculateSize">calculateSize()</a>, <a href="Nette.Image.html#_crop">crop()</a>, <a href="Nette.Image.html#_calculateCutout">calculateCutout()</a>, <a href="Nette.Image.html#_sharpen">sharpen()</a>, <a href="Nette.Image.html#_place">place()</a>, <a href="Nette.Image.html#_save">save()</a>, <a href="Nette.Image.html#_toString">toString()</a>, <a href="Nette.Image.html#___toString">__toString()</a>, <a href="Nette.Image.html#_send">send()</a>, <a href="Nette.Image.html#___call">__call()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="Nette.Image.html#constantSummary">Image</a></h2>
+	<div class="box"><code>ENLARGE, STRETCH, FIT, FILL, JPEG, PNG, GIF, EMPTY_GIF</code></div>
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="path" id="$path">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				string
+			</code></td>
+
+			<td width="1%"><var>$path</var></td>
+			<td><pre><span class="php-quote">''</span></pre></td>
+			<td>path to ImageMagick library <a href="#$path" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="tempDir" id="$tempDir">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				string
+			</code></td>
+
+			<td width="1%"><var>$tempDir</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$tempDir" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+	<h2>Properties Inherited From <a href="Nette.Image.html#propertySummary">Image</a></h2>
+	<div class="box"><code><var>$useImageMagick</var></code></div>
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

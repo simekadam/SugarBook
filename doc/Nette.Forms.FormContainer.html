@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Forms\FormContainer</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" class="active">Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Forms.Button.html" >Button</a></li>
+		<li><a href="Nette.Forms.Checkbox.html" >Checkbox</a></li>
+		<li><a href="Nette.Forms.DefaultFormRenderer.html" >DefaultFormRenderer</a></li>
+		<li><a href="Nette.Forms.FileUpload.html" >FileUpload</a></li>
+		<li><a href="Nette.Forms.Form.html" >Form</a></li>
+		<li><a href="Nette.Forms.FormContainer.html" class="active">FormContainer</a></li>
+		<li><a href="Nette.Forms.FormControl.html" >FormControl</a></li>
+		<li><a href="Nette.Forms.FormGroup.html" >FormGroup</a></li>
+		<li><a href="Nette.Forms.HiddenField.html" >HiddenField</a></li>
+		<li><a href="Nette.Forms.ImageButton.html" >ImageButton</a></li>
+		<li><a href="Nette.Forms.MultiSelectBox.html" >MultiSelectBox</a></li>
+		<li><a href="Nette.Forms.RadioList.html" >RadioList</a></li>
+		<li><a href="Nette.Forms.Rule.html" >Rule</a></li>
+		<li><a href="Nette.Forms.Rules.html" >Rules</a></li>
+		<li><a href="Nette.Forms.SelectBox.html" >SelectBox</a></li>
+		<li><a href="Nette.Forms.SubmitButton.html" >SubmitButton</a></li>
+		<li><a href="Nette.Forms.TextArea.html" >TextArea</a></li>
+		<li><a href="Nette.Forms.TextBase.html" >TextBase</a></li>
+		<li><a href="Nette.Forms.TextInput.html" >TextInput</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Forms.IFormControl.html" >IFormControl</a></li>
+		<li><a href="Nette.Forms.IFormRenderer.html" >IFormRenderer</a></li>
+		<li><a href="Nette.Forms.ISubmitterControl.html" >ISubmitterControl</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Forms.html" title="Summary of Nette\Forms">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Forms.html">Nette\Forms</a></p>
+
+		<h1>Class FormContainer</h1>
+		<div class="classDescription">
+
+		
+<p>Container for form controls.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Component.html">Nette\Component</a>
+				 implements <a href="Nette.IComponent.html">Nette\IComponent</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.ComponentContainer.html">Nette\ComponentContainer</a>
+				 implements <a href="Nette.IComponentContainer.html">Nette\IComponentContainer</a>
+			</dd>
+			<dd style="padding-left:90px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Forms\FormContainer</b>				 implements <a href="ArrayAccess.html">ArrayAccess</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Forms.Form.html">Form</a>
+		</div>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Forms.FormContainer.php.html#18">/libs/Nette/Forms/FormContainer.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 setDefaults" id="_setDefaults">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FormContainer.html">FormContainer</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setDefaults">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#45" title="go to source code"><b>setDefaults</b></a>(
+					array|<a href="Traversable.html">Traversable</a>
+					<var>$values</var>, 
+					bool
+					<var>$erase</var> = <span class="php-keyword1">false</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Fill-in with default values.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Fill-in with default values.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$values</code> array|Traversable  values used to fill the form<br />
+						<code>$erase</code> bool     erase other default values?<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">FormContainer  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setValues" id="_setValues">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FormContainer.html">FormContainer</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setValues">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#62" title="go to source code"><b>setValues</b></a>(
+					array|<a href="Traversable.html">Traversable</a>
+					<var>$values</var>, 
+					bool
+					<var>$erase</var> = <span class="php-keyword1">false</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Fill-in with values.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Fill-in with values.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$values</code> array|Traversable  values used to fill the form<br />
+						<code>$erase</code> bool     erase other controls?<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">FormContainer  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getValues" id="_getValues">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getValues">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#106" title="go to source code"><b>getValues</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the values submitted by the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the values submitted by the form.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isValid" id="_isValid">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isValid">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#137" title="go to source code"><b>isValid</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Is form valid?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Is form valid?</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 validate" id="_validate">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_validate">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#151" title="go to source code"><b>validate</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Performs the server side validation.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Performs the server side validation.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setCurrentGroup" id="_setCurrentGroup">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FormContainer.html">FormContainer</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setCurrentGroup">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#172" title="go to source code"><b>setCurrentGroup</b></a>(
+					<a href="Nette.Forms.FormGroup.html">FormGroup</a>
+					
+					<var>$group</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$group</code> FormGroup<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">FormContainer  provides a fluent interface</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCurrentGroup" id="_getCurrentGroup">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FormGroup.html">FormGroup</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCurrentGroup">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#184" title="go to source code"><b>getCurrentGroup</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns current group.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns current group.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addComponent" id="_addComponent">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addComponent">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#195" title="go to source code"><b>addComponent</b></a>(
+					<a href="Nette.IComponent.html">Nette\IComponent</a>
+					
+					<var>$component</var>, 
+					string
+					<var>$name</var>, 
+					string
+					<var>$insertBefore</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds the specified component to the IComponentCon­tainer.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds the specified component to the IComponentCon­tainer.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$component</code> IComponent<br />
+						<code>$name</code> string<br />
+						<code>$insertBefore</code> string<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidStateException.html">\InvalidStateException</a><br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.IComponentContainer.html#_addComponent">Nette\IComponentContainer::addComponent</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getControls" id="_getControls">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				\ArrayIterator
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getControls">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#213" title="go to source code"><b>getControls</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Iterates over all form controls.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Iterates over all form controls.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getForm" id="_getForm">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.Form.html">Form</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getForm">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#224" title="go to source code"><b>getForm</b></a>(
+					bool
+					<var>$need</var> = <span class="php-keyword1">true</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$need</code> bool   throw exception if form doesn&#039;t exist?<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addText" id="_addText">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.TextInput.html">TextInput</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addText">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#240" title="go to source code"><b>addText</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$cols</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$maxLength</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds single-line text input control to the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds single-line text input control to the form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$cols</code> int  width of the control<br />
+						<code>$maxLength</code> int  maximum number of characters the user may enter<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addPassword" id="_addPassword">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.TextInput.html">TextInput</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addPassword">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#255" title="go to source code"><b>addPassword</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$cols</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$maxLength</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds single-line text input control used for sensitive input such as
+passwords.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds single-line text input control used for sensitive input such as
+passwords.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$cols</code> int  width of the control<br />
+						<code>$maxLength</code> int  maximum number of characters the user may enter<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addTextArea" id="_addTextArea">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.TextArea.html">TextArea</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addTextArea">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#272" title="go to source code"><b>addTextArea</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$cols</var> = <span class="php-num">40</span>, 
+					int
+					<var>$rows</var> = <span class="php-num">10</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds multi-line text input control to the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds multi-line text input control to the form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$cols</code> int  width of the control<br />
+						<code>$rows</code> int  height of the control in text lines<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addFile" id="_addFile">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FileUpload.html">FileUpload</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addFile">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#287" title="go to source code"><b>addFile</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds control that allows the user to upload files.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds control that allows the user to upload files.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addHidden" id="_addHidden">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.HiddenField.html">HiddenField</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addHidden">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#300" title="go to source code"><b>addHidden</b></a>(
+					string
+					<var>$name</var>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds hidden form control used to store a non-displayed value.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds hidden form control used to store a non-displayed value.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$default</code> mixed   default value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addCheckbox" id="_addCheckbox">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.Checkbox.html">Checkbox</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addCheckbox">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#315" title="go to source code"><b>addCheckbox</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$caption</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds check box control to the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds check box control to the form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$caption</code> string  caption<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addRadioList" id="_addRadioList">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.RadioList.html">RadioList</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addRadioList">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#328" title="go to source code"><b>addRadioList</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					array
+					
+					<var>$items</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds set of radio button controls to the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds set of radio button controls to the form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$items</code> array   options from which to choose<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addSelect" id="_addSelect">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.SelectBox.html">SelectBox</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addSelect">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#342" title="go to source code"><b>addSelect</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					array
+					
+					<var>$items</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$size</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds select box control that allows single item selection.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds select box control that allows single item selection.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$items</code> array   items from which to choose<br />
+						<code>$size</code> int     number of rows that should be visible<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addMultiSelect" id="_addMultiSelect">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.MultiSelectBox.html">MultiSelectBox</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addMultiSelect">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#357" title="go to source code"><b>addMultiSelect</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$label</var> = <span class="php-keyword1">NULL</span>, 
+					array
+					
+					<var>$items</var> = <span class="php-keyword1">NULL</span>, 
+					int
+					<var>$size</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds select box control that allows multiple item selection.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds select box control that allows multiple item selection.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$label</code> string  label<br />
+						<code>$items</code> array   options from which to choose<br />
+						<code>$size</code> int     number of rows that should be visible<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addSubmit" id="_addSubmit">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.SubmitButton.html">SubmitButton</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addSubmit">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#372" title="go to source code"><b>addSubmit</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$caption</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds button used to submit form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds button used to submit form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$caption</code> string  caption<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addButton" id="_addButton">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.Button.html">Button</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addButton">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#385" title="go to source code"><b>addButton</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$caption</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds push buttons with no default behavior.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds push buttons with no default behavior.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$caption</code> string  caption<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addImage" id="_addImage">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.ImageButton.html">ImageButton</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addImage">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#398" title="go to source code"><b>addImage</b></a>(
+					string
+					<var>$name</var>, 
+					string
+					<var>$src</var> = <span class="php-keyword1">NULL</span>, 
+					string
+					<var>$alt</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds graphical button used to submit form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds graphical button used to submit form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  control name<br />
+						<code>$src</code> string  URI of the image<br />
+						<code>$alt</code> string  alternate text for the image<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 addContainer" id="_addContainer">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Forms.FormContainer.html">FormContainer</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_addContainer">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#412" title="go to source code"><b>addContainer</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds naming container to the form.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds naming container to the form.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  name<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetSet" id="_offsetSet">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#430" title="go to source code"><b>offsetSet</b></a>(
+					string
+					<var>$name</var>, 
+					<a href="Nette.IComponent.html">Nette\IComponent</a>
+					<var>$component</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds the component to the container.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds the component to the container.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+						<code>$component</code> Nette\IComponent<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetGet" id="_offsetGet">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				<a href="Nette.IComponent.html">Nette\IComponent</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#443" title="go to source code"><b>offsetGet</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns component specified by name. Throws exception if component
+doesn't exist.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns component specified by name. Throws exception if component
+doesn't exist.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidArgumentException.html">\InvalidArgumentException</a><br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetExists" id="_offsetExists">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#456" title="go to source code"><b>offsetExists</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Does component specified by name exists?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Does component specified by name exists?</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetUnset" id="_offsetUnset">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#468" title="go to source code"><b>offsetUnset</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes component from the container.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes component from the container.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __clone" id="___clone">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___clone">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Forms.FormContainer.php.html#483" title="go to source code"><b>__clone</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Prevents cloning.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Prevents cloning.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.ComponentContainer.html#methodSummary">Nette\ComponentContainer</a></h2>
+	<div class="box"><code>
+		<a href="Nette.ComponentContainer.html#_addComponent">addComponent()</a>, <a href="Nette.ComponentContainer.html#_removeComponent">removeComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponent">getComponent()</a>, <a href="Nette.ComponentContainer.html#_createComponent">createComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponents">getComponents()</a>, <a href="Nette.ComponentContainer.html#_validateChildComponent">validateChildComponent()</a>, <a href="Nette.ComponentContainer.html#___clone">__clone()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Component.html#methodSummary">Nette\Component</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Component.html#___construct">__construct()</a>, <a href="Nette.Component.html#_lookup">lookup()</a>, <a href="Nette.Component.html#_lookupPath">lookupPath()</a>, <a href="Nette.Component.html#_monitor">monitor()</a>, <a href="Nette.Component.html#_unmonitor">unmonitor()</a>, <a href="Nette.Component.html#_attached">attached()</a>, <a href="Nette.Component.html#_detached">detached()</a>, <a href="Nette.Component.html#_getName">getName()</a>, <a href="Nette.Component.html#_getParent">getParent()</a>, <a href="Nette.Component.html#_setParent">setParent()</a>, <a href="Nette.Component.html#_validateParent">validateParent()</a>, <a href="Nette.Component.html#___clone">__clone()</a>, <a href="Nette.Component.html#___wakeup">__wakeup()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="Nette.Component.html#constantSummary">Nette\Component</a></h2>
+	<div class="box"><code>NAME_SEPARATOR</code></div>
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="onValidate" id="$onValidate">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				array
+			</code></td>
+
+			<td width="1%"><var>$onValidate</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>of function(Form $sender); Occurs when the form is validated <a href="#$onValidate" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="currentGroup" id="$currentGroup">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				<a href="Nette.Forms.FormGroup.html">FormGroup</a>
+			</code></td>
+
+			<td width="1%"><var>$currentGroup</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$currentGroup" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="valid" id="$valid">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				bool
+			</code></td>
+
+			<td width="1%"><var>$valid</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$valid" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

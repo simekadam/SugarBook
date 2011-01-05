@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class ReflectionClass</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" class="active">PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArrayObject.html" >ArrayObject</a></li>
+		<li><a href="CachingIterator.html" >CachingIterator</a></li>
+		<li><a href="ErrorException.html" >ErrorException</a></li>
+		<li><a href="Exception.html" >Exception</a></li>
+		<li><a href="FilterIterator.html" >FilterIterator</a></li>
+		<li><a href="InvalidArgumentException.html" >InvalidArgumentException</a></li>
+		<li><a href="IteratorIterator.html" >IteratorIterator</a></li>
+		<li><a href="LogicException.html" >LogicException</a></li>
+		<li><a href="PDO.html" >PDO</a></li>
+		<li><a href="PDOStatement.html" >PDOStatement</a></li>
+		<li><a href="ReflectionClass.html" class="active">ReflectionClass</a></li>
+		<li><a href="ReflectionExtension.html" >ReflectionExtension</a></li>
+		<li><a href="ReflectionFunction.html" >ReflectionFunction</a></li>
+		<li><a href="ReflectionFunctionAbstract.html" >ReflectionFunctionAbstract</a></li>
+		<li><a href="ReflectionMethod.html" >ReflectionMethod</a></li>
+		<li><a href="ReflectionParameter.html" >ReflectionParameter</a></li>
+		<li><a href="ReflectionProperty.html" >ReflectionProperty</a></li>
+		<li><a href="RuntimeException.html" >RuntimeException</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="ArrayAccess.html" >ArrayAccess</a></li>
+		<li><a href="Countable.html" >Countable</a></li>
+		<li><a href="Iterator.html" >Iterator</a></li>
+		<li><a href="IteratorAggregate.html" >IteratorAggregate</a></li>
+		<li><a href="OuterIterator.html" >OuterIterator</a></li>
+		<li><a href="RecursiveIterator.html" >RecursiveIterator</a></li>
+		<li><a href="Reflector.html" >Reflector</a></li>
+		<li><a href="Serializable.html" >Serializable</a></li>
+		<li><a href="Traversable.html" >Traversable</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>PHP – Reflection</p>
+
+		<h1>Class ReflectionClass</h1>
+		<dl class="tree">
+
+			<dd style="padding-left:0px"><b>ReflectionClass</b>				 implements <a href="Reflector.html">Reflector</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Reflection.ClassReflection.html">Nette\Reflection\ClassReflection</a>
+		</div>
+
+		<div class="classInfo">
+			
+			<b>Documented at</b> <a href="http://php.net/manual/class.reflectionclass.php">php.net</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="0 export" id="_export">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_export">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.export.php" title="go to PHP documentation"><b>export</b></a>(
+					
+					<var>$argument</var>, 
+					
+					<var>$return</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.construct.php" title="go to PHP documentation"><b>__construct</b></a>(
+					
+					<var>$argument</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 __toString" id="___toString">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___toString">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.tostring.php" title="go to PHP documentation"><b>__toString</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getName" id="_getName">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getName">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getname.php" title="go to PHP documentation"><b>getName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isInternal" id="_isInternal">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isInternal">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isinternal.php" title="go to PHP documentation"><b>isInternal</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isUserDefined" id="_isUserDefined">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isUserDefined">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isuserdefined.php" title="go to PHP documentation"><b>isUserDefined</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isInstantiable" id="_isInstantiable">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isInstantiable">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isinstantiable.php" title="go to PHP documentation"><b>isInstantiable</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getFileName" id="_getFileName">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getFileName">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getfilename.php" title="go to PHP documentation"><b>getFileName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getStartLine" id="_getStartLine">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getStartLine">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getstartline.php" title="go to PHP documentation"><b>getStartLine</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getEndLine" id="_getEndLine">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getEndLine">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getendline.php" title="go to PHP documentation"><b>getEndLine</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getDocComment" id="_getDocComment">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getDocComment">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getdoccomment.php" title="go to PHP documentation"><b>getDocComment</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getConstructor" id="_getConstructor">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getConstructor">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getconstructor.php" title="go to PHP documentation"><b>getConstructor</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 hasMethod" id="_hasMethod">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_hasMethod">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.hasmethod.php" title="go to PHP documentation"><b>hasMethod</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getMethod" id="_getMethod">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getMethod">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getmethod.php" title="go to PHP documentation"><b>getMethod</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getMethods" id="_getMethods">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getMethods">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getmethods.php" title="go to PHP documentation"><b>getMethods</b></a>(
+					
+					<var>$filter</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 hasProperty" id="_hasProperty">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_hasProperty">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.hasproperty.php" title="go to PHP documentation"><b>hasProperty</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getProperty" id="_getProperty">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getProperty">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getproperty.php" title="go to PHP documentation"><b>getProperty</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getProperties" id="_getProperties">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getProperties">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getproperties.php" title="go to PHP documentation"><b>getProperties</b></a>(
+					
+					<var>$filter</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 hasConstant" id="_hasConstant">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_hasConstant">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.hasconstant.php" title="go to PHP documentation"><b>hasConstant</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getConstants" id="_getConstants">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getConstants">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getconstants.php" title="go to PHP documentation"><b>getConstants</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getConstant" id="_getConstant">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getConstant">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getconstant.php" title="go to PHP documentation"><b>getConstant</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getInterfaces" id="_getInterfaces">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getInterfaces">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getinterfaces.php" title="go to PHP documentation"><b>getInterfaces</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getInterfaceNames" id="_getInterfaceNames">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getInterfaceNames">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getinterfacenames.php" title="go to PHP documentation"><b>getInterfaceNames</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isInterface" id="_isInterface">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isInterface">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isinterface.php" title="go to PHP documentation"><b>isInterface</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isAbstract" id="_isAbstract">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isAbstract">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isabstract.php" title="go to PHP documentation"><b>isAbstract</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isFinal" id="_isFinal">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isFinal">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isfinal.php" title="go to PHP documentation"><b>isFinal</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getModifiers" id="_getModifiers">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getModifiers">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getmodifiers.php" title="go to PHP documentation"><b>getModifiers</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isInstance" id="_isInstance">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isInstance">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isinstance.php" title="go to PHP documentation"><b>isInstance</b></a>(
+					
+					<var>$object</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 newInstance" id="_newInstance">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_newInstance">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.newinstance.php" title="go to PHP documentation"><b>newInstance</b></a>(
+					
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 newInstanceArgs" id="_newInstanceArgs">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_newInstanceArgs">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.newinstanceargs.php" title="go to PHP documentation"><b>newInstanceArgs</b></a>(
+					array
+					
+					<var>$args</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getParentClass" id="_getParentClass">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getParentClass">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getparentclass.php" title="go to PHP documentation"><b>getParentClass</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isSubclassOf" id="_isSubclassOf">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isSubclassOf">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.issubclassof.php" title="go to PHP documentation"><b>isSubclassOf</b></a>(
+					
+					<var>$class</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getStaticProperties" id="_getStaticProperties">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getStaticProperties">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getstaticproperties.php" title="go to PHP documentation"><b>getStaticProperties</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getStaticPropertyValue" id="_getStaticPropertyValue">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getStaticPropertyValue">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getstaticpropertyvalue.php" title="go to PHP documentation"><b>getStaticPropertyValue</b></a>(
+					
+					<var>$name</var>, 
+					
+					<var>$default</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setStaticPropertyValue" id="_setStaticPropertyValue">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setStaticPropertyValue">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.setstaticpropertyvalue.php" title="go to PHP documentation"><b>setStaticPropertyValue</b></a>(
+					
+					<var>$name</var>, 
+					
+					<var>$value</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getDefaultProperties" id="_getDefaultProperties">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getDefaultProperties">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getdefaultproperties.php" title="go to PHP documentation"><b>getDefaultProperties</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isIterateable" id="_isIterateable">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isIterateable">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.isiterateable.php" title="go to PHP documentation"><b>isIterateable</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 implementsInterface" id="_implementsInterface">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_implementsInterface">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.implementsinterface.php" title="go to PHP documentation"><b>implementsInterface</b></a>(
+					
+					<var>$interface</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getExtension" id="_getExtension">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getExtension">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getextension.php" title="go to PHP documentation"><b>getExtension</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getExtensionName" id="_getExtensionName">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getExtensionName">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getextensionname.php" title="go to PHP documentation"><b>getExtensionName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 inNamespace" id="_inNamespace">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_inNamespace">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.innamespace.php" title="go to PHP documentation"><b>inNamespace</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getNamespaceName" id="_getNamespaceName">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getNamespaceName">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getnamespacename.php" title="go to PHP documentation"><b>getNamespaceName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getShortName" id="_getShortName">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getShortName">#</a>
+			<code class="nowrap">
+				<a href="http://php.net/manual/reflectionclass.getshortname.php" title="go to PHP documentation"><b>getShortName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="IS_IMPLICIT_ABSTRACT" id="IS_IMPLICIT_ABSTRACT">
+			<td align="right" width="1%"><code><b>IS_IMPLICIT_ABSTRACT</b></code></td>
+			<td><code><span class="php-num">16</span></code> <a href="#IS_IMPLICIT_ABSTRACT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="IS_EXPLICIT_ABSTRACT" id="IS_EXPLICIT_ABSTRACT">
+			<td align="right" width="1%"><code><b>IS_EXPLICIT_ABSTRACT</b></code></td>
+			<td><code><span class="php-num">32</span></code> <a href="#IS_EXPLICIT_ABSTRACT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="IS_FINAL" id="IS_FINAL">
+			<td align="right" width="1%"><code><b>IS_FINAL</b></code></td>
+			<td><code><span class="php-num">64</span></code> <a href="#IS_FINAL" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="name" id="$name">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				
+			</code></td>
+
+			<td width="1%"><var>$name</var></td>
+			<td><pre><span class="php-quote">''</span></pre></td>
+			<td> <a href="#$name" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

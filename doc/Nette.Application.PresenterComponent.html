@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Application\PresenterComponent</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" class="active">Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Application.AbortException.html" >AbortException</a></li>
+		<li><a href="Nette.Application.AppForm.html" >AppForm</a></li>
+		<li><a href="Nette.Application.Application.html" >Application</a></li>
+		<li><a href="Nette.Application.ApplicationException.html" >ApplicationException</a></li>
+		<li><a href="Nette.Application.BadRequestException.html" >BadRequestException</a></li>
+		<li><a href="Nette.Application.BadSignalException.html" >BadSignalException</a></li>
+		<li><a href="Nette.Application.CliRouter.html" >CliRouter</a></li>
+		<li><a href="Nette.Application.Control.html" >Control</a></li>
+		<li><a href="Nette.Application.DownloadResponse.html" >DownloadResponse</a></li>
+		<li><a href="Nette.Application.ForbiddenRequestException.html" >ForbiddenRequestException</a></li>
+		<li><a href="Nette.Application.ForwardingResponse.html" >ForwardingResponse</a></li>
+		<li><a href="Nette.Application.InvalidLinkException.html" >InvalidLinkException</a></li>
+		<li><a href="Nette.Application.InvalidPresenterException.html" >InvalidPresenterException</a></li>
+		<li><a href="Nette.Application.JsonResponse.html" >JsonResponse</a></li>
+		<li><a href="Nette.Application.Link.html" >Link</a></li>
+		<li><a href="Nette.Application.MultiRouter.html" >MultiRouter</a></li>
+		<li><a href="Nette.Application.Presenter.html" >Presenter</a></li>
+		<li><a href="Nette.Application.PresenterComponent.html" class="active">PresenterComponent</a></li>
+		<li><a href="Nette.Application.PresenterLoader.html" >PresenterLoader</a></li>
+		<li><a href="Nette.Application.PresenterRequest.html" >PresenterRequest</a></li>
+		<li><a href="Nette.Application.RedirectingResponse.html" >RedirectingResponse</a></li>
+		<li><a href="Nette.Application.RenderResponse.html" >RenderResponse</a></li>
+		<li><a href="Nette.Application.Route.html" >Route</a></li>
+		<li><a href="Nette.Application.RoutingDebugger.html" >RoutingDebugger</a></li>
+		<li><a href="Nette.Application.SimpleRouter.html" >SimpleRouter</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Application.IPartiallyRenderable.html" >IPartiallyRenderable</a></li>
+		<li><a href="Nette.Application.IPresenter.html" >IPresenter</a></li>
+		<li><a href="Nette.Application.IPresenterLoader.html" >IPresenterLoader</a></li>
+		<li><a href="Nette.Application.IPresenterResponse.html" >IPresenterResponse</a></li>
+		<li><a href="Nette.Application.IRenderable.html" >IRenderable</a></li>
+		<li><a href="Nette.Application.IRouter.html" >IRouter</a></li>
+		<li><a href="Nette.Application.ISignalReceiver.html" >ISignalReceiver</a></li>
+		<li><a href="Nette.Application.IStatePersistent.html" >IStatePersistent</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Application.html" title="Summary of Nette\Application">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Application.html">Nette\Application</a></p>
+
+		<h1>Class PresenterComponent</h1>
+		<div class="classDescription">
+
+		
+<p>PresenterComponent is the base class for all presenters components.</p>
+
+<p>Components are persistent objects located on a presenter. They have ability
+to own other child components, and interact with user. Components have
+properties for storing their status, and responds to user command.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Component.html">Nette\Component</a>
+				 implements <a href="Nette.IComponent.html">Nette\IComponent</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.ComponentContainer.html">Nette\ComponentContainer</a>
+				 implements <a href="Nette.IComponentContainer.html">Nette\IComponentContainer</a>
+			</dd>
+			<dd style="padding-left:90px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Application\PresenterComponent</b>				 implements <a href="Nette.Application.ISignalReceiver.html">ISignalReceiver</a>, <a href="Nette.Application.IStatePersistent.html">IStatePersistent</a>, <a href="ArrayAccess.html">ArrayAccess</a>
+			</dd>
+		</dl>
+		<div>
+
+			<h4>Direct Known Subclasses</h4>
+			<a href="Nette.Application.Control.html">Control</a>
+		</div>
+
+		<div class="classInfo">
+			<b>Abstract Class</b><br />
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Application.PresenterComponent.php.html#18">/libs/Nette/Application/PresenterComponent.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#36" title="go to source code"><b>__construct</b></a>(
+					<a href="Nette.IComponentContainer.html">Nette\IComponentContainer</a>
+					
+					<var>$parent</var> = <span class="php-keyword1">NULL</span>, 
+					
+					<var>$name</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getPresenter" id="_getPresenter">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Application.Presenter.html">Presenter</a>|NULL
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPresenter">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#46" title="go to source code"><b>getPresenter</b></a>(
+					bool
+					<var>$need</var> = <span class="php-keyword1">true</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the presenter where this component belongs to.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the presenter where this component belongs to.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$need</code> bool   throw exception if presenter doesn&#039;t exist?<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getUniqueId" id="_getUniqueId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getUniqueId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#58" title="go to source code"><b>getUniqueId</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a fully-qualified name that uniquely identifies the component</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a fully-qualified name that uniquely identifies the component within
+the presenter hierarchy.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 attached" id="_attached">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_attached">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#70" title="go to source code"><b>attached</b></a>(
+					IComponent
+					<var>$presenter</var>
+			)</code>
+
+			<div class="short">
+				
+<p>This method will be called when the component (or component's parent)</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>This method will be called when the component (or component's parent)
+becomes attached to a monitored object. Do not call this method yourself.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$presenter</code> IComponent<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 tryCall" id="_tryCall">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_tryCall">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#85" title="go to source code"><b>tryCall</b></a>(
+					string
+					<var>$method</var>, 
+					array
+					
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Calls public method if exists.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Calls public method if exists.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$method</code> string<br />
+						<code>$params</code> array<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">bool  does method exist?</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 getReflection" id="_getReflection">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				PresenterComponentReflection
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getReflection">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#106" title="go to source code"><b>getReflection</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Access to reflection.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Access to reflection.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 loadState" id="_loadState">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_loadState">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#121" title="go to source code"><b>loadState</b></a>(
+					array
+					
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Loads state informations.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Loads state informations.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> array<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Application.IStatePersistent.html#_loadState">IStatePersistent::loadState</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 saveState" id="_saveState">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_saveState">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#146" title="go to source code"><b>saveState</b></a>(
+					array
+					
+					<var>&amp; $params</var>, 
+					PresenterComponentReflection
+					<var>$reflection</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Saves state informations for next request.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Saves state informations for next request.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> array<br />
+						<code>$reflection</code> PresenterComponentReflection (internal, used by Presenter)<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Application.IStatePersistent.html#_saveState">IStatePersistent::saveState</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getParam" id="_getParam">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getParam">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#187" title="go to source code"><b>getParam</b></a>(
+					string
+					<var>$name</var> = <span class="php-keyword1">NULL</span>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns component param.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns component param. If no key is passed, returns the entire array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string key<br />
+						<code>$default</code> mixed  default value<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getParamId" id="_getParamId">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getParamId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#209" title="go to source code"><b>getParamId</b></a>(
+					
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a fully-qualified name that uniquely identifies the parameter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a fully-qualified name that uniquely identifies the parameter.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 getPersistentParams" id="_getPersistentParams">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getPersistentParams">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#221" title="go to source code"><b>getPersistentParams</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns array of classes persistent parameters. They have public visibility
+and are non-static.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns array of classes persistent parameters. They have public visibility
+and are non-static. This default implementation detects persistent parameters by
+annotation @persistent.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 signalReceived" id="_signalReceived">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_signalReceived">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#244" title="go to source code"><b>signalReceived</b></a>(
+					string
+					<var>$signal</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Calls signal handler method.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Calls signal handler method.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$signal</code> string<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+BadSignalException if there is not handler method<br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Application.ISignalReceiver.html#_signalReceived">ISignalReceiver::signalReceived</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 formatSignalMethod" id="_formatSignalMethod">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_formatSignalMethod">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#259" title="go to source code"><b>formatSignalMethod</b></a>(
+					string
+					<var>$signal</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Formats signal handler method name → case sensitivity doesn't matter.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Formats signal handler method name → case sensitivity doesn't matter.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$signal</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 link" id="_link">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_link">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#275" title="go to source code"><b>link</b></a>(
+					string
+					<var>$destination</var>, 
+					array|mixed
+					<var>$args</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Generates URL to presenter, action or signal.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Generates URL to presenter, action or signal.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$destination</code> string   destination in format &quot;[[module:]presenter:]action&quot; or &quot;signal!&quot; or &quot;this&quot;<br />
+						<code>$args</code> array|mixed<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="Nette.Application.InvalidLinkException.html">InvalidLinkException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 lazyLink" id="_lazyLink">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				<a href="Nette.Application.Link.html">Link</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_lazyLink">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#299" title="go to source code"><b>lazyLink</b></a>(
+					string
+					<var>$destination</var>, 
+					array|mixed
+					<var>$args</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Returns destination as Link object.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns destination as Link object.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$destination</code> string   destination in format &quot;[[module:]presenter:]view&quot; or &quot;signal!&quot;<br />
+						<code>$args</code> array|mixed<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 isLinkCurrent" id="_isLinkCurrent">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_isLinkCurrent">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#317" title="go to source code"><b>isLinkCurrent</b></a>(
+					string
+					<var>$destination</var>, 
+					array|mixed
+					<var>$args</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Determines whether it links to the current page.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Determines whether it links to the current page.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$destination</code> string   destination in format &quot;[[module:]presenter:]action&quot; or &quot;signal!&quot; or &quot;this&quot;<br />
+						<code>$args</code> array|mixed<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="Nette.Application.InvalidLinkException.html">InvalidLinkException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 redirect" id="_redirect">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_redirect">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#337" title="go to source code"><b>redirect</b></a>(
+					int
+					<var>$code</var>, 
+					string
+					<var>$destination</var> = <span class="php-keyword1">NULL</span>, 
+					array|mixed
+					<var>$args</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Redirect to another presenter, action or signal.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Redirect to another presenter, action or signal.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$code</code> int      [optional] HTTP error code<br />
+						<code>$destination</code> string   destination in format &quot;[[module:]presenter:]view&quot; or &quot;signal!&quot;<br />
+						<code>$args</code> array|mixed<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="Nette.Application.AbortException.html">AbortException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetSet" id="_offsetSet">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#368" title="go to source code"><b>offsetSet</b></a>(
+					string
+					<var>$name</var>, 
+					<a href="Nette.IComponent.html">Nette\IComponent</a>
+					<var>$component</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Adds the component to the container.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Adds the component to the container.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+						<code>$component</code> Nette\IComponent<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetGet" id="_offsetGet">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				<a href="Nette.IComponent.html">Nette\IComponent</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#381" title="go to source code"><b>offsetGet</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns component specified by name. Throws exception if component
+doesn't exist.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns component specified by name. Throws exception if component
+doesn't exist.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidArgumentException.html">\InvalidArgumentException</a><br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetExists" id="_offsetExists">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#394" title="go to source code"><b>offsetExists</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Does component specified by name exists?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Does component specified by name exists?</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetUnset" id="_offsetUnset">
+			<td align="right" width="1%"><code class="nowrap">
+				final public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Application.PresenterComponent.php.html#406" title="go to source code"><b>offsetUnset</b></a>(
+					string
+					<var>$name</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes component from the container.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes component from the container.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string  component name<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset</a></code></div>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.ComponentContainer.html#methodSummary">Nette\ComponentContainer</a></h2>
+	<div class="box"><code>
+		<a href="Nette.ComponentContainer.html#_addComponent">addComponent()</a>, <a href="Nette.ComponentContainer.html#_removeComponent">removeComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponent">getComponent()</a>, <a href="Nette.ComponentContainer.html#_createComponent">createComponent()</a>, <a href="Nette.ComponentContainer.html#_getComponents">getComponents()</a>, <a href="Nette.ComponentContainer.html#_validateChildComponent">validateChildComponent()</a>, <a href="Nette.ComponentContainer.html#___clone">__clone()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Component.html#methodSummary">Nette\Component</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Component.html#___construct">__construct()</a>, <a href="Nette.Component.html#_lookup">lookup()</a>, <a href="Nette.Component.html#_lookupPath">lookupPath()</a>, <a href="Nette.Component.html#_monitor">monitor()</a>, <a href="Nette.Component.html#_unmonitor">unmonitor()</a>, <a href="Nette.Component.html#_attached">attached()</a>, <a href="Nette.Component.html#_detached">detached()</a>, <a href="Nette.Component.html#_getName">getName()</a>, <a href="Nette.Component.html#_getParent">getParent()</a>, <a href="Nette.Component.html#_setParent">setParent()</a>, <a href="Nette.Component.html#_validateParent">validateParent()</a>, <a href="Nette.Component.html#___clone">__clone()</a>, <a href="Nette.Component.html#___wakeup">__wakeup()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="Nette.Component.html#constantSummary">Nette\Component</a></h2>
+	<div class="box"><code>NAME_SEPARATOR</code></div>
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="params" id="$params">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				array
+			</code></td>
+
+			<td width="1%"><var>$params</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+)</pre></td>
+			<td> <a href="#$params" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

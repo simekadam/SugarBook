@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.AbortException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Components.AddStatus.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.AmbiguousServiceException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.Annotation.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.AnnotationsParser.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.AppForm.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.Application.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.ApplicationException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ArgumentOutOfRangeException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ArrayAccess.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ArrayList.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ArrayObject.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ArrayTools.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.AuthenticationException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Loaders.AutoLoader.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.BadRequestException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.BadSignalException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/BasePresenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.Button.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.Cache.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.CachingHelper.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/CachingIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Callback.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.CallbackFilterIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.Checkbox.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.ClassReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.CliRouter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.Collection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Component.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ComponentContainer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Config.Config.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Config.ConfigAdapterIni.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Configurator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Connection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Context.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.Control.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Countable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.DatabasePanel.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Reflection.DatabaseReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Debug.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.DebugPanel.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.DefaultFormRenderer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/DefaultPresenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/DeprecatedException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/DirectoryNotFoundException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.DownloadResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.DummyStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Environment.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ErrorException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Exception.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.ExtensionReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Facebook.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/FacebookApiException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/FatalErrorException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/FConfig.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.FileJournal.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/FileNotFoundException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.FileStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.FileTemplate.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.FileUpload.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/FilterIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Finder.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.ForbiddenRequestException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.Form.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.FormContainer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.FormControl.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.FormGroup.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.ForwardingResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Framework.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.FreezableObject.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.FunctionReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.GenericRecursiveIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Selector.GroupedTableSelection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.Hashtable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.HiddenField.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.Html.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.HttpContext.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.HttpRequest.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.HttpRequestFactory.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.HttpResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.HttpUploadedFile.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.IAnnotation.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.IAuthenticator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.IAuthorizator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.ICacheJournal.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.ICacheStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.ICollection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.IComponent.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.IComponentContainer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Config.IConfigAdapter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.IContext.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.IDebugPanel.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.Identity.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.IFileTemplate.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.IFormControl.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.IFormRenderer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.IFreezable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.IHttpRequest.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.IHttpResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.IIdentity.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.IList.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Image.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.ImageButton.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ImageMagick.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.IMailer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.IMap.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.InstanceFilterIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/InvalidArgumentException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.InvalidLinkException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.InvalidPresenterException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/InvalidStateException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/IOException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IPartiallyRenderable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IPresenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IPresenterLoader.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IPresenterResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IRenderable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.IResource.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.IRole.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IRouter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.ISet.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.ISignalReceiver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.IStatePersistent.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.ISubmitterControl.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.ISupplementalDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.ITemplate.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Iterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/IteratorAggregate.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/IteratorIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ITranslator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.IUser.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Json.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.JsonException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.JsonResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.KeyNotFoundException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.LatteException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.LatteFilter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.LatteMacros.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Loaders.LimitedScope.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.Link.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/LogicException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/LogoutPresenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.Mail.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.MailMimePart.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.MapIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/MemberAccessException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.MemcachedStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.MemoryStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.MethodReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.MultiRouter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.MultiSelectBox.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.NeonException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.NeonParser.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Loaders.NetteLoader.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/NewsFeedPresenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/NotImplementedException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/NotSupportedException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Object.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.ObjectMixin.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/OuterIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Paginator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.ParameterReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/PDO.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoMsSqlDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoMySqlDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoOciDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoOdbcDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoPgSqlDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoSqlite2Driver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Drivers.PdoSqliteDriver.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/PDOStatement.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.Permission.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.Presenter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.PresenterComponent.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.PresenterLoader.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.PresenterRequest.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Reflection.PropertyReflection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.RadioList.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.RecursiveCallbackFilterIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/RecursiveIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.RedirectingResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionClass.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionExtension.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionFunction.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionFunctionAbstract.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionMethod.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionParameter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ReflectionProperty.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Reflector.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.RegexpException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.RenderResponse.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Loaders.RobotLoader.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.Route.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.RoutingDebugger.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Row.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.Rule.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.Rules.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/RuntimeException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.SafeStream.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.SelectBox.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.SendmailMailer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Serializable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.Session.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.SessionNamespace.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Collections.Set.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Security.SimpleAuthenticator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Application.SimpleRouter.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.SmartCachingIterator.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.SmtpException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Mail.SmtpMailer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Caching.SqliteJournal.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.SqlLiteral.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.SqlPreprocessor.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Statement.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.String.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.SubmitButton.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Selector.TableRow.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Database.Selector.TableSelection.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.Template.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.TemplateCacheStorage.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.TemplateException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.TemplateFilters.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Templates.TemplateHelpers.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.TextArea.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.TextBase.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Forms.TextInput.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/ThiefModel.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Tokenizer.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.TokenizerException.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Tools.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Traversable.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.Uri.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/Nette.Web.UriScript.html</loc>
+</url>
+<url>
+	<loc>http://api.nette.org/2.0/User.html</loc>
+</url>
+</urlset>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Collections\Hashtable</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" class="active">Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Collections.ArrayList.html" >ArrayList</a></li>
+		<li><a href="Nette.Collections.Collection.html" >Collection</a></li>
+		<li><a href="Nette.Collections.Hashtable.html" class="active">Hashtable</a></li>
+		<li><a href="Nette.Collections.KeyNotFoundException.html" >KeyNotFoundException</a></li>
+		<li><a href="Nette.Collections.Set.html" >Set</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Collections.ICollection.html" >ICollection</a></li>
+		<li><a href="Nette.Collections.IList.html" >IList</a></li>
+		<li><a href="Nette.Collections.IMap.html" >IMap</a></li>
+		<li><a href="Nette.Collections.ISet.html" >ISet</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Collections.html" title="Summary of Nette\Collections">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Collections.html">Nette\Collections</a></p>
+
+		<h1>Class Hashtable</h1>
+		<div class="classDescription">
+
+		
+<p>Provides the base class for a generic collection of keys and values.</p>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="ArrayObject.html">ArrayObject</a>
+				 implements <a href="IteratorAggregate.html">IteratorAggregate</a>, <a href="Traversable.html">Traversable</a>, <a href="ArrayAccess.html">ArrayAccess</a>, <a href="Serializable.html">Serializable</a>, <a href="Countable.html">Countable</a>
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+				<a href="Nette.Collections.Collection.html">Nette\Collections\Collection</a>
+				 implements <a href="Nette.Collections.ICollection.html">ICollection</a>
+			</dd>
+			<dd style="padding-left:60px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Collections\Hashtable</b>				 implements <a href="Nette.Collections.IMap.html">IMap</a>
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Collections.Hashtable.php.html#28">/libs/Nette/Collections/Hashtable.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 add" id="_add">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_add">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#40" title="go to source code"><b>add</b></a>(
+					mixed
+					<var>$key</var>, 
+					mixed
+					<var>$item</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Inserts the specified element to the map.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Inserts the specified element to the map.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> mixed<br />
+						<code>$item</code> mixed<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+\InvalidArgumentException, \InvalidStateException<br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Collections.IMap.html#_add">IMap::add</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 append" id="_append">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_append">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#65" title="go to source code"><b>append</b></a>(
+					
+					<var>$item</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Append is not supported.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Append is not supported.</p>
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Collections.ICollection.html#_append">ICollection::append</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getKeys" id="_getKeys">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getKeys">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#75" title="go to source code"><b>getKeys</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns a array of the keys contained in this map.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns a array of the keys contained in this map. return array</p>
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Collections.IMap.html#_getKeys">IMap::getKeys</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 search" id="_search">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_search">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#86" title="go to source code"><b>search</b></a>(
+					mixed
+					<var>$item</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the key of the first occurrence of the specified element,.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the key of the first occurrence of the specified element,. or FALSE
+if this map does not contain this element.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$item</code> mixed<br />
+					</div>
+
+
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="Nette.Collections.IMap.html#_search">IMap::search</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 import" id="_import">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_import">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#99" title="go to source code"><b>import</b></a>(
+					array|<a href="Traversable.html">\Traversable</a>
+					<var>$arr</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Import from array or any traversable object.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Import from array or any traversable object.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$arr</code> array|\Traversable<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidArgumentException.html">\InvalidArgumentException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 get" id="_get">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_get">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#126" title="go to source code"><b>get</b></a>(
+					string
+					<var>$key</var>, 
+					mixed
+					<var>$default</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns variable or $default if there is no element.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns variable or $default if there is no element.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+						<code>$default</code> mixed  default value<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidArgumentException.html">\InvalidArgumentException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 throwKeyNotFound" id="_throwKeyNotFound">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_throwKeyNotFound">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#149" title="go to source code"><b>throwKeyNotFound</b></a>(
+					
+					<var>$val</var> = <span class="php-keyword1">true</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Do throw KeyNotFoundEx­ception?</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Do throw KeyNotFoundEx­ception?</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetSet" id="_offsetSet">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#164" title="go to source code"><b>offsetSet</b></a>(
+					string
+					<var>$key</var>, 
+					object
+					<var>$item</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Inserts (replaces) item (\ArrayAccess implementation).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Inserts (replaces) item (\ArrayAccess implementation).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+						<code>$item</code> object<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+\NotSupportedException, \InvalidArgumentException<br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetSet">ArrayAccess::offsetSet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetGet" id="_offsetGet">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#183" title="go to source code"><b>offsetGet</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns item (\ArrayAccess implementation).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns item (\ArrayAccess implementation).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+KeyNotFoundException, \InvalidArgumentException<br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetGet">ArrayAccess::offsetGet</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetExists" id="_offsetExists">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				bool
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#208" title="go to source code"><b>offsetExists</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Exists item? (\ArrayAccess implementation).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Exists item? (\ArrayAccess implementation).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="InvalidArgumentException.html">\InvalidArgumentException</a><br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetExists">ArrayAccess::offsetExists</a></code></div>
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 offsetUnset" id="_offsetUnset">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Collections.Hashtable.php.html#225" title="go to source code"><b>offsetUnset</b></a>(
+					string
+					<var>$key</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Removes the element at the specified position in this list.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Removes the element at the specified position in this list.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$key</code> string key<br />
+					</div>
+
+
+					<h4>Throws</h4>
+					<div class="smallList">
+\NotSupportedException, \InvalidArgumentException<br />
+					</div>
+
+					<h4>Implementation of</h4>
+					<div class="smallList"><code><a href="ArrayAccess.html#_offsetUnset">ArrayAccess::offsetUnset</a></code></div>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Collections.Collection.html#methodSummary">Collection</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Collections.Collection.html#___construct">__construct()</a>, <a href="Nette.Collections.Collection.html#_append">append()</a>, <a href="Nette.Collections.Collection.html#_remove">remove()</a>, <a href="Nette.Collections.Collection.html#_search">search()</a>, <a href="Nette.Collections.Collection.html#_clear">clear()</a>, <a href="Nette.Collections.Collection.html#_contains">contains()</a>, <a href="Nette.Collections.Collection.html#_import">import()</a>, <a href="Nette.Collections.Collection.html#_getItemType">getItemType()</a>, <a href="Nette.Collections.Collection.html#_setReadOnly">setReadOnly()</a>, <a href="Nette.Collections.Collection.html#_isReadOnly">isReadOnly()</a>, <a href="Nette.Collections.Collection.html#_beforeAdd">beforeAdd()</a>, <a href="Nette.Collections.Collection.html#_getIterator">getIterator()</a>, <a href="Nette.Collections.Collection.html#_exchangeArray">exchangeArray()</a>, <a href="Nette.Collections.Collection.html#_setArray">setArray()</a>, <a href="Nette.Collections.Collection.html#_getReflection">getReflection()</a>, <a href="Nette.Collections.Collection.html#___call">__call()</a>, <a href="Nette.Collections.Collection.html#___callStatic">__callStatic()</a>, <a href="Nette.Collections.Collection.html#___get">__get()</a>, <a href="Nette.Collections.Collection.html#___set">__set()</a>, <a href="Nette.Collections.Collection.html#___isset">__isset()</a>, <a href="Nette.Collections.Collection.html#___unset">__unset()</a>, <a href="Nette.Collections.Collection.html#_freeze">freeze()</a>, <a href="Nette.Collections.Collection.html#_isFrozen">isFrozen()</a>, <a href="Nette.Collections.Collection.html#___clone">__clone()</a>, <a href="Nette.Collections.Collection.html#_updating">updating()</a>
+	</code></div>
+	<h2>Methods Inherited From <a href="ArrayObject.html#methodSummary">ArrayObject</a></h2>
+	<div class="box"><code>
+		<a href="ArrayObject.html#___construct">__construct()</a>, <a href="ArrayObject.html#_offsetExists">offsetExists()</a>, <a href="ArrayObject.html#_offsetGet">offsetGet()</a>, <a href="ArrayObject.html#_offsetSet">offsetSet()</a>, <a href="ArrayObject.html#_offsetUnset">offsetUnset()</a>, <a href="ArrayObject.html#_append">append()</a>, <a href="ArrayObject.html#_getArrayCopy">getArrayCopy()</a>, <a href="ArrayObject.html#_count">count()</a>, <a href="ArrayObject.html#_getFlags">getFlags()</a>, <a href="ArrayObject.html#_setFlags">setFlags()</a>, <a href="ArrayObject.html#_asort">asort()</a>, <a href="ArrayObject.html#_ksort">ksort()</a>, <a href="ArrayObject.html#_uasort">uasort()</a>, <a href="ArrayObject.html#_uksort">uksort()</a>, <a href="ArrayObject.html#_natsort">natsort()</a>, <a href="ArrayObject.html#_natcasesort">natcasesort()</a>, <a href="ArrayObject.html#_unserialize">unserialize()</a>, <a href="ArrayObject.html#_serialize">serialize()</a>, <a href="ArrayObject.html#_getIterator">getIterator()</a>, <a href="ArrayObject.html#_exchangeArray">exchangeArray()</a>, <a href="ArrayObject.html#_setIteratorClass">setIteratorClass()</a>, <a href="ArrayObject.html#_getIteratorClass">getIteratorClass()</a>
+	</code></div>
+
+
+	<h2>Constants Inherited From <a href="ArrayObject.html#constantSummary">ArrayObject</a></h2>
+	<div class="box"><code>STD_PROP_LIST, ARRAY_AS_PROPS</code></div>
+
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

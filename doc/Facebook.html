@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Facebook</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" class="active">none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" >Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="ArgumentOutOfRangeException.html" >ArgumentOutOfRangeException</a></li>
+		<li><a href="BasePresenter.html" >BasePresenter</a></li>
+		<li><a href="DefaultPresenter.html" >DefaultPresenter</a></li>
+		<li><a href="DeprecatedException.html" >DeprecatedException</a></li>
+		<li><a href="DirectoryNotFoundException.html" >DirectoryNotFoundException</a></li>
+		<li><a href="Facebook.html" class="active">Facebook</a></li>
+		<li><a href="FacebookApiException.html" >FacebookApiException</a></li>
+		<li><a href="FatalErrorException.html" >FatalErrorException</a></li>
+		<li><a href="FConfig.html" >FConfig</a></li>
+		<li><a href="FileNotFoundException.html" >FileNotFoundException</a></li>
+		<li><a href="InvalidStateException.html" >InvalidStateException</a></li>
+		<li><a href="IOException.html" >IOException</a></li>
+		<li><a href="LogoutPresenter.html" >LogoutPresenter</a></li>
+		<li><a href="MemberAccessException.html" >MemberAccessException</a></li>
+		<li><a href="NewsFeedPresenter.html" >NewsFeedPresenter</a></li>
+		<li><a href="NotImplementedException.html" >NotImplementedException</a></li>
+		<li><a href="NotSupportedException.html" >NotSupportedException</a></li>
+		<li><a href="ThiefModel.html" >ThiefModel</a></li>
+		<li><a href="User.html" >User</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">
+		<h1>Class Facebook</h1>
+		<div class="classDescription">
+
+		
+<p>Provides access to the Facebook Platform.</p>
+
+		</div>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> Naitik Shah &lt;naitik<br />
+			<b>Located at</b> <a href="source-libs.facebook_sdk.facebook.php.html#93">/libs/facebook_sdk/facebook.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#174" title="go to source code"><b>__construct</b></a>(
+					Array
+					<var>$config</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Initialize a Facebook Application.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Initialize a Facebook Application.</p>
+
+<p>The configuration:</p>
+
+<ul>
+	<li>appId: the application ID</li>
+
+	<li>secret: the application secret</li>
+
+	<li>cookie: (optional) boolean true to enable cookie support</li>
+
+	<li>domain: (optional) domain for the cookie</li>
+
+	<li>fileUpload: (optional) boolean indicating if file uploads are enabled</li>
+</ul>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$config</code> Array $config the application configuration<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setAppId" id="_setAppId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setAppId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#200" title="go to source code"><b>setAppId</b></a>(
+					String
+					<var>$appId</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the Application ID.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the Application ID.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$appId</code> String $appId the Application ID<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getAppId" id="_getAppId">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getAppId">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#210" title="go to source code"><b>getAppId</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the Application ID.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the Application ID.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the Application ID</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setApiSecret" id="_setApiSecret">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setApiSecret">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#219" title="go to source code"><b>setApiSecret</b></a>(
+					String
+					<var>$apiSecret</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the API Secret.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the API Secret.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$apiSecret</code> String $appId the API Secret<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getApiSecret" id="_getApiSecret">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getApiSecret">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#229" title="go to source code"><b>getApiSecret</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the API Secret.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the API Secret.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the API Secret</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setCookieSupport" id="_setCookieSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setCookieSupport">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#238" title="go to source code"><b>setCookieSupport</b></a>(
+					Boolean
+					<var>$cookieSupport</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the Cookie Support status.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the Cookie Support status.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$cookieSupport</code> Boolean $cookieSupport the Cookie Support status<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 useCookieSupport" id="_useCookieSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				Boolean
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_useCookieSupport">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#248" title="go to source code"><b>useCookieSupport</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the Cookie Support status.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the Cookie Support status.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">Boolean the Cookie Support status</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setBaseDomain" id="_setBaseDomain">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setBaseDomain">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#257" title="go to source code"><b>setBaseDomain</b></a>(
+					String
+					<var>$domain</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the base domain for the Cookie.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the base domain for the Cookie.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$domain</code> String $domain the base domain<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getBaseDomain" id="_getBaseDomain">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getBaseDomain">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#267" title="go to source code"><b>getBaseDomain</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the base domain for the Cookie.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the base domain for the Cookie.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the base domain</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setFileUploadSupport" id="_setFileUploadSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setFileUploadSupport">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#276" title="go to source code"><b>setFileUploadSupport</b></a>(
+					String
+					<var>$fileUploadSupport</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the file upload support status.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the file upload support status.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$fileUploadSupport</code> String $domain the base domain<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 useFileUploadSupport" id="_useFileUploadSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_useFileUploadSupport">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#286" title="go to source code"><b>useFileUploadSupport</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the file upload support status.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the file upload support status.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the base domain</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getSignedRequest" id="_getSignedRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getSignedRequest">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#295" title="go to source code"><b>getSignedRequest</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the data from a signed_request token</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the data from a signed_request token</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the base domain</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setSession" id="_setSession">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setSession">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#310" title="go to source code"><b>setSession</b></a>(
+					Array
+					<var>$session</var> = <span class="php-keyword1">NULL</span>, 
+					Boolean
+					<var>$write_cookie</var> = <span class="php-keyword1">true</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Set the Session.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set the Session.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$session</code> Array $session the session<br />
+						<code>$write_cookie</code> Boolean $write_cookie indicate if a cookie should be written. this<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getSession" id="_getSession">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				Array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getSession">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#327" title="go to source code"><b>getSession</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the session object. This will automatically look for a signed session</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the session object. This will automatically look for a signed session
+sent via the signed_request, Cookie or Query Parameters if needed.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">Array the session</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getUser" id="_getUser">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getUser">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#379" title="go to source code"><b>getUser</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Get the UID from the session.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get the UID from the session.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the UID if available</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getAccessToken" id="_getAccessToken">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getAccessToken">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#389" title="go to source code"><b>getAccessToken</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Gets a OAuth access token.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Gets a OAuth access token.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the access token</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getLoginUrl" id="_getLoginUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getLoginUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#404" title="go to source code"><b>getLoginUrl</b></a>(
+					Array
+					<var>$params</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Get a Login URL for use with redirects. By default, full page
+redirect is</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get a Login URL for use with redirects. By default, full page redirect is
+assumed. If you are using the generated URL with a window.open() call in
+JavaScript, you can pass in display=popup as part of the $params.</p>
+
+<p>The parameters:</p>
+
+<ul>
+	<li>next: the url to go to after a successful login</li>
+
+	<li>cancel_url: the url to go to after the user cancels</li>
+
+	<li>req_perms: comma separated list of requested extended perms</li>
+
+	<li>display: can be „page“ (default, full page) or „popup“</li>
+</ul>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> Array $params provide custom parameters<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the URL for the login flow</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getLogoutUrl" id="_getLogoutUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getLogoutUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#436" title="go to source code"><b>getLogoutUrl</b></a>(
+					Array
+					<var>$params</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Get a Logout URL suitable for use with redirects.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get a Logout URL suitable for use with redirects.</p>
+
+<p>The parameters:</p>
+
+<ul>
+	<li>next: the url to go to after a successful logout</li>
+</ul>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> Array $params provide custom parameters<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the URL for the logout flow</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getLoginStatusUrl" id="_getLoginStatusUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getLoginStatusUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#456" title="go to source code"><b>getLoginStatusUrl</b></a>(
+					Array
+					<var>$params</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Get a login status URL to fetch the status from facebook.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Get a login status URL to fetch the status from facebook.</p>
+
+<p>The parameters:</p>
+
+<ul>
+	<li>ok_session: the URL to go to if a session is found</li>
+
+	<li>no_session: the URL to go to if the user is not connected</li>
+
+	<li>no_user: the URL to go to if the user is not signed into facebook</li>
+</ul>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> Array $params provide custom parameters<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the URL for the logout flow</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 api" id="_api">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				the
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_api">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#481" title="go to source code"><b>api</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Make an API call.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Make an API call.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">the decoded response</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 _restserver" id="__restserver">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				the
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#__restserver">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#496" title="go to source code"><b>_restserver</b></a>(
+					Array
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Invoke the old restserver.php endpoint.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Invoke the old restserver.php endpoint.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> Array $params method call object<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">the decoded response object</div>
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="FacebookApiException.html">FacebookApiException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 _graph" id="__graph">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				the
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#__graph">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#520" title="go to source code"><b>_graph</b></a>(
+					String
+					<var>$path</var>, 
+					String
+					<var>$method</var> = <span class="php-quote">'GET'</span>, 
+					Array
+					<var>$params</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Invoke the Graph API.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Invoke the Graph API.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$path</code> String $path the path (required)<br />
+						<code>$method</code> String $method the http method (default &#039;GET&#039;)<br />
+						<code>$params</code> Array $params the query/post data<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">the decoded response object</div>
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="FacebookApiException.html">FacebookApiException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 _oauthRequest" id="__oauthRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				the
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#__oauthRequest">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#556" title="go to source code"><b>_oauthRequest</b></a>(
+					String
+					<var>$url</var>, 
+					Array
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Make a OAuth Request</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Make a OAuth Request</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$url</code> String $path the path (required)<br />
+						<code>$params</code> Array $params the query/post data<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">the decoded response object</div>
+
+					<h4>Throws</h4>
+					<div class="smallList">
+						<a href="FacebookApiException.html">FacebookApiException</a><br />
+					</div>
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 makeRequest" id="_makeRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_makeRequest">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#578" title="go to source code"><b>makeRequest</b></a>(
+					String
+					<var>$url</var>, 
+					Array
+					<var>$params</var>, 
+					CurlHandler
+					<var>$ch</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Makes an HTTP request. This method can be overriden by subclasses if</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Makes an HTTP request. This method can be overriden by subclasses if
+developers want to do fancier things or use something other than curl to make
+the request.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$url</code> String $url the URL to make the request to<br />
+						<code>$params</code> Array $params the parameters to use for the POST body<br />
+						<code>$ch</code> CurlHandler $ch optional initialized curl handle<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the response text</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getSessionCookieName" id="_getSessionCookieName">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getSessionCookieName">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#636" title="go to source code"><b>getSessionCookieName</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>The name of the Cookie that contains the session.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>The name of the Cookie that contains the session.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the cookie name</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 setCookieFromSession" id="_setCookieFromSession">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_setCookieFromSession">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#645" title="go to source code"><b>setCookieFromSession</b></a>(
+					Array
+					<var>$session</var> = <span class="php-keyword1">NULL</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Set a JS Cookie based on the _passed in_ session. It does not use the</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Set a JS Cookie based on the _passed in_ session. It does not use the
+currently stored session – you need to explicitly pass it in.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$session</code> Array $session the session to use for setting the cookie<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 validateSessionObject" id="_validateSessionObject">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_validateSessionObject">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#690" title="go to source code"><b>validateSessionObject</b></a>(
+					Array
+					<var>$session</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Validates a session_version=3 style session object.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Validates a session_version=3 style session object.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$session</code> Array $session the session object<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Array the session object if it validates, null otherwise</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 createSessionFromSignedRequest" id="_createSessionFromSignedRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_createSessionFromSignedRequest">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#720" title="go to source code"><b>createSessionFromSignedRequest</b></a>(
+					Array
+					<var>$data</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Returns something that looks like our JS session object from the</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns something that looks like our JS session object from the signed
+token's data</p>
+
+<p>TODO: Nuke this once the login flow uses OAuth2</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$data</code> Array the output of getSignedRequest<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Array Something that will work as a session</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 parseSignedRequest" id="_parseSignedRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				Array
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_parseSignedRequest">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#749" title="go to source code"><b>parseSignedRequest</b></a>(
+					String
+					<var>$signed_request</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Parses a signed_request and validates the signature.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Parses a signed_request and validates the signature. Then saves it in
+$this-&gt;signed_data</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$signed_request</code> String A signed token<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">Array the payload inside it or null if the sig is wrong</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getApiUrl" id="_getApiUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getApiUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#781" title="go to source code"><b>getApiUrl</b></a>(
+					$method
+					<var>$method</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Build the URL for api given parameters.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Build the URL for api given parameters.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$method</code> $method String the method name.<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the URL for the given parameters</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getUrl" id="_getUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#856" title="go to source code"><b>getUrl</b></a>(
+					$name
+					<var>$name</var>, 
+					$path
+					<var>$path</var> = <span class="php-quote">''</span>, 
+					$params
+					<var>$params</var> = <span class="php-keyword1">array</span> (
+)
+			)</code>
+
+			<div class="short">
+				
+<p>Build the URL for given domain alias, path and parameters.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Build the URL for given domain alias, path and parameters.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> $name String the name of the domain<br />
+						<code>$path</code> $path String optional path (without a leading slash)<br />
+						<code>$params</code> $params Array optional query parameters<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the URL for the given parameters</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 getCurrentUrl" id="_getCurrentUrl">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected 
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_getCurrentUrl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#878" title="go to source code"><b>getCurrentUrl</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Returns the Current URL, stripping it of known FB parameters that should</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Returns the Current URL, stripping it of known FB parameters that should not
+persist.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="smallList">String the current URL</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 generateSignature" id="_generateSignature">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected static
+				String
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_generateSignature">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#915" title="go to source code"><b>generateSignature</b></a>(
+					Array
+					<var>$params</var>, 
+					String
+					<var>$secret</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Generate a signature for the given params and secret.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Generate a signature for the given params and secret.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$params</code> Array $params the parameters to sign<br />
+						<code>$secret</code> String $secret the secret to sign with<br />
+					</div>
+
+					<h4>Returns</h4>
+					<div class="smallList">String the generated signature</div>
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 errorLog" id="_errorLog">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected static
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_errorLog">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#936" title="go to source code"><b>errorLog</b></a>(
+					String
+					<var>$msg</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Prints to the error log if you aren't in command line mode.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Prints to the error log if you aren't in command line mode.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$msg</code> String log message<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 base64UrlDecode" id="_base64UrlDecode">
+			<td align="right" width="1%"><code class="nowrap">
+				 protected static
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_base64UrlDecode">#</a>
+			<code class="nowrap">
+				<a href="source-libs.facebook_sdk.facebook.php.html#952" title="go to source code"><b>base64UrlDecode</b></a>(
+					String
+					<var>$input</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Base64 encoding that doesn't need to be urlencode()ed.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Base64 encoding that doesn't need to be urlencode()ed. Exactly the same as
+base64_encode except it uses<br>
+- instead of +<br>
+_ instead of /</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$input</code> String base64UrlEncodeded string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="VERSION" id="VERSION">
+			<td align="right" width="1%"><code><b>VERSION</b></code></td>
+			<td><code><span class="php-quote">'2.1.2'</span></code> <a href="#VERSION" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="CURL_OPTS" id="$CURL_OPTS">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				
+			</code></td>
+
+			<td width="1%"><var>$CURL_OPTS</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+  <span class="php-num">78</span> =&gt; <span class="php-num">10</span>,
+  <span class="php-num">19913</span> =&gt; <span class="php-keyword1">true</span>,
+  <span class="php-num">13</span> =&gt; <span class="php-num">60</span>,
+  <span class="php-num">10018</span> =&gt; <span class="php-quote">'facebook-php-2.0'</span>,
+)</pre></td>
+			<td>Default options for curl. <a href="#$CURL_OPTS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="DROP_QUERY_PARAMS" id="$DROP_QUERY_PARAMS">
+			<td align="right" width="1%"><code class="nowrap">
+				protected static
+				
+			</code></td>
+
+			<td width="1%"><var>$DROP_QUERY_PARAMS</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+  <span class="php-num">0</span> =&gt; <span class="php-quote">'session'</span>,
+  <span class="php-num">1</span> =&gt; <span class="php-quote">'signed_request'</span>,
+)</pre></td>
+			<td>List of query parameters that get automatically dropped when rebuilding <a href="#$DROP_QUERY_PARAMS" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="DOMAIN_MAP" id="$DOMAIN_MAP">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				
+			</code></td>
+
+			<td width="1%"><var>$DOMAIN_MAP</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+  <span class="php-quote">'api'</span> =&gt; <span class="php-quote">'https://api.facebook.com/'</span>,
+  <span class="php-quote">'api_read'</span> =&gt; <span class="php-quote">'https://api-read.facebook.com/'</span>,
+  <span class="php-quote">'graph'</span> =&gt; <span class="php-quote">'https://graph.facebook.com/'</span>,
+  <span class="php-quote">'www'</span> =&gt; <span class="php-quote">'https://www.facebook.com/'</span>,
+)</pre></td>
+			<td>Maps aliases to Facebook domains. <a href="#$DOMAIN_MAP" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="appId" id="$appId">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$appId</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>The Application ID. <a href="#$appId" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="apiSecret" id="$apiSecret">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$apiSecret</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>The Application API Secret. <a href="#$apiSecret" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="session" id="$session">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$session</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>The active user session, if one is available. <a href="#$session" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="signedRequest" id="$signedRequest">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$signedRequest</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td>The data from the signed_request token. <a href="#$signedRequest" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="sessionLoaded" id="$sessionLoaded">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$sessionLoaded</var></td>
+			<td><pre><span class="php-keyword1">false</span></pre></td>
+			<td>Indicates that we already loaded the session as best as we could. <a href="#$sessionLoaded" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="cookieSupport" id="$cookieSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$cookieSupport</var></td>
+			<td><pre><span class="php-keyword1">false</span></pre></td>
+			<td>Indicates if Cookie support should be enabled. <a href="#$cookieSupport" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="baseDomain" id="$baseDomain">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$baseDomain</var></td>
+			<td><pre><span class="php-quote">''</span></pre></td>
+			<td>Base domain for the Cookie. <a href="#$baseDomain" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="fileUploadSupport" id="$fileUploadSupport">
+			<td align="right" width="1%"><code class="nowrap">
+				protected 
+				
+			</code></td>
+
+			<td width="1%"><var>$fileUploadSupport</var></td>
+			<td><pre><span class="php-keyword1">false</span></pre></td>
+			<td>Indicates if the CURL based @ syntax for file uploads is enabled. <a href="#$fileUploadSupport" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>

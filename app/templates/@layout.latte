@@ -1,0 +1,45 @@
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="{$basePath}/css/default.css" type="text/css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript" src="{$basePath}/js/jquery-1.4.4.js"></script>
+    <script language="javascript" type="text/javascript" src="{$basePath}/js/jquery.nette.js"></script>
+        <script language="javascript" type="text/javascript" src="{$basePath}/js/javascriptStuff.js"></script>
+        <script language="javascript" type="text/javascript" src="{$basePath}/js/jquery.textarearesizer.compressed.js"></script>
+
+    <script language="javascript" type="text/javascript" src="{$basePath}/js/jquery.ajaxform.js"></script>
+  </head>
+  <body>
+      <div id="header">     
+          <ul>
+              <li><a href="{link newsFeed:default}" class="ajax">home ::</a></li>
+              <li><a href="{link default:default}" class="ajax">  status ::</a></li>
+              <li><a href="{plink default:photos}" class=""> haha ::</a></li>
+              <li><a href="{plink logout:logoutFromFacebook}">logout ::</a></li>
+              <li><a href="{plink Thief!}" class="ajax">thief</a></li>
+      </ul>
+          </div>
+      {snippet flashMesagesHomePage}
+      {foreach $flashes as $flash}
+        <div class="flash-message">
+                {$flash->message}
+        </div>
+        {/foreach}
+      {/snippet}
+      {control addStatusForm}
+      <div id="contentMask">
+      <div id="mainContent">
+      {include #statuses}
+      </div>
+      </div>
+      <div id="ajax-spinner">nacitam</div>
+  </body>
+</html>
+      {dump}

@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex,noarchive">
+	<meta name="generator" content="Nette Framework">
+
+	<title>InvalidArgumentException</title><!-- Invalid argument passed to foreach resp. Nette\SmartCachingIterator; array or Traversable expected, NULL given. -->
+
+	<style type="text/css" class="nette">body{margin:0 0 2em;padding:0}#netteBluescreen{font:9pt/1.5 Verdana,sans-serif;background:white;color:#333;position:absolute;left:0;top:0;width:100%;z-index:23178;text-align:left}#netteBluescreen *{font:inherit;color:inherit;background:transparent;border:none;margin:0;padding:0;text-align:inherit;text-indent:0}#netteBluescreen b{font-weight:bold}#netteBluescreen i{font-style:italic}#netteBluescreenIcon{position:absolute;right:.5em;top:.5em;z-index:23179;text-decoration:none;background:#CD1818;padding:3px}#netteBluescreenError{background:#CD1818;color:white;font:13pt/1.5 Verdana,sans-serif!important;display:block}#netteBluescreen h1{font-size:18pt;font-weight:normal;text-shadow:1px 1px 0 rgba(0,0,0,.4);margin:.7em 0}#netteBluescreen h2{font:14pt/1.5 sans-serif!important;color:#888;margin:.6em 0}#netteBluescreen a{text-decoration:none;color:#328ADC;padding:2px 4px;margin:-2px -4px}#netteBluescreen a abbr{font-family:sans-serif;color:#BBB}#netteBluescreen h3{font:bold 10pt/1.5 Verdana,sans-serif!important;margin:1em 0;padding:0}#netteBluescreen p,#netteBluescreen pre{margin:.8em 0}#netteBluescreen pre,#netteBluescreen code,#netteBluescreen table{font:9pt/1.5 Consolas,monospace!important}#netteBluescreen pre,#netteBluescreen table{background:#FDF5CE;padding:.4em .7em;border:1px dotted silver;overflow:auto}#netteBluescreen table pre{padding:0;margin:0;border:none}#netteBluescreen pre.nette-dump span{color:#C22}#netteBluescreen pre.nette-dump a{color:#333}#netteBluescreen div.panel{padding:1px 25px}#netteBluescreen div.inner{background:#F4F3F1;padding:.1em 1em 1em;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px}#netteBluescreen table{border-collapse:collapse;width:100%}#netteBluescreen .outer{overflow:auto}#netteBluescreen td,#netteBluescreen th{vertical-align:top;text-align:left;padding:2px 6px;border:1px solid #e6dfbf}#netteBluescreen th{width:10%;font-weight:bold}#netteBluescreen tr:nth-child(2n),#netteBluescreen tr:nth-child(2n) pre{background-color:#F7F0CB}#netteBluescreen ol{margin:1em 0;padding-left:2.5em}#netteBluescreen ul{font:7pt/1.5 Verdana,sans-serif!important;padding:2em 4em;margin:1em 0 0;color:#777;background:#F6F5F3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAjCAMAAADbuxbOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF/fz24d7Y7Onj5uLd9vPu3drUzMvG09LN39zW8e7o2NbQ3NnT29jS0M7J1tXQAAAApvmsFgAAABB0Uk5T////////////////////AOAjXRkAAAKlSURBVHja7FbbsqQgDAwENEgc//9vN+SCWDtbtXPmZR/Wc6o02mlC58LA9ckFAOszvMV8xNgyUjyXhojfMVKvRL0ZHavxXYy5JrmchMdzou8YlTClxajtK8ZGGpWRoBr1+gFjKfHkJPbizabLgzE3pH7Iu4K980xgFvlrVzMZoVBWhtvouCDdcTDmTgMCJdVxJ9MKO6XxnliM7hxi5lbj2ZVM4l8DqYyKoNLYcfqBB1/LpHYxEcfVG6ZpMDgyFUVWY/Q1sSYPpIdSAKWqLWL0XqWiMWc4hpH0OQOMOAgdycY4N9Sb7wWANQs3rsDSdLAYiuxi5siVfOhBWIrtH0G3kNaF/8Q4kCPE1kMucG/ZMUBUCOgiKJkPuWWTLGVgLGpwns1DraUayCtoBqERyaYtVsm85NActRooezvSLO/sKZP/nq8n4+xcyjNsRu8zW6KWpdb7wjiQd4WrtFZYFiKHENSmWp6xshh96c2RQ+c7Lt+qbijyEjHWUJ/pZsy8MGIUuzNiPySK2Gqoh6ZTRF6ko6q3nVTkaA//itIrDpW6l3SLo8juOmqMXkYknu5FdQxWbhCfKHEGDhxxyTVaXJF3ZjSl3jMksjSOOKmne9pI+mcG5QvaUJhI9HpkmRo2NpCrDJvsktRhRE2MM6F2n7dt4OaMUq8bCctk0+PoMRzL+1l5PZ2eyM/Owr86gf8z/tOM53lom5+nVcFuB+eJVzlXwAYy9TZ9s537tfqcsJWbEU4nBngZo6FfO9T9CdhfBtmk2dLiAy8uS4zwOpMx2HqYbTC+amNeAYTpsP4SIgvWfUBWXxn3CMHW3ffd7k3+YIkx7w0t/CVGvcPejoeOlzOWzeGbawOHqXQGUTMZRcfj4XPCgW9y/fuvVn8zD9P1QHzv80uAAQA0i3Jer7Jr7gAAAABJRU5ErkJggg==') 99% 10px no-repeat;border-top:1px solid #DDD}#netteBluescreen .highlight{background:#CD1818;color:white;font-weight:bold;font-style:normal;display:block;padding:0 .4em;margin:0 -.4em}#netteBluescreen .line{color:#9F9C7F;font-weight:normal;font-style:normal}#netteBluescreen a[href^=editor\:]{color:inherit;border-bottom:1px dotted #328ADC}</style>
+</head>
+
+
+
+<body>
+<div id="netteBluescreen">
+	<a id="netteBluescreenIcon" href="#" rel="next"><abbr>&#x25bc;</abbr></a
+
+	><div>
+		<div id="netteBluescreenError" class="panel">
+			<h1>InvalidArgumentException</h1>
+
+			<p>Invalid argument passed to foreach resp. Nette\SmartCachingIterator; array or Traversable expected, NULL given.</p>
+		</div>
+
+
+
+				
+			
+												<div class="panel">
+			<h2><a href="#" rel="netteBsPnl1">Source file <abbr>&#x25ba;</abbr></a></h2>
+
+			<div id="netteBsPnl1" class="nette-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FUtils%2FIterators%2FSmartCachingIterator.php&amp;line=50">				/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Iterators/SmartCachingIterator.php</a> &nbsp; <b>Line:</b> 50</p>
+				<pre><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>43:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$iterator&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">$iterator</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getIterator</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>44:</span>    
+<span class='line'>45:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(!(</span><span style="color: #000">$iterator&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;\</span><span style="color: #000">Iterator</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>46:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$iterator&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;new&nbsp;\</span><span style="color: #000">IteratorIterator</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$iterator</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>47:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>48:</span>    
+<span class='line'>49:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+<span class='highlight'>50:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\InvalidArgumentException("Invalid&nbsp;argument&nbsp;passed&nbsp;to&nbsp;foreach&nbsp;resp.&nbsp;"&nbsp;.&nbsp;__CLASS__&nbsp;.&nbsp;";&nbsp;array&nbsp;or&nbsp;Traversable&nbsp;expected,&nbsp;"&nbsp;.&nbsp;(is_object($iterator)&nbsp;?&nbsp;get_class($iterator)&nbsp;:&nbsp;gettype($iterator))&nbsp;."&nbsp;given.");
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>51:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>52:</span>    
+<span class='line'>53:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">parent</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">__construct</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$iterator</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>54:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>55:</span>    
+<span class='line'>56:</span>    
+<span class='line'>57:</span>    
+</span></span></code></pre>
+			</div></div>
+			
+
+
+									<div class="panel">
+				<h2><a href="#" rel="netteBsPnl2">Call stack <abbr>&#x25bc;</abbr></a></h2>
+
+				<div id="netteBsPnl2" class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Ftemp%2Fcache%2F_Nette.FileTemplate%2F_NewsFeed.default.latte-807644f25bef2859513103c825735003.php&amp;line=42" title="/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_NewsFeed.default.latte-807644f25bef2859513103c825735003.php">
+						_Nette.FileTemplate/<b>_NewsFeed.default.latte-807644f25bef2859513103c825735003.php</b></a> (42)					
+					<a href="#" rel="netteBsSrc1-0">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\SmartCachingIterator->					__construct
+					(<a href="#" rel="netteBsArgs1-0">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-0">
+						<table>
+						<tr><th>$iterator</th><td><pre class="nette-dump">NULL
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre  id="netteBsSrc1-0"><code><span style="color: #06B"><span class='line'>35:</span>    &lt;!--&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&nbsp;/&gt;--&gt;
+<span class='line'>36:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">if&nbsp;(isset(</span><span style="color: #000">$news</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'comments'</span><span style="color: #D24; font-weight: bold">])):&nbsp;</span><span style="color: #000">?&gt;
+<span class='line'>37:</span>    </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class="toggleComments"&gt;Show&nbsp;Comments&lt;/span&gt;
+<span class='line'>38:</span>    <span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">endif&nbsp;</span><span style="color: #000">?&gt;
+<span class='line'>39:</span>    </span>
+<span class='line'>40:</span>    <span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">if&nbsp;(isset(</span><span style="color: #000">$news</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'comments'</span><span style="color: #D24; font-weight: bold">])):&nbsp;</span><span style="color: #000">?&gt;
+<span class='line'>41:</span>    </span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&nbsp;class="ul_comments"&gt;
+<span class='highlight'>42:    &lt;?php&nbsp;foreach&nbsp;($iterator&nbsp;=&nbsp;$_l-&gt;its[]&nbsp;=&nbsp;new&nbsp;Nette\SmartCachingIterator($news['comments']['data'])&nbsp;as&nbsp;$datas):&nbsp;?&gt;
+</span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"><span class='line'>43:</span>    </span>
+<span class='line'>44:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class="li_comments"&gt;
+<span class='line'>45:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class="commentatorImg"&nbsp;src="http://graph.facebook.com/<span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">echo&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Templates</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">TemplateHelpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">escapeHtml</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$datas</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'from'</span><span style="color: #D24; font-weight: bold">][</span><span style="color: #080">'id'</span><span style="color: #D24; font-weight: bold">])&nbsp;</span><span style="color: #000">?&gt;</span>/picture"&nbsp;rel=""&nbsp;alt=""&nbsp;/&gt;
+<span class='line'>46:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="commentatorsName"&gt;<span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">echo&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Templates</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">TemplateHelpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">escapeHtml</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$datas</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'from'</span><span style="color: #D24; font-weight: bold">][</span><span style="color: #080">'name'</span><span style="color: #D24; font-weight: bold">])&nbsp;</span><span style="color: #000">?&gt;</span>&lt;/div&gt;
+<span class='line'>47:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="commentsContent"&gt;<span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">echo&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Templates</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">TemplateHelpers</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">escapeHtml</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$datas</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'message'</span><span style="color: #D24; font-weight: bold">])&nbsp;</span><span style="color: #000">?&gt;</span>&lt;/div&gt;
+<span class='line'>48:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+<span class='line'>49:</span>    <span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">endforeach;&nbsp;</span><span style="color: #000">array_pop</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">its</span><span style="color: #D24; font-weight: bold">);&nbsp;</span><span style="color: #000">$iterator&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">end</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">its</span><span style="color: #D24; font-weight: bold">)&nbsp;</span><span style="color: #000">?&gt;
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FTemplates%2FFilters%2FLatteMacros.php&amp;line=1221" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/Filters/LatteMacros.php">
+						Filters/<b>LatteMacros.php</b></a> (1221)					
+					<a href="#" rel="netteBsSrc1-1">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										_lb2261b7b338__zkouska
+					(<a href="#" rel="netteBsArgs1-1">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-1">
+						<table>
+						<tr><th>$_l</th><td><pre class="nette-dump"><a href='#' rel='next'><span>stdClass</span>(5) <abbr>&#x25bc;</abbr> </a><code>{
+   <a href='#' rel='next'>"blocks" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"newses" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb76647e6a32_newses" (20)
+      <a href='#' rel='next'>]</code>
+      "_zkouska" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb2261b7b338__zkouska" (22)
+      <a href='#' rel='next'>]</code>
+      "_flashMesagesHomePage" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb29331a58a2__flashMesagesHomePage" (35)
+      <a href='#' rel='next'>]</code>
+   }</code>
+   "templates" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"49b3807b82" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      <a href='#' rel='next'>}</code>
+      "c038111a10" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte" (60)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+   }</code>
+   "extends" => FALSE
+   "g" => <span>stdClass</span>(0) 
+   <a href='#' rel='next'>"its" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+      <a href='#' rel='next'>0 => <span>Nette\SmartCachingIterator</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "counter" <span>private</span> => 6
+      }</code>
+   ]</code>
+}</code>
+</pre></td></tr>
+<tr><th>$_args</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"control" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "presenter" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "user" => <span>Nette\Web\User</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "guestRole" => "guest" (5)
+      "authenticatedRole" => "authenticated" (13)
+      "onLoggedIn" => NULL
+      "onLoggedOut" => NULL
+      "authenticationHandler" <span>private</span> => NULL
+      "authorizationHandler" <span>private</span> => NULL
+      "namespace" <span>private</span> => ""
+      "session" <span>private</span> => NULL
+   }</code>
+   "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+   "basePath" => "/SugarBook/document_root" (24)
+   "flashes" => <span>array</span>(0) 
+   <a href='#' rel='next'>"newsFeedDatas" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"data" => <span>array</span>(18) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">[
+         0 => <span>array</span>(14) { ... }
+         1 => <span>array</span>(13) { ... }
+         2 => <span>array</span>(8) { ... }
+         3 => <span>array</span>(10) { ... }
+         4 => <span>array</span>(7) { ... }
+         5 => <span>array</span>(14) { ... }
+         6 => <span>array</span>(7) { ... }
+         7 => <span>array</span>(6) { ... }
+         8 => <span>array</span>(10) { ... }
+         9 => <span>array</span>(7) { ... }
+         10 => <span>array</span>(13) { ... }
+         11 => <span>array</span>(11) { ... }
+         12 => <span>array</span>(7) { ... }
+         13 => <span>array</span>(14) { ... }
+         14 => <span>array</span>(6) { ... }
+         15 => <span>array</span>(8) { ... }
+         16 => <span>array</span>(11) { ... }
+         17 => <span>array</span>(11) { ... }
+      <a href='#' rel='next'>]</code>
+      "paging" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "previous" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;since=2010-12-29T22%3A11%3A39%2B0000" (92)
+         "next" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;until=2010-12-29T15%3A41%3A58%2B0000" (92)
+      }</code>
+   }</code>
+   "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+   <a href='#' rel='next'>"template" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte" (60)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { ... }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { ... }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+   }</code>
+   "_l" => <span>stdClass</span>(5) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"blocks" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+         "newses" => <span>array</span>(1) [ ... ]
+         "_zkouska" => <span>array</span>(1) [ ... ]
+         "_flashMesagesHomePage" => <span>array</span>(1) [ ... ]
+      <a href='#' rel='next'>}</code>
+      "templates" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "49b3807b82" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+         "c038111a10" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "extends" => FALSE
+      "g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>"its" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\SmartCachingIterator</span>(1) { ... }
+      ]</code>
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-1"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>1214:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>1215:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$payload&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getPresenter</span><span style="color: #D24; font-weight: bold">()-&gt;</span><span style="color: #000">getPayload</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>1216:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #000">$local</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">blocks</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>1217:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #000">$local</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">blocks&nbsp;</span><span style="color: #D24; font-weight: bold">as&nbsp;</span><span style="color: #000">$name&nbsp;</span><span style="color: #D24; font-weight: bold">=&gt;&nbsp;</span><span style="color: #000">$function</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>1218:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">]&nbsp;!==&nbsp;</span><span style="color: #080">'_'&nbsp;</span><span style="color: #D24; font-weight: bold">||&nbsp;!</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isControlInvalid</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">substr</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">)))&nbsp;continue;
+<span class='line'>1219:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">ob_start</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>1220:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$function&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">reset</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$function</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>1221:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$function($local,&nbsp;$params);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>1222:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$payload</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">snippets</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getSnippetId</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">substr</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">))]&nbsp;=&nbsp;</span><span style="color: #000">ob_get_clean</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>1223:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>1224:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>1225:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$control&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Control</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>1226:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getComponents</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">FALSE</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #080">'Nette\Application\Control'</span><span style="color: #D24; font-weight: bold">)&nbsp;as&nbsp;</span><span style="color: #000">$child</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>1227:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$child</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isControlInvalid</span><span style="color: #D24; font-weight: bold">())&nbsp;{
+<span class='line'>1228:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$child</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">render</span><span style="color: #D24; font-weight: bold">();
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Ftemp%2Fcache%2F_Nette.FileTemplate%2F_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php&amp;line=28" title="/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php">
+						_Nette.FileTemplate/<b>_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php</b></a> (28)					
+					<a href="#" rel="netteBsSrc1-2">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Templates\LatteMacros::					renderSnippets
+					(<a href="#" rel="netteBsArgs1-2">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-2">
+						<table>
+						<tr><th>$control</th><td><pre class="nette-dump"><a href='#' rel='next'><span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"oldlayoutMode" => FALSE
+   "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "appId" <span>protected</span> => "124815934249440" (15)
+      "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+      <a href='#' rel='next'>"session" <span>protected</span> => <span>array</span>(6) <abbr>&#x25bc;</abbr> </a><code>{
+         "session_key" => "2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266" (53)
+         "uid" => "1586568266" (10)
+         "expires" => "1293667200" (10)
+         "secret" => "IIXWFnKO6qr0Wxx3OQjTLg__" (24)
+         "access_token" => "124815934249440|2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266|bxE5aFHYfQLm5Ym9mkIDDfo6g_A" (97)
+         "sig" => "0d9408b60795244c73696c766087fa09" (32)
+      }</code>
+      "signedRequest" <span>protected</span> => NULL
+      "sessionLoaded" <span>protected</span> => TRUE
+      "cookieSupport" <span>protected</span> => TRUE
+      "baseDomain" <span>protected</span> => ""
+      "fileUploadSupport" <span>protected</span> => FALSE
+   <a href='#' rel='next'>}</code>
+   "model" <span>private</span> => NULL
+   "onShutdown" => NULL
+   "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "method" <span>private</span> => "GET" (3)
+      <a href='#' rel='next'>"flags" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "secured" => FALSE
+      }</code>
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"params" <span>private</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "post" <span>private</span> => <span>array</span>(0) 
+      "files" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+   }</code>
+   "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+   }</code>
+   "autoCanonicalize" => TRUE
+   "absoluteUrls" => FALSE
+   "globalParams" <span>private</span> => <span>array</span>(0) 
+   "globalState" <span>private</span> => <span>array</span>(0) 
+   "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+   "action" <span>private</span> => "default" (7)
+   "view" <span>private</span> => "default" (7)
+   <a href='#' rel='next'>"layout" <span>private</span> => NULL
+   "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      "state" => <span>array</span>(0) 
+   }</code>
+   "signalReceiver" <span>private</span> => ""
+   "signal" <span>private</span> => NULL
+   "ajaxMode" <span>private</span> => TRUE
+   "startupCheck" <span>private</span> => TRUE
+   <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+   "lastCreatedRequestFlag" <span>private</span> => NULL
+   "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { *RECURSION* }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { *RECURSION* }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      ]</code>
+   }</code>
+   "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+   <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      "action" => "default" (7)
+      "id" => NULL
+   }</code>
+   "components" <span>private</span> => <span>array</span>(0) 
+   "cloning" <span>private</span> => NULL
+   "parent" <span>private</span> => NULL
+   "name" <span>private</span> => "NewsFeed" (8)
+   <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"Nette\Application\Presenter" => <span>array</span>(4) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => NULL
+         1 => NULL
+         2 => NULL
+         3 => TRUE
+      ]</code>
+   }</code>
+}</code>
+</pre></td></tr>
+<tr><th>$local</th><td><pre class="nette-dump"><a href='#' rel='next'><span>stdClass</span>(5) <abbr>&#x25bc;</abbr> </a><code>{
+   <a href='#' rel='next'>"blocks" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"newses" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb76647e6a32_newses" (20)
+      <a href='#' rel='next'>]</code>
+      "_zkouska" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb2261b7b338__zkouska" (22)
+      <a href='#' rel='next'>]</code>
+      "_flashMesagesHomePage" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => "_lb29331a58a2__flashMesagesHomePage" (35)
+      <a href='#' rel='next'>]</code>
+   }</code>
+   "templates" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"49b3807b82" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      <a href='#' rel='next'>}</code>
+      "c038111a10" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte" (60)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+   }</code>
+   "extends" => FALSE
+   "g" => <span>stdClass</span>(0) 
+   <a href='#' rel='next'>"its" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+      <a href='#' rel='next'>0 => <span>Nette\SmartCachingIterator</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "counter" <span>private</span> => 6
+      }</code>
+   ]</code>
+}</code>
+</pre></td></tr>
+<tr><th>$params</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"control" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "presenter" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "user" => <span>Nette\Web\User</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "guestRole" => "guest" (5)
+      "authenticatedRole" => "authenticated" (13)
+      "onLoggedIn" => NULL
+      "onLoggedOut" => NULL
+      "authenticationHandler" <span>private</span> => NULL
+      "authorizationHandler" <span>private</span> => NULL
+      "namespace" <span>private</span> => ""
+      "session" <span>private</span> => NULL
+   }</code>
+   "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+   "basePath" => "/SugarBook/document_root" (24)
+   "flashes" => <span>array</span>(0) 
+   <a href='#' rel='next'>"newsFeedDatas" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"data" => <span>array</span>(18) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">[
+         0 => <span>array</span>(14) { ... }
+         1 => <span>array</span>(13) { ... }
+         2 => <span>array</span>(8) { ... }
+         3 => <span>array</span>(10) { ... }
+         4 => <span>array</span>(7) { ... }
+         5 => <span>array</span>(14) { ... }
+         6 => <span>array</span>(7) { ... }
+         7 => <span>array</span>(6) { ... }
+         8 => <span>array</span>(10) { ... }
+         9 => <span>array</span>(7) { ... }
+         10 => <span>array</span>(13) { ... }
+         11 => <span>array</span>(11) { ... }
+         12 => <span>array</span>(7) { ... }
+         13 => <span>array</span>(14) { ... }
+         14 => <span>array</span>(6) { ... }
+         15 => <span>array</span>(8) { ... }
+         16 => <span>array</span>(11) { ... }
+         17 => <span>array</span>(11) { ... }
+      <a href='#' rel='next'>]</code>
+      "paging" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "previous" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;since=2010-12-29T22%3A11%3A39%2B0000" (92)
+         "next" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;until=2010-12-29T15%3A41%3A58%2B0000" (92)
+      }</code>
+   }</code>
+   "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+   <a href='#' rel='next'>"template" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte" (60)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { ... }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { ... }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+   }</code>
+   "_l" => <span>stdClass</span>(5) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"blocks" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+         "newses" => <span>array</span>(1) [ ... ]
+         "_zkouska" => <span>array</span>(1) [ ... ]
+         "_flashMesagesHomePage" => <span>array</span>(1) [ ... ]
+      <a href='#' rel='next'>}</code>
+      "templates" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "49b3807b82" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+         "c038111a10" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "extends" => FALSE
+      "g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>"its" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\SmartCachingIterator</span>(1) { ... }
+      ]</code>
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-2"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>21:</span>    </span><span style="color: #999; font-style: italic">//
+<span class='line'>22:</span>    //&nbsp;end&nbsp;of&nbsp;blocks
+<span class='line'>23:</span>    //
+<span class='line'>24:</span>    
+<span class='line'>25:</span>    </span><span style="color: #D24; font-weight: bold">if&nbsp;(</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">extends</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>26:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">ob_start</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>27:</span>    }&nbsp;elseif&nbsp;(isset(</span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isAjax</span><span style="color: #D24; font-weight: bold">()&nbsp;&amp;&amp;&nbsp;</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isControlInvalid</span><span style="color: #D24; font-weight: bold">())&nbsp;{
+<span class='highlight'>28:    &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;Nette\Templates\LatteMacros::renderSnippets($control,&nbsp;$_l,&nbsp;get_defined_vars());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>29:</span>    }
+<span class='line'>30:</span>    </span><span style="color: #000">?&gt;
+<span class='line'>31:</span>    </span>
+<span class='line'>32:</span>    &lt;!--
+<span class='line'>33:</span>    To&nbsp;change&nbsp;this&nbsp;template,&nbsp;choose&nbsp;Tools&nbsp;|&nbsp;Templates
+<span class='line'>34:</span>    and&nbsp;open&nbsp;the&nbsp;template&nbsp;in&nbsp;the&nbsp;editor.
+<span class='line'>35:</span>    --&gt;
+</span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FLoaders%2FLimitedScope.php&amp;line=66" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/LimitedScope.php">
+						Loaders/<b>LimitedScope.php</b></a> (66)					
+					<a href="#" rel="netteBsSrc1-3">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										include
+					(<a href="#" rel="netteBsArgs1-3">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-3">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php" (125)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-3"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>59:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>60:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">load</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #999; font-style: italic">/*$file,&nbsp;array&nbsp;$vars&nbsp;=&nbsp;NULL*/</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>61:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>62:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">func_num_args</span><span style="color: #D24; font-weight: bold">()&nbsp;&gt;&nbsp;</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>63:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$vars&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">func_get_arg</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>64:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">extract</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$vars</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>65:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='highlight'>66:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;include&nbsp;func_get_arg(0);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>67:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>68:</span>    
+<span class='line'>69:</span>    }</span>
+</span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FTemplates%2FFileTemplate.php&amp;line=121" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/FileTemplate.php">
+						Templates/<b>FileTemplate.php</b></a> (121)					
+					<a href="#" rel="netteBsSrc1-4">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Loaders\LimitedScope::					load
+					(<a href="#" rel="netteBsArgs1-4">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-4">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../temp/cache/_Nette.FileTemplate/_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php" (142)
+</pre></td></tr>
+<tr><th>#1</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"control" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "presenter" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "user" => <span>Nette\Web\User</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "guestRole" => "guest" (5)
+      "authenticatedRole" => "authenticated" (13)
+      "onLoggedIn" => NULL
+      "onLoggedOut" => NULL
+      "authenticationHandler" <span>private</span> => NULL
+      "authorizationHandler" <span>private</span> => NULL
+      "namespace" <span>private</span> => ""
+      "session" <span>private</span> => NULL
+   }</code>
+   "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+   "basePath" => "/SugarBook/document_root" (24)
+   "flashes" => <span>array</span>(0) 
+   <a href='#' rel='next'>"newsFeedDatas" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"data" => <span>array</span>(18) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">[
+         0 => <span>array</span>(14) { ... }
+         1 => <span>array</span>(13) { ... }
+         2 => <span>array</span>(8) { ... }
+         3 => <span>array</span>(10) { ... }
+         4 => <span>array</span>(7) { ... }
+         5 => <span>array</span>(14) { ... }
+         6 => <span>array</span>(7) { ... }
+         7 => <span>array</span>(6) { ... }
+         8 => <span>array</span>(10) { ... }
+         9 => <span>array</span>(7) { ... }
+         10 => <span>array</span>(13) { ... }
+         11 => <span>array</span>(11) { ... }
+         12 => <span>array</span>(7) { ... }
+         13 => <span>array</span>(14) { ... }
+         14 => <span>array</span>(6) { ... }
+         15 => <span>array</span>(8) { ... }
+         16 => <span>array</span>(11) { ... }
+         17 => <span>array</span>(11) { ... }
+      <a href='#' rel='next'>]</code>
+      "paging" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "previous" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;since=2010-12-29T22%3A11%3A39%2B0000" (92)
+         "next" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;until=2010-12-29T15%3A41%3A58%2B0000" (92)
+      }</code>
+   }</code>
+   "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+   <a href='#' rel='next'>"template" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/@layout.latte" (60)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { ... }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { ... }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+   }</code>
+   "_l" => <span>stdClass</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"templates" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "49b3807b82" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+         "c038111a10" => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "extends" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+      "g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>"blocks" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+         "newses" => <span>array</span>(1) [ ... ]
+         "_zkouska" => <span>array</span>(1) [ ... ]
+         "_flashMesagesHomePage" => <span>array</span>(1) [ ... ]
+      }</code>
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-4"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>114:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+<span class='line'>115:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+<span class='line'>116:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$cache</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">release</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>117:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$cached&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">$cache</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">file</span><span style="color: #D24; font-weight: bold">];
+<span class='line'>118:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>119:</span>    
+<span class='line'>120:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$cached&nbsp;</span><span style="color: #D24; font-weight: bold">!==&nbsp;</span><span style="color: #000">NULL&nbsp;</span><span style="color: #D24; font-weight: bold">&amp;&amp;&nbsp;</span><span style="color: #000">$storage&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">TemplateCacheStorage</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='highlight'>121:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LimitedScope::load($cached['file'],&nbsp;$this-&gt;getParams());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>122:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">flock</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$cached</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'handle'</span><span style="color: #D24; font-weight: bold">],&nbsp;</span><span style="color: #000">LOCK_UN</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>123:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">fclose</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$cached</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'handle'</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>124:</span>    
+<span class='line'>125:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+<span class='line'>126:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">LimitedScope</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">evaluate</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getParams</span><span style="color: #D24; font-weight: bold">());
+<span class='line'>127:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>128:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Ftemp%2Fcache%2F_Nette.FileTemplate%2F_NewsFeed.default.latte-807644f25bef2859513103c825735003.php&amp;line=74" title="/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_NewsFeed.default.latte-807644f25bef2859513103c825735003.php">
+						_Nette.FileTemplate/<b>_NewsFeed.default.latte-807644f25bef2859513103c825735003.php</b></a> (74)					
+					<a href="#" rel="netteBsSrc1-5">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Templates\FileTemplate->					render
+					()
+					</p>
+
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-5"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>67:</span>    &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Templates</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">LatteMacros</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">renderSnippets</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$control</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">get_defined_vars</span><span style="color: #D24; font-weight: bold">());
+<span class='line'>68:</span>    }
+<span class='line'>69:</span>    </span><span style="color: #000">?&gt;
+<span class='line'>70:</span>    </span>
+<span class='line'>71:</span>    <span style="color: #000">&lt;?php&nbsp;</span><span style="color: #D24; font-weight: bold">if&nbsp;(!</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">extends</span><span style="color: #D24; font-weight: bold">)&nbsp;{&nbsp;</span><span style="color: #000">call_user_func</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">reset</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">blocks</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'newses'</span><span style="color: #D24; font-weight: bold">]),&nbsp;</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">get_defined_vars</span><span style="color: #D24; font-weight: bold">());&nbsp;}&nbsp;&nbsp;
+<span class='line'>72:</span>    if&nbsp;(</span><span style="color: #000">$_l</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">extends</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>73:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">ob_end_clean</span><span style="color: #D24; font-weight: bold">();
+<span class='highlight'>74:    &nbsp;&nbsp;&nbsp;&nbsp;Nette\Templates\LatteMacros::includeTemplate($_l-&gt;extends,&nbsp;get_defined_vars(),&nbsp;$template)-&gt;render();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>75:</span>    }
+<span class='line'>76:</span>    </span>
+</span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FLoaders%2FLimitedScope.php&amp;line=66" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/LimitedScope.php">
+						Loaders/<b>LimitedScope.php</b></a> (66)					
+					<a href="#" rel="netteBsSrc1-6">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										include
+					(<a href="#" rel="netteBsArgs1-6">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-6">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_NewsFeed.default.latte-807644f25bef2859513103c825735003.php" (124)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-6"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>59:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>60:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">load</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #999; font-style: italic">/*$file,&nbsp;array&nbsp;$vars&nbsp;=&nbsp;NULL*/</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>61:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>62:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">func_num_args</span><span style="color: #D24; font-weight: bold">()&nbsp;&gt;&nbsp;</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>63:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$vars&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">func_get_arg</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">1</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>64:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">extract</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$vars</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>65:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='highlight'>66:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;include&nbsp;func_get_arg(0);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>67:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>68:</span>    
+<span class='line'>69:</span>    }</span>
+</span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FTemplates%2FFileTemplate.php&amp;line=121" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/FileTemplate.php">
+						Templates/<b>FileTemplate.php</b></a> (121)					
+					<a href="#" rel="netteBsSrc1-7">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Loaders\LimitedScope::					load
+					(<a href="#" rel="netteBsArgs1-7">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-7">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../temp/cache/_Nette.FileTemplate/_NewsFeed.default.latte-807644f25bef2859513103c825735003.php" (141)
+</pre></td></tr>
+<tr><th>#1</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"control" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "presenter" => <span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"oldlayoutMode" => FALSE
+      "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "appId" <span>protected</span> => "124815934249440" (15)
+         "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+         "session" <span>protected</span> => <span>array</span>(6) { ... }
+         "signedRequest" <span>protected</span> => NULL
+         "sessionLoaded" <span>protected</span> => TRUE
+         "cookieSupport" <span>protected</span> => TRUE
+         "baseDomain" <span>protected</span> => ""
+         "fileUploadSupport" <span>protected</span> => FALSE
+      <a href='#' rel='next'>}</code>
+      "model" <span>private</span> => NULL
+      "onShutdown" => NULL
+      "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "method" <span>private</span> => "GET" (3)
+         "flags" <span>private</span> => <span>array</span>(1) { ... }
+         "name" <span>private</span> => "NewsFeed" (8)
+         "params" <span>private</span> => <span>array</span>(2) { ... }
+         "post" <span>private</span> => <span>array</span>(0) 
+         "files" <span>private</span> => <span>array</span>(0) 
+         <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+      }</code>
+      "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) { ... }
+      }</code>
+      "autoCanonicalize" => TRUE
+      "absoluteUrls" => FALSE
+      "globalParams" <span>private</span> => <span>array</span>(0) 
+      "globalState" <span>private</span> => <span>array</span>(0) 
+      "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+      "action" <span>private</span> => "default" (7)
+      "view" <span>private</span> => "default" (7)
+      <a href='#' rel='next'>"layout" <span>private</span> => NULL
+      "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "state" => <span>array</span>(0) 
+      }</code>
+      "signalReceiver" <span>private</span> => ""
+      "signal" <span>private</span> => NULL
+      "ajaxMode" <span>private</span> => TRUE
+      "startupCheck" <span>private</span> => TRUE
+      <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+      "lastCreatedRequestFlag" <span>private</span> => NULL
+      "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+      "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "components" <span>private</span> => <span>array</span>(0) 
+      "cloning" <span>private</span> => NULL
+      "parent" <span>private</span> => NULL
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "Nette\Application\Presenter" => <span>array</span>(4) [ ... ]
+      <a href='#' rel='next'>}</code>
+   }</code>
+   "user" => <span>Nette\Web\User</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "guestRole" => "guest" (5)
+      "authenticatedRole" => "authenticated" (13)
+      "onLoggedIn" => NULL
+      "onLoggedOut" => NULL
+      "authenticationHandler" <span>private</span> => NULL
+      "authorizationHandler" <span>private</span> => NULL
+      "namespace" <span>private</span> => ""
+      "session" <span>private</span> => NULL
+   }</code>
+   "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+   "basePath" => "/SugarBook/document_root" (24)
+   "flashes" => <span>array</span>(0) 
+   <a href='#' rel='next'>"newsFeedDatas" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"data" => <span>array</span>(18) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">[
+         0 => <span>array</span>(14) { ... }
+         1 => <span>array</span>(13) { ... }
+         2 => <span>array</span>(8) { ... }
+         3 => <span>array</span>(10) { ... }
+         4 => <span>array</span>(7) { ... }
+         5 => <span>array</span>(14) { ... }
+         6 => <span>array</span>(7) { ... }
+         7 => <span>array</span>(6) { ... }
+         8 => <span>array</span>(10) { ... }
+         9 => <span>array</span>(7) { ... }
+         10 => <span>array</span>(13) { ... }
+         11 => <span>array</span>(11) { ... }
+         12 => <span>array</span>(7) { ... }
+         13 => <span>array</span>(14) { ... }
+         14 => <span>array</span>(6) { ... }
+         15 => <span>array</span>(8) { ... }
+         16 => <span>array</span>(11) { ... }
+         17 => <span>array</span>(11) { ... }
+      <a href='#' rel='next'>]</code>
+      "paging" => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "previous" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;since=2010-12-29T22%3A11%3A39%2B0000" (92)
+         "next" => "https://graph.facebook.com/me/home?type=status&amp;limit=25&amp;until=2010-12-29T15%3A41%3A58%2B0000" (92)
+      }</code>
+   }</code>
+   "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+   "_extends" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+   <a href='#' rel='next'>"template" => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { ... }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { ... }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      ]</code>
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-7"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>114:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+<span class='line'>115:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+<span class='line'>116:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$cache</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">release</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>117:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$cached&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">$cache</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">file</span><span style="color: #D24; font-weight: bold">];
+<span class='line'>118:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>119:</span>    
+<span class='line'>120:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$cached&nbsp;</span><span style="color: #D24; font-weight: bold">!==&nbsp;</span><span style="color: #000">NULL&nbsp;</span><span style="color: #D24; font-weight: bold">&amp;&amp;&nbsp;</span><span style="color: #000">$storage&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">TemplateCacheStorage</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='highlight'>121:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LimitedScope::load($cached['file'],&nbsp;$this-&gt;getParams());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>122:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">flock</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$cached</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'handle'</span><span style="color: #D24; font-weight: bold">],&nbsp;</span><span style="color: #000">LOCK_UN</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>123:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">fclose</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$cached</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'handle'</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>124:</span>    
+<span class='line'>125:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+<span class='line'>126:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">LimitedScope</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">evaluate</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$content</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getParams</span><span style="color: #D24; font-weight: bold">());
+<span class='line'>127:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>128:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FApplication%2FResponses%2FRenderResponse.php&amp;line=57" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Responses/RenderResponse.php">
+						Responses/<b>RenderResponse.php</b></a> (57)					
+					<a href="#" rel="netteBsSrc1-8">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Templates\FileTemplate->					render
+					()
+					</p>
+
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-8"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>50:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>51:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Sends&nbsp;response&nbsp;to&nbsp;output.
+<span class='line'>52:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;void
+<span class='line'>53:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>54:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;function&nbsp;</span><span style="color: #000">send</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>55:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>56:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">source&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Templates</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">ITemplate</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='highlight'>57:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;source-&gt;render();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>58:</span>    
+<span class='line'>59:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+<span class='line'>60:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">source</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>61:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>62:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>63:</span>    
+<span class='line'>64:</span>    }
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FApplication%2FPresenter.php&amp;line=198" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Presenter.php">
+						Application/<b>Presenter.php</b></a> (198)					
+					<a href="#" rel="netteBsSrc1-9">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Application\RenderResponse->					send
+					()
+					</p>
+
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-9"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>191:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #000">AbortException&nbsp;$e</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>192:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;continue&nbsp;with&nbsp;shutting&nbsp;down
+<span class='line'>193:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">}&nbsp;</span><span style="color: #999; font-style: italic">/*&nbsp;finally&nbsp;*/&nbsp;</span><span style="color: #D24; font-weight: bold">{
+<span class='line'>194:</span>    
+<span class='line'>195:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isAjax</span><span style="color: #D24; font-weight: bold">())&nbsp;try&nbsp;{
+<span class='line'>196:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$hasPayload&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;(array)&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">payload</span><span style="color: #D24; font-weight: bold">;&nbsp;unset(</span><span style="color: #000">$hasPayload</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'state'</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>197:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">response&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">RenderResponse&nbsp;</span><span style="color: #D24; font-weight: bold">&amp;&amp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isControlInvalid</span><span style="color: #D24; font-weight: bold">())&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;snippets&nbsp;-&nbsp;TODO
+<span class='highlight'>198:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;response-&gt;send();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>199:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">sendPayload</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>200:</span>    
+<span class='line'>201:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(!</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">response&nbsp;</span><span style="color: #D24; font-weight: bold">&amp;&amp;&nbsp;</span><span style="color: #000">$hasPayload</span><span style="color: #D24; font-weight: bold">)&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;back&nbsp;compatibility&nbsp;for&nbsp;use&nbsp;terminate()&nbsp;instead&nbsp;of&nbsp;sendPayload()
+<span class='line'>202:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">sendPayload</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>203:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>204:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #000">AbortException&nbsp;$e</span><span style="color: #D24; font-weight: bold">)&nbsp;{&nbsp;}
+<span class='line'>205:</span>    
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FApplication%2FApplication.php&amp;line=133" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Application.php">
+						Application/<b>Application.php</b></a> (133)					
+					<a href="#" rel="netteBsSrc1-10">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Application\Presenter->					run
+					(<a href="#" rel="netteBsArgs1-10">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-10">
+						<table>
+						<tr><th>$request</th><td><pre class="nette-dump"><a href='#' rel='next'><span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   "method" <span>private</span> => "GET" (3)
+   <a href='#' rel='next'>"flags" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      "secured" => FALSE
+   }</code>
+   "name" <span>private</span> => "NewsFeed" (8)
+   <a href='#' rel='next'>"params" <span>private</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      "action" => "default" (7)
+      "id" => NULL
+   }</code>
+   "post" <span>private</span> => <span>array</span>(0) 
+   "files" <span>private</span> => <span>array</span>(0) 
+   "frozen" <span>private</span> => TRUE
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-10"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>126:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #000">InvalidPresenterException&nbsp;$e</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>127:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #000">BadRequestException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$e</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getMessage</span><span style="color: #D24; font-weight: bold">(),&nbsp;</span><span style="color: #000">404</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$e</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>128:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>129:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">freeze</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>130:</span>    
+<span class='line'>131:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;Execute&nbsp;presenter
+<span class='line'>132:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenter&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;new&nbsp;</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">;
+<span class='highlight'>133:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$response&nbsp;=&nbsp;$this-&gt;presenter-&gt;run($request);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>134:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onResponse</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>135:</span>    
+<span class='line'>136:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;Send&nbsp;response
+<span class='line'>137:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">if&nbsp;(</span><span style="color: #000">$response&nbsp;</span><span style="color: #D24; font-weight: bold">instanceof&nbsp;</span><span style="color: #000">ForwardingResponse</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>138:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$request&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">$response</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getRequest</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>139:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;
+<span class='line'>140:</span>    
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Fapp%2Fbootstrap.php&amp;line=32" title="/Users/simekadam/Sites/SugarBook/app/bootstrap.php">
+						app/<b>bootstrap.php</b></a> (32)					
+					<a href="#" rel="netteBsSrc1-11">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Application\Application->					run
+					()
+					</p>
+
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-11"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>25:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #080">'presenter'&nbsp;</span><span style="color: #D24; font-weight: bold">=&gt;&nbsp;</span><span style="color: #080">'logout'</span><span style="color: #D24; font-weight: bold">,
+<span class='line'>26:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #080">'action'&nbsp;</span><span style="color: #D24; font-weight: bold">=&gt;&nbsp;</span><span style="color: #080">'default'</span><span style="color: #D24; font-weight: bold">,
+<span class='line'>27:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #080">'id'&nbsp;</span><span style="color: #D24; font-weight: bold">=&gt;&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">,
+<span class='line'>28:</span>    ));
+<span class='line'>29:</span>    
+<span class='line'>30:</span>    </span><span style="color: #000">$application</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onStartup</span><span style="color: #D24; font-weight: bold">[]&nbsp;=&nbsp;</span><span style="color: #080">'ThiefModel::initialize'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>31:</span>    
+<span class='highlight'>32:    $application-&gt;run();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>33:</span>    </span>
+</span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Fdocument_root%2Findex.php&amp;line=16" title="/Users/simekadam/Sites/SugarBook/document_root/index.php">
+						document_root/<b>index.php</b></a> (16)					
+					<a href="#" rel="netteBsSrc1-12">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										require
+					(<a href="#" rel="netteBsArgs1-12">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-12">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/app/bootstrap.php" (50)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-12"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'> 9:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'LIBS_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../libs'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>10:</span>    
+<span class='line'>11:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'TEMP_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../temp'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>12:</span>    
+<span class='line'>13:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'MODELS_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../models'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>14:</span>    
+<span class='line'>15:</span>    
+<span class='highlight'>16:    require&nbsp;APP_DIR&nbsp;.&nbsp;'/bootstrap.php';
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>17:</span>    
+<span class='line'>18:</span>    </span>
+</span></code></pre>
+					
+					</li>
+									</ol>
+			</div></div>
+			
+
+
+			
+
+
+			
+				
+
+
+				<div class="panel">
+		<h2><a href="#" rel="netteBsPnl3">Nette Application <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl3" class="nette-collapsed inner">
+			<h3>Requests</h3>
+			<pre class="nette-dump"><a href='#' rel='next'><span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+   <a href='#' rel='next'>0 => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "method" <span>private</span> => "GET" (3)
+      <a href='#' rel='next'>"flags" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "secured" => FALSE
+      }</code>
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"params" <span>private</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "post" <span>private</span> => <span>array</span>(0) 
+      "files" <span>private</span> => <span>array</span>(0) 
+      "frozen" <span>private</span> => TRUE
+   }</code>
+]</code>
+</pre>
+			<h3>Presenter</h3>
+			<pre class="nette-dump"><a href='#' rel='next'><span>NewsFeedPresenter</span>(29) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+   <a href='#' rel='next'>"oldlayoutMode" => FALSE
+   "facebook" => <span>Facebook</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "appId" <span>protected</span> => "124815934249440" (15)
+      "apiSecret" <span>protected</span> => "c28792395618482b698005d2efd4d40f" (32)
+      <a href='#' rel='next'>"session" <span>protected</span> => <span>array</span>(6) <abbr>&#x25bc;</abbr> </a><code>{
+         "session_key" => "2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266" (53)
+         "uid" => "1586568266" (10)
+         "expires" => "1293667200" (10)
+         "secret" => "IIXWFnKO6qr0Wxx3OQjTLg__" (24)
+         "access_token" => "124815934249440|2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266|bxE5aFHYfQLm5Ym9mkIDDfo6g_A" (97)
+         "sig" => "0d9408b60795244c73696c766087fa09" (32)
+      }</code>
+      "signedRequest" <span>protected</span> => NULL
+      "sessionLoaded" <span>protected</span> => TRUE
+      "cookieSupport" <span>protected</span> => TRUE
+      "baseDomain" <span>protected</span> => ""
+      "fileUploadSupport" <span>protected</span> => FALSE
+   <a href='#' rel='next'>}</code>
+   "model" <span>private</span> => NULL
+   "onShutdown" => NULL
+   "request" <span>private</span> => <span>Nette\Application\PresenterRequest</span>(7) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      "method" <span>private</span> => "GET" (3)
+      <a href='#' rel='next'>"flags" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+         "secured" => FALSE
+      }</code>
+      "name" <span>private</span> => "NewsFeed" (8)
+      <a href='#' rel='next'>"params" <span>private</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "action" => "default" (7)
+         "id" => NULL
+      }</code>
+      "post" <span>private</span> => <span>array</span>(0) 
+      "files" <span>private</span> => <span>array</span>(0) 
+      <a href='#' rel='next'>"frozen" <span>private</span> => TRUE
+   }</code>
+   "response" <span>private</span> => <span>Nette\Application\RenderResponse</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"source" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) { ... }
+         "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+         "warnOnUndefined" => TRUE
+         "onPrepareFilters" => <span>array</span>(1) [ ... ]
+         "params" <span>private</span> => <span>array</span>(10) { ... }
+         "filters" <span>private</span> => <span>array</span>(1) [ ... ]
+         "helpers" <span>private</span> => <span>array</span>(9) { ... }
+         "helperLoaders" <span>private</span> => <span>array</span>(1) [ ... ]
+      }</code>
+   }</code>
+   "autoCanonicalize" => TRUE
+   "absoluteUrls" => FALSE
+   "globalParams" <span>private</span> => <span>array</span>(0) 
+   "globalState" <span>private</span> => <span>array</span>(0) 
+   "globalStateSinces" <span>private</span> => <span>array</span>(0) 
+   "action" <span>private</span> => "default" (7)
+   "view" <span>private</span> => "default" (7)
+   <a href='#' rel='next'>"layout" <span>private</span> => NULL
+   "payload" <span>private</span> => <span>stdClass</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      "state" => <span>array</span>(0) 
+   }</code>
+   "signalReceiver" <span>private</span> => ""
+   "signal" <span>private</span> => NULL
+   "ajaxMode" <span>private</span> => TRUE
+   "startupCheck" <span>private</span> => TRUE
+   <a href='#' rel='next'>"lastCreatedRequest" <span>private</span> => NULL
+   "lastCreatedRequestFlag" <span>private</span> => NULL
+   "template" <span>private</span> => <span>Nette\Templates\FileTemplate</span>(8) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+      <a href='#' rel='next'>"cacheStorage" <span>private</span> => <span>Nette\Templates\TemplateCacheStorage</span>(4) <abbr>&#x25bc;</abbr> </a><code>{
+         "hint" => "/templates/@layout.latte" (24)
+         "dir" <span>private</span> => "/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+         "useDirs" <span>private</span> => TRUE
+         "context" <span>private</span> => NULL
+      }</code>
+      "file" <span>private</span> => "/Users/simekadam/Sites/SugarBook/app/templates/NewsFeed/default.latte" (69)
+      <a href='#' rel='next'>"warnOnUndefined" => TRUE
+      "onPrepareFilters" => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "params" <span>private</span> => <span>array</span>(10) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "control" => <span>NewsFeedPresenter</span>(29) { *RECURSION* }
+         "presenter" => <span>NewsFeedPresenter</span>(29) { *RECURSION* }
+         "user" => <span>Nette\Web\User</span>(8) { ... }
+         "baseUri" => "http://adamsimek.com/SugarBook/document_root" (44)
+         "basePath" => "/SugarBook/document_root" (24)
+         "flashes" => <span>array</span>(0) 
+         "newsFeedDatas" => <span>array</span>(2) { ... }
+         "layout" => "/Users/simekadam/Sites/SugarBook/document_root/../app/templates/@layout.latte" (77)
+         "template" => <span>Nette\Templates\FileTemplate</span>(8) { *RECURSION* }
+         "_g" => <span>stdClass</span>(0) 
+      <a href='#' rel='next'>}</code>
+      "filters" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>]</code>
+      "helpers" <span>private</span> => <span>array</span>(9) <abbr>&#x25ba;</abbr> </a><code class="nette-collapsed">{
+         "escape" => <span>Nette\Callback</span>(1) { ... }
+         "escapeurl" => <span>Nette\Callback</span>(1) { ... }
+         "striptags" => <span>Nette\Callback</span>(1) { ... }
+         "nl2br" => <span>Nette\Callback</span>(1) { ... }
+         "substr" => <span>Nette\Callback</span>(1) { ... }
+         "repeat" => <span>Nette\Callback</span>(1) { ... }
+         "replacere" => <span>Nette\Callback</span>(1) { ... }
+         "implode" => <span>Nette\Callback</span>(1) { ... }
+         "number" => <span>Nette\Callback</span>(1) { ... }
+      <a href='#' rel='next'>}</code>
+      "helperLoaders" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>Nette\Callback</span>(1) { ... }
+      ]</code>
+   }</code>
+   "invalidSnippets" <span>private</span> => <span>array</span>(0) 
+   <a href='#' rel='next'>"params" <span>protected</span> => <span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      "action" => "default" (7)
+      "id" => NULL
+   }</code>
+   "components" <span>private</span> => <span>array</span>(0) 
+   "cloning" <span>private</span> => NULL
+   "parent" <span>private</span> => NULL
+   "name" <span>private</span> => "NewsFeed" (8)
+   <a href='#' rel='next'>"monitors" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"Nette\Application\Presenter" => <span>array</span>(4) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => NULL
+         1 => NULL
+         2 => NULL
+         3 => TRUE
+      ]</code>
+   }</code>
+}</code>
+</pre>		</div></div>
+		
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl4">Environment <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl4" class="nette-collapsed inner">
+						<h3><a href="#" rel="netteBsPnl-env-const">Constants <abbr>&#x25bc;</abbr></a></h3>
+			<div class="outer">
+			<table id="netteBsPnl-env-const">
+			<tr><th>SITE</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>WWW_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root" (46)
+</pre></td></tr>
+<tr><th>APP_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../app" (53)
+</pre></td></tr>
+<tr><th>LIBS_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../libs" (54)
+</pre></td></tr>
+<tr><th>TEMP_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../temp" (54)
+</pre></td></tr>
+<tr><th>MODELS_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../models" (56)
+</pre></td></tr>
+<tr><th>NETTE</th><td><pre class="nette-dump">TRUE
+</pre></td></tr>
+<tr><th>NETTE_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/libs/Nette" (43)
+</pre></td></tr>
+<tr><th>NETTE_VERSION_ID</th><td><pre class="nette-dump">20000
+</pre></td></tr>
+<tr><th>NETTE_PACKAGE</th><td><pre class="nette-dump">"5.3" (3)
+</pre></td></tr>
+<tr><th>DEBUG</th><td><pre class="nette-dump">TRUE
+</pre></td></tr>
+			</table>
+			</div>
+			
+
+			<h3><a href="#" rel="netteBsPnl-env-files">Included files <abbr>&#x25ba;</abbr></a> (109)</h3>
+			<div class="outer">
+			<table id="netteBsPnl-env-files" class="nette-collapsed">
+			<tr><td>/Users/simekadam/Sites/SugarBook/document_root/index.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/app/bootstrap.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/loader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/shortcuts.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/exceptions.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Object.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/LimitedScope.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/AutoLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/NetteLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/Debug.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/DebugPanel.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/IDebugPanel.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Environment.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Configurator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/Config.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/ConfigAdapterIni.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/IConfigAdapter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/ArrayTools.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Iterators/GenericRecursiveIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Context.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/FreezableObject.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/IFreezable.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/IContext.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Callback.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/RobotLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/FileStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/ICacheStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/Cache.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Framework.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/Session.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/HttpRequestFactory.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/UriScript.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/Uri.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/ObjectMixin.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/String.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/HttpRequest.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/IHttpRequest.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Application.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Routers/MultiRouter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/ArrayList.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IRouter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Routers/Route.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/HttpResponse.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/IHttpResponse.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Reflection/ClassReflection.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Reflection/PropertyReflection.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/app/models/ThiefModel.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/dibi.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/interfaces.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiDateTime.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiObject.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiLazyStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiException.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiConnection.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiResult.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiResultIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiRow.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiTranslator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiDataSource.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiFluent.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiDatabaseInfo.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/libs/DibiProfiler.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/drivers/mysqli.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/dibi/drivers/mysql.reflector.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/RoutingDebugger.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/PresenterRequest.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/PresenterLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IPresenterLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/app/presenters/NewsFeedPresenter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/app/presenters/BasePresenter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Presenter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Control.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/PresenterComponent.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/ComponentModel/ComponentContainer.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/ComponentModel/Component.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/ComponentModel/IComponent.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/ComponentModel/IComponentContainer.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/ISignalReceiver.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IStatePersistent.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IPartiallyRenderable.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IRenderable.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IPresenter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/PresenterComponentReflection.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Reflection/AnnotationsParser.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/facebook_sdk/facebook.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Reflection/MethodReflection.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/FileTemplate.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/Template.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/ITemplate.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/IFileTemplate.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/User.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/IUser.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/ComponentModel/RecursiveComponentIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Iterators/InstanceFilterIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Responses/RenderResponse.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/IPresenterResponse.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Exceptions/AbortException.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/TemplateCacheStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/Filters/TemplateHelpers.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/Filters/LatteFilter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Templates/Filters/LatteMacros.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Tokenizer.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Web/Html.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_NewsFeed.default.latte-807644f25bef2859513103c825735003.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/temp/cache/_Nette.FileTemplate/_templates._layout.latte-bfdbdf5a1947c6d8d54094e8189b0f51.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Iterators/SmartCachingIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Application/Exceptions/InvalidLinkException.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/DebugHelpers.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/templates/bluescreen.phtml</td></tr>
+			</table>
+			</div>
+
+
+			<h3>$_SERVER</h3>
+						<div class="outer">
+			<table>
+			<tr><th>REDIRECT_STATUS</th><td><pre class="nette-dump">"200" (3)
+</pre></td></tr>
+<tr><th>HTTP_HOST</th><td><pre class="nette-dump">"adamsimek.com" (13)
+</pre></td></tr>
+<tr><th>HTTP_X_REQUESTED_WITH</th><td><pre class="nette-dump">"XMLHttpRequest" (14)
+</pre></td></tr>
+<tr><th>HTTP_USER_AGENT</th><td><pre class="nette-dump">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4" (127)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT</th><td><pre class="nette-dump">"application/json, text/javascript, */*; q=0.01" (46)
+</pre></td></tr>
+<tr><th>HTTP_REFERER</th><td><pre class="nette-dump">"http://adamsimek.com/SugarBook/document_root/default/?session=%7B%22session_key%22%3A%222.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%22%2C%22 ... " (439)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="nette-dump">"en-us" (5)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="nette-dump">"gzip, deflate" (13)
+</pre></td></tr>
+<tr><th>HTTP_COOKIE</th><td><pre class="nette-dump">"fbs_124815934249440=%22session_key%3D2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%26uid%3D1586568266%26expires%3D1293667200%26secret%3DIIXWFn ... " (405)
+</pre></td></tr>
+<tr><th>HTTP_CONNECTION</th><td><pre class="nette-dump">"keep-alive" (10)
+</pre></td></tr>
+<tr><th>PATH</th><td><pre class="nette-dump">"/usr/bin:/bin:/usr/sbin:/sbin" (29)
+</pre></td></tr>
+<tr><th>SERVER_SIGNATURE</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>SERVER_SOFTWARE</th><td><pre class="nette-dump">"Apache/2.2.15 (Unix) mod_ssl/2.2.15 OpenSSL/0.9.8l DAV/2 PHP/5.3.3" (66)
+</pre></td></tr>
+<tr><th>SERVER_NAME</th><td><pre class="nette-dump">"adamsimek.com" (13)
+</pre></td></tr>
+<tr><th>SERVER_ADDR</th><td><pre class="nette-dump">"127.0.0.1" (9)
+</pre></td></tr>
+<tr><th>SERVER_PORT</th><td><pre class="nette-dump">"80" (2)
+</pre></td></tr>
+<tr><th>REMOTE_ADDR</th><td><pre class="nette-dump">"127.0.0.1" (9)
+</pre></td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="nette-dump">"/Users/simekadam/Sites" (22)
+</pre></td></tr>
+<tr><th>SERVER_ADMIN</th><td><pre class="nette-dump">"you@example.com" (15)
+</pre></td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/index.php" (56)
+</pre></td></tr>
+<tr><th>REMOTE_PORT</th><td><pre class="nette-dump">"57069" (5)
+</pre></td></tr>
+<tr><th>REDIRECT_URL</th><td><pre class="nette-dump">"/SugarBook/document_root/news-feed/" (35)
+</pre></td></tr>
+<tr><th>GATEWAY_INTERFACE</th><td><pre class="nette-dump">"CGI/1.1" (7)
+</pre></td></tr>
+<tr><th>SERVER_PROTOCOL</th><td><pre class="nette-dump">"HTTP/1.1" (8)
+</pre></td></tr>
+<tr><th>REQUEST_METHOD</th><td><pre class="nette-dump">"GET" (3)
+</pre></td></tr>
+<tr><th>QUERY_STRING</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>REQUEST_URI</th><td><pre class="nette-dump">"/SugarBook/document_root/news-feed/" (35)
+</pre></td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="nette-dump">"/SugarBook/document_root/index.php" (34)
+</pre></td></tr>
+<tr><th>PHP_SELF</th><td><pre class="nette-dump">"/SugarBook/document_root/index.php" (34)
+</pre></td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="nette-dump">1293661663
+</pre></td></tr>
+			</table>
+			</div>
+					</div></div>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl5">HTTP request <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl5" class="nette-collapsed inner">
+						<h3>Headers</h3>
+			<div class="outer">
+			<table>
+			<tr><th>Host</th><td>adamsimek.com</td></tr>
+<tr><th>X-Requested-With</th><td>XMLHttpRequest</td></tr>
+<tr><th>User-Agent</th><td>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4</td></tr>
+<tr><th>Accept</th><td>application/json, text/javascript, */*; q=0.01</td></tr>
+<tr><th>Referer</th><td>http://adamsimek.com/SugarBook/document_root/default/?session=%7B%22session_key%22%3A%222.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%22%2C%22uid%22%3A%221586568266%22%2C%22expires%22%3A1293667200%2C%22secret%22%3A%22IIXWFnKO6qr0Wxx3OQjTLg__%22%2C%22access_token%22%3A%22124815934249440%7C2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%7CbxE5aFHYfQLm5Ym9mkIDDfo6g_A%22%2C%22sig%22%3A%220d9408b60795244c73696c766087fa09%22%7D</td></tr>
+<tr><th>Accept-Language</th><td>en-us</td></tr>
+<tr><th>Accept-Encoding</th><td>gzip, deflate</td></tr>
+<tr><th>Cookie</th><td>fbs_124815934249440=%22session_key%3D2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%26uid%3D1586568266%26expires%3D1293667200%26secret%3DIIXWFnKO6qr0Wxx3OQjTLg__%26access_token%3D124815934249440%257C2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266%257CbxE5aFHYfQLm5Ym9mkIDDfo6g_A%26sig%3D0d9408b60795244c73696c766087fa09%22; nette-browser=0.45283521362845; PHPSESSID=jdj9d9gfsgt8lu496pmp7hu6e3</td></tr>
+<tr><th>Connection</th><td>keep-alive</td></tr>
+			</table>
+			</div>
+			
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<p><i>empty</i></p>
+									<h3>$_COOKIE</h3>
+						<div class="outer">
+			<table>
+			<tr><th>fbs_124815934249440</th><td><pre class="nette-dump">""session_key=2.gDiHD7O38KmeT2LVyl_bhw__.3600.1293667200-1586568266&amp;uid=1586568266&amp;expires=1293667200&amp;secret=IIXWFnKO6qr0Wxx3OQjTLg__&amp;access_token=1248 ... " (285)
+</pre></td></tr>
+<tr><th>nette-browser</th><td><pre class="nette-dump">"0.45283521362845" (16)
+</pre></td></tr>
+<tr><th>PHPSESSID</th><td><pre class="nette-dump">"jdj9d9gfsgt8lu496pmp7hu6e3" (26)
+</pre></td></tr>
+			</table>
+			</div>
+								</div></div>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl6">HTTP response <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl6" class="nette-collapsed inner">
+			<h3>Headers</h3>
+						<pre>X-Powered-By: Nette Framework<br>Expires: Thu, 19 Nov 1981 08:52:00 GMT<br>Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0<br>Pragma: no-cache<br>Set-Cookie: PHPSESSID=jdj9d9gfsgt8lu496pmp7hu6e3; path=/; httponly<br>Set-Cookie: nette-browser=0.45283521362845; path=/; httponly<br></pre>
+					</div></div>
+
+
+		<ul>
+			<li>Report generated at 2010/12/29 23:27:43</li>
+							<li><a href="http://adamsimek.com/SugarBook/document_root/news-feed/">http://adamsimek.com/SugarBook/document_root/news-feed/</a></li>
+						<li>PHP 5.3.3</li>
+			<li>Apache/2.2.15 (Unix) mod_ssl/2.2.15 OpenSSL/0.9.8l DAV/2 PHP/5.3.3</li>			<li>Nette Framework 2.0-dev <i>(revision f195947 released on 2010-12-16)</i></li>		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">/*<![CDATA[*/var bs=document.getElementById("netteBluescreen");document.body.appendChild(bs);document.onkeyup=function(b){b=b||window.event;b.keyCode==27&&bs.onclick({target:document.getElementById("netteBluescreenIcon")})};
+for(var i=0,styles=document.styleSheets;i<styles.length;i++)if((styles[i].owningElement||styles[i].ownerNode).className!=="nette"){styles[i].oldDisabled=styles[i].disabled;styles[i].disabled=true}else styles[i].addRule?styles[i].addRule(".nette-collapsed","display: none"):styles[i].insertRule(".nette-collapsed { display: none }",0);
+bs.onclick=function(b){b=b||window.event;for(var a=b.target||b.srcElement;a&&a.tagName&&a.tagName.toLowerCase()!=="a";)a=a.parentNode;if(!a||!a.rel)return true;for(var d=a.getElementsByTagName("abbr")[0],c=a.rel==="next"?a.nextSibling:document.getElementById(a.rel);c.nodeType!==1;)c=c.nextSibling;b=c.currentStyle?c.currentStyle.display=="none":getComputedStyle(c,null).display=="none";try{d.innerHTML=String.fromCharCode(b?9660:9658)}catch(e){}c.style.display=b?c.tagName.toLowerCase()==="code"?"inline":
+"block":"none";if(a.id==="netteBluescreenIcon"){a=0;for(d=document.styleSheets;a<d.length;a++)if((d[a].owningElement||d[a].ownerNode).className!=="nette")d[a].disabled=b?true:d[a].oldDisabled}return false};/*]]>*/</script>
+</body>
+</html>

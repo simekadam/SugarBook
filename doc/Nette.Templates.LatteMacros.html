@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Nette Framework Apigen" />
+	<title>Class Nette\Templates\LatteMacros</title>
+
+	<script type="text/javascript" src="media/combined.js"></script>
+	<script type="text/javascript" src="allclasses.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="media/style.css?v=2010123012" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div id="left">
+	<a href="allclasses.html">All Classes</a>
+
+	<h3>Namespaces</h3>
+	<ul>
+		<li><a href="namespace-none.html" >none</a></li>
+		<li><a href="namespace-Components.html" >Components</a></li>
+		<li><a href="namespace-Nette.html" >Nette</a></li>
+		<li><a href="namespace-Nette.Application.html" >Nette\Application</a></li>
+		<li><a href="namespace-Nette.Caching.html" >Nette\Caching</a></li>
+		<li><a href="namespace-Nette.Collections.html" >Nette\Collections</a></li>
+		<li><a href="namespace-Nette.Config.html" >Nette\Config</a></li>
+		<li><a href="namespace-Nette.Database.html" >Nette\Database</a></li>
+		<li><a href="namespace-Nette.Database.Drivers.html" >Nette\Database\Drivers</a></li>
+		<li><a href="namespace-Nette.Database.Reflection.html" >Nette\Database\Reflection</a></li>
+		<li><a href="namespace-Nette.Database.Selector.html" >Nette\Database\Selector</a></li>
+		<li><a href="namespace-Nette.Forms.html" >Nette\Forms</a></li>
+		<li><a href="namespace-Nette.Loaders.html" >Nette\Loaders</a></li>
+		<li><a href="namespace-Nette.Mail.html" >Nette\Mail</a></li>
+		<li><a href="namespace-Nette.Reflection.html" >Nette\Reflection</a></li>
+		<li><a href="namespace-Nette.Security.html" >Nette\Security</a></li>
+		<li><a href="namespace-Nette.Templates.html" class="active">Nette\Templates</a></li>
+		<li><a href="namespace-Nette.Web.html" >Nette\Web</a></li>
+		<li><a href="namespace-PHP.html" >PHP</a></li>
+	</ul>
+
+	<h3>Classes</h3>
+
+	<ul>
+		<li><a href="Nette.Templates.CachingHelper.html" >CachingHelper</a></li>
+		<li><a href="Nette.Templates.FileTemplate.html" >FileTemplate</a></li>
+		<li><a href="Nette.Templates.LatteException.html" >LatteException</a></li>
+		<li><a href="Nette.Templates.LatteFilter.html" >LatteFilter</a></li>
+		<li><a href="Nette.Templates.LatteMacros.html" class="active">LatteMacros</a></li>
+		<li><a href="Nette.Templates.Template.html" >Template</a></li>
+		<li><a href="Nette.Templates.TemplateCacheStorage.html" >TemplateCacheStorage</a></li>
+		<li><a href="Nette.Templates.TemplateException.html" >TemplateException</a></li>
+		<li><a href="Nette.Templates.TemplateFilters.html" >TemplateFilters</a></li>
+		<li><a href="Nette.Templates.TemplateHelpers.html" >TemplateHelpers</a></li>
+	</ul>
+
+	<h3>Interfaces</h3>
+
+	<ul>
+		<li><a href="Nette.Templates.IFileTemplate.html" >IFileTemplate</a></li>
+		<li><a href="Nette.Templates.ITemplate.html" >ITemplate</a></li>
+	</ul>
+</div>
+
+<div id="right">
+	<form action="http://www.google.com/cse" id="search" onsubmit="if(this.q.value.indexOf('more:')==-1)this.q.value+=' more:api'">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" /><input type="hidden" name="ie" value="UTF-8" /><input type="text" name="q" class="text" /><input type="submit" value="Search" />
+	</form>
+
+<div id="navigation">
+	<ul>
+		<li><a href="overview.html" title="Summary of all namespaces">Overview</a></li>		<li><a href="namespace-Nette.Templates.html" title="Summary of Nette\Templates">Namespace</a></li>
+		<li class="active">Class</li>
+		<li><a href="elements.html">Elements</a></li>
+	</ul>
+</div>
+
+<div id="content">
+	<div id="classSummary">		<p>namespace <a href="namespace-Nette.Templates.html">Nette\Templates</a></p>
+
+		<h1>Class LatteMacros</h1>
+		<div class="classDescription">
+
+		
+<p>Default macros for filter LatteFilter.</p>
+
+<ul>
+	<li>{$variable} with escaping</li>
+
+	<li>{!$variable} without escaping</li>
+
+	<li>{*comment*} will be removed</li>
+
+	<li>{=expression} echo with escaping</li>
+
+	<li>{!=expression} echo without escaping</li>
+
+	<li>{?expression} evaluate PHP statement</li>
+
+	<li>{_expression} echo translation with escaping</li>
+
+	<li>{!_expression} echo translation without escaping</li>
+
+	<li>{link destination …} control link</li>
+
+	<li>{plink destination …} presenter link</li>
+
+	<li>{if ?} … {elseif ?} … {else} … {/if}</li>
+
+	<li>{ifset ?} … {elseifset ?} … {/ifset}</li>
+
+	<li>{for ?} … {/for}</li>
+
+	<li>{foreach ?} … {/foreach}</li>
+
+	<li>{include ?}</li>
+
+	<li>{cache ?} … {/cache} cached block</li>
+
+	<li>{snippet ?} … {/snippet ?} control snippet</li>
+
+	<li>{attr ?} HTML element attributes</li>
+
+	<li>{block|texy} … {/block} block</li>
+
+	<li>{contentType …} HTTP Content-Type header</li>
+
+	<li>{status …} HTTP status</li>
+
+	<li>{capture ?} … {/capture} capture block to parameter</li>
+
+	<li>{var var ⇒ value} set template parameter</li>
+
+	<li>{default var ⇒ value} set default template parameter</li>
+
+	<li>{dump $var}</li>
+
+	<li>{debugbreak}</li>
+
+	<li>{l} {r} to display { }</li>
+</ul>
+
+		</div>
+		<dl class="tree">
+
+			<dd style="padding-left:0px">				<a href="Nette.Object.html">Nette\Object</a>
+				
+			</dd>
+			<dd style="padding-left:30px">				<img src="media/inherit.gif" alt="extended by" />
+<b>Nette\Templates\LatteMacros</b>				
+			</dd>
+		</dl>
+
+		<div class="classInfo">
+			
+				<b>Author:</b> David Grudl<br />
+			<b>Located at</b> <a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#19">/libs/Nette/Templates/Filters/LatteMacros.php</a><br />
+		</div>
+	</div>
+
+	<div id="methodSummary">
+
+		<table class="summary">
+		<caption>Method Summary</caption>
+		<tr data-order="1 __construct" id="___construct">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#___construct">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#173" title="go to source code"><b>__construct</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>Constructor.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Constructor.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 initialize" id="_initialize">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_initialize">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#195" title="go to source code"><b>initialize</b></a>(
+					<a href="Nette.Templates.LatteFilter.html">LatteFilter</a>
+					<var>$filter</var>, 
+					string
+					<var>&amp; $s</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Initializes parsing.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Initializes parsing.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$filter</code> LatteFilter<br />
+						<code>$s</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 finalize" id="_finalize">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_finalize">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#217" title="go to source code"><b>finalize</b></a>(
+					string
+					<var>&amp; $s</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Finishes parsing.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Finishes parsing.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$s</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macro" id="_macro">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macro">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#285" title="go to source code"><b>macro</b></a>(
+					string
+					<var>$macro</var>, 
+					string
+					<var>$content</var> = <span class="php-quote">''</span>, 
+					string
+					<var>$modifiers</var> = <span class="php-quote">''</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Process {macro content | modifiers}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Process {macro content | modifiers}</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$macro</code> string<br />
+						<code>$content</code> string<br />
+						<code>$modifiers</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 tagMacro" id="_tagMacro">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_tagMacro">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#350" title="go to source code"><b>tagMacro</b></a>(
+					string
+					<var>$name</var>, 
+					array
+					<var>$attrs</var>, 
+					bool
+					<var>$closing</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Process &lt;n:tag attr&gt; (experimental).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Process &lt;n:tag attr&gt; (experimental).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$name</code> string<br />
+						<code>$attrs</code> array<br />
+						<code>$closing</code> bool<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 attrsMacro" id="_attrsMacro">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_attrsMacro">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#377" title="go to source code"><b>attrsMacro</b></a>(
+					string
+					<var>$code</var>, 
+					array
+					<var>$attrs</var>, 
+					bool
+					<var>$closing</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Process &lt;tag n:attr&gt; (experimental).</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Process &lt;tag n:attr&gt; (experimental).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$code</code> string<br />
+						<code>$attrs</code> array<br />
+						<code>$closing</code> bool<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroDollar" id="_macroDollar">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroDollar">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#461" title="go to source code"><b>macroDollar</b></a>(
+					
+					<var>$var</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{$var |modifiers}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{$var |modifiers}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroTranslate" id="_macroTranslate">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroTranslate">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#471" title="go to source code"><b>macroTranslate</b></a>(
+					
+					<var>$var</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{_$var |modifiers}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{_$var |modifiers}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroSyntax" id="_macroSyntax">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroSyntax">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#481" title="go to source code"><b>macroSyntax</b></a>(
+					
+					<var>$var</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{syntax …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{syntax …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroInclude" id="_macroInclude">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroInclude">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#515" title="go to source code"><b>macroInclude</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>, 
+					
+					<var>$isDefinition</var> = <span class="php-keyword1">false</span>
+			)</code>
+
+			<div class="short">
+				
+<p>{include …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{include …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroExtends" id="_macroExtends">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroExtends">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#561" title="go to source code"><b>macroExtends</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{extends …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{extends …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroBlock" id="_macroBlock">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroBlock">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#581" title="go to source code"><b>macroBlock</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{block …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{block …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroBlockEnd" id="_macroBlockEnd">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroBlockEnd">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#627" title="go to source code"><b>macroBlockEnd</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{/block}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{/block}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroSnippet" id="_macroSnippet">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroSnippet">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#648" title="go to source code"><b>macroSnippet</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{snippet …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{snippet …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroSnippetEnd" id="_macroSnippetEnd">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroSnippetEnd">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#658" title="go to source code"><b>macroSnippetEnd</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{snippet …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{snippet …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroCapture" id="_macroCapture">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroCapture">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#668" title="go to source code"><b>macroCapture</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{capture …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{capture …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroCaptureEnd" id="_macroCaptureEnd">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroCaptureEnd">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#685" title="go to source code"><b>macroCaptureEnd</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{/capture}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{/capture}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroCache" id="_macroCache">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroCache">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#696" title="go to source code"><b>macroCache</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{cache …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{cache …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroForeach" id="_macroForeach">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroForeach">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#708" title="go to source code"><b>macroForeach</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{foreach …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{foreach …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroAttr" id="_macroAttr">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroAttr">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#718" title="go to source code"><b>macroAttr</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{attr …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{attr …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroContentType" id="_macroContentType">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroContentType">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#728" title="go to source code"><b>macroContentType</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{contentType …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{contentType …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroDump" id="_macroDump">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroDump">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#764" title="go to source code"><b>macroDump</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{dump …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{dump …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroDebugbreak" id="_macroDebugbreak">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroDebugbreak">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#776" title="go to source code"><b>macroDebugbreak</b></a>(
+			)</code>
+
+			<div class="short">
+				
+<p>{debugbreak}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{debugbreak}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroControl" id="_macroControl">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroControl">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#786" title="go to source code"><b>macroControl</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{control …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{control …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroLink" id="_macroLink">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroLink">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#809" title="go to source code"><b>macroLink</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{link …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{link …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroPlink" id="_macroPlink">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroPlink">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#819" title="go to source code"><b>macroPlink</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{plink …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{plink …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroIfCurrent" id="_macroIfCurrent">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroIfCurrent">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#829" title="go to source code"><b>macroIfCurrent</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{ifCurrent …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{ifCurrent …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroVar" id="_macroVar">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroVar">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#850" title="go to source code"><b>macroVar</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>, 
+					
+					<var>$extract</var> = <span class="php-keyword1">false</span>
+			)</code>
+
+			<div class="short">
+				
+<p>{var …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{var …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroDefault" id="_macroDefault">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroDefault">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#881" title="go to source code"><b>macroDefault</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>{default …}</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>{default …}</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 macroModifiers" id="_macroModifiers">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_macroModifiers">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#891" title="go to source code"><b>macroModifiers</b></a>(
+					
+					<var>$content</var>, 
+					
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Just modifiers helper.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Just modifiers helper.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 escape" id="_escape">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_escape">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#901" title="go to source code"><b>escape</b></a>(
+					
+					<var>$content</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Escaping helper.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Escaping helper.</p>
+
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 formatModifiers" id="_formatModifiers">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_formatModifiers">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#915" title="go to source code"><b>formatModifiers</b></a>(
+					string
+					<var>$var</var>, 
+					string
+					<var>$modifiers</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Applies modifiers.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Applies modifiers.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$var</code> string<br />
+						<code>$modifiers</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 fetchToken" id="_fetchToken">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_fetchToken">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#956" title="go to source code"><b>fetchToken</b></a>(
+					string
+					<var>&amp; $s</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Reads single token (optionally delimited by comma) from string.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Reads single token (optionally delimited by comma) from string.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$s</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 formatMacroArgs" id="_formatMacroArgs">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_formatMacroArgs">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#972" title="go to source code"><b>formatMacroArgs</b></a>(
+					string
+					<var>$input</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Reformats Latte to PHP code.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Reformats Latte to PHP code.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$input</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 formatArray" id="_formatArray">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_formatArray">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#989" title="go to source code"><b>formatArray</b></a>(
+					string
+					<var>$input</var>, 
+					string
+					<var>$prefix</var> = <span class="php-quote">''</span>
+			)</code>
+
+			<div class="short">
+				
+<p>Reformats Latte to PHP array.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Reformats Latte to PHP array.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$input</code> string<br />
+						<code>$prefix</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="1 formatString" id="_formatString">
+			<td align="right" width="1%"><code class="nowrap">
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_formatString">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1021" title="go to source code"><b>formatString</b></a>(
+					string
+					<var>$s</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Formats parameter to PHP string.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Formats parameter to PHP string.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$s</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 callBlock" id="_callBlock">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_callBlock">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1111" title="go to source code"><b>callBlock</b></a>(
+					stdClass
+					<var>$context</var>, 
+					string
+					<var>$name</var>, 
+					array
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Calls block.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Calls block.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$context</code> stdClass<br />
+						<code>$name</code> string<br />
+						<code>$params</code> array<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 callBlockParent" id="_callBlockParent">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				void
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_callBlockParent">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1129" title="go to source code"><b>callBlockParent</b></a>(
+					stdClass
+					<var>$context</var>, 
+					string
+					<var>$name</var>, 
+					array
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Calls parent block.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Calls parent block.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$context</code> stdClass<br />
+						<code>$name</code> string<br />
+						<code>$params</code> array<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 includeTemplate" id="_includeTemplate">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				<a href="Nette.Templates.Template.html">Template</a>
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_includeTemplate">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1146" title="go to source code"><b>includeTemplate</b></a>(
+					mixed
+					<var>$destination</var>, 
+					array
+					<var>$params</var>, 
+					<a href="Nette.Templates.ITemplate.html">ITemplate</a>
+					<var>$template</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Includes subtemplate.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Includes subtemplate.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$destination</code> mixed      included file name or template<br />
+						<code>$params</code> array      parameters<br />
+						<code>$template</code> ITemplate  current template<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 initRuntime" id="_initRuntime">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				stdClass
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_initRuntime">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1177" title="go to source code"><b>initRuntime</b></a>(
+					<a href="Nette.Templates.ITemplate.html">ITemplate</a>
+					<var>$template</var>, 
+					bool
+					<var>$extends</var>, 
+					string
+					<var>$realFile</var>
+			)</code>
+
+			<div class="short">
+				
+<p>Initializes local &amp; global storage in template.</p>
+
+			</div>
+
+			<div class="detailed">
+				
+<p>Initializes local &amp; global storage in template.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="smallList">
+						<code>$template</code> ITemplate<br />
+						<code>$extends</code> bool<br />
+						<code>$realFile</code> string<br />
+					</div>
+
+
+
+			</div>
+			</td>
+		</tr>
+		<tr data-order="0 renderSnippets" id="_renderSnippets">
+			<td align="right" width="1%"><code class="nowrap">
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td>
+			<a class="anchor" href="#_renderSnippets">#</a>
+			<code class="nowrap">
+				<a href="source-libs.Nette.Templates.Filters.LatteMacros.php.html#1212" title="go to source code"><b>renderSnippets</b></a>(
+					
+					<var>$control</var>, 
+					
+					<var>$local</var>, 
+					
+					<var>$params</var>
+			)</code>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed">
+				
+
+
+
+
+
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+
+	<h2>Methods Inherited From <a href="Nette.Object.html#methodSummary">Nette\Object</a></h2>
+	<div class="box"><code>
+		<a href="Nette.Object.html#_getReflection">getReflection()</a>, <a href="Nette.Object.html#___call">__call()</a>, <a href="Nette.Object.html#___callStatic">__callStatic()</a>, <a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, <a href="Nette.Object.html#___get">__get()</a>, <a href="Nette.Object.html#___set">__set()</a>, <a href="Nette.Object.html#___isset">__isset()</a>, <a href="Nette.Object.html#___unset">__unset()</a>
+	</code></div>
+
+	<div id="constantSummary">
+
+		<table class="summary">
+		<caption>Constant Summary</caption>
+		<tr data-order="RE_IDENTIFIER" id="RE_IDENTIFIER">
+			<td align="right" width="1%"><code><b>RE_IDENTIFIER</b></code></td>
+			<td><code><span class="php-quote">'[_a-zA-Z\\x7F-\\xFF][_a-zA-Z0-9\\x7F-\\xFF]*'</span></code> <a href="#RE_IDENTIFIER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="T_WHITESPACE" id="T_WHITESPACE">
+			<td align="right" width="1%"><code><b>T_WHITESPACE</b></code></td>
+			<td><code><span class="php-num">371</span></code> <a href="#T_WHITESPACE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="T_COMMENT" id="T_COMMENT">
+			<td align="right" width="1%"><code><b>T_COMMENT</b></code></td>
+			<td><code><span class="php-num">366</span></code> <a href="#T_COMMENT" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="T_SYMBOL" id="T_SYMBOL">
+			<td align="right" width="1%"><code><b>T_SYMBOL</b></code></td>
+			<td><code>-<span class="php-num">1</span></code> <a href="#T_SYMBOL" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="T_NUMBER" id="T_NUMBER">
+			<td align="right" width="1%"><code><b>T_NUMBER</b></code></td>
+			<td><code>-<span class="php-num">2</span></code> <a href="#T_NUMBER" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="T_VARIABLE" id="T_VARIABLE">
+			<td align="right" width="1%"><code><b>T_VARIABLE</b></code></td>
+			<td><code>-<span class="php-num">3</span></code> <a href="#T_VARIABLE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="BLOCK_NAMED" id="BLOCK_NAMED">
+			<td align="right" width="1%"><code><b>BLOCK_NAMED</b></code></td>
+			<td><code><span class="php-num">1</span></code> <a href="#BLOCK_NAMED" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="BLOCK_CAPTURE" id="BLOCK_CAPTURE">
+			<td align="right" width="1%"><code><b>BLOCK_CAPTURE</b></code></td>
+			<td><code><span class="php-num">2</span></code> <a href="#BLOCK_CAPTURE" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="BLOCK_ANONYMOUS" id="BLOCK_ANONYMOUS">
+			<td align="right" width="1%"><code><b>BLOCK_ANONYMOUS</b></code></td>
+			<td><code><span class="php-num">3</span></code> <a href="#BLOCK_ANONYMOUS" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+	<div id="propertySummary">
+
+		<table class="summary">
+		<caption>Property Summary</caption>
+		<tr data-order="defaultMacros" id="$defaultMacros">
+			<td align="right" width="1%"><code class="nowrap">
+				 static
+				array
+			</code></td>
+
+			<td width="1%"><var>$defaultMacros</var></td>
+			<td><pre><span class="php-keyword1">array</span> (
+  <span class="php-quote">'syntax'</span> =&gt; <span class="php-quote">'%:macroSyntax%'</span>,
+  <span class="php-quote">'/syntax'</span> =&gt; <span class="php-quote">'%:macroSyntax%'</span>,
+  <span class="php-quote">'block'</span> =&gt; <span class="php-quote">'&lt;?php %:macroBlock% ?&gt;'</span>,
+  <span class="php-quote">'/block'</span> =&gt; <span class="php-quote">'&lt;?php %:macroBlockEnd% ?&gt;'</span>,
+  <span class="php-quote">'capture'</span> =&gt; <span class="php-quote">'&lt;?php %:macroCapture% ?&gt;'</span>,
+  <span class="php-quote">'/capture'</span> =&gt; <span class="php-quote">'&lt;?php %:macroCaptureEnd% ?&gt;'</span>,
+  <span class="php-quote">'snippet'</span> =&gt; <span class="php-quote">'&lt;?php %:macroSnippet% ?&gt;'</span>,
+  <span class="php-quote">'/snippet'</span> =&gt; <span class="php-quote">'&lt;?php %:macroSnippetEnd% ?&gt;'</span>,
+  <span class="php-quote">'cache'</span> =&gt; <span class="php-quote">'&lt;?php %:macroCache% ?&gt;'</span>,
+  <span class="php-quote">'/cache'</span> =&gt; <span class="php-quote">'&lt;?php array_pop($_l-&gt;g-&gt;caches)-&gt;save(); } ?&gt;'</span>,
+  <span class="php-quote">'if'</span> =&gt; <span class="php-quote">'&lt;?php if (%%): ?&gt;'</span>,
+  <span class="php-quote">'elseif'</span> =&gt; <span class="php-quote">'&lt;?php elseif (%%): ?&gt;'</span>,
+  <span class="php-quote">'else'</span> =&gt; <span class="php-quote">'&lt;?php else: ?&gt;'</span>,
+  <span class="php-quote">'/if'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'ifset'</span> =&gt; <span class="php-quote">'&lt;?php if (isset(%%)): ?&gt;'</span>,
+  <span class="php-quote">'/ifset'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'elseifset'</span> =&gt; <span class="php-quote">'&lt;?php elseif (isset(%%)): ?&gt;'</span>,
+  <span class="php-quote">'foreach'</span> =&gt; <span class="php-quote">'&lt;?php foreach (%:macroForeach%): ?&gt;'</span>,
+  <span class="php-quote">'/foreach'</span> =&gt; <span class="php-quote">'&lt;?php endforeach; array_pop($_l-&gt;its); $iterator = end($_l-&gt;its) ?&gt;'</span>,
+  <span class="php-quote">'for'</span> =&gt; <span class="php-quote">'&lt;?php for (%%): ?&gt;'</span>,
+  <span class="php-quote">'/for'</span> =&gt; <span class="php-quote">'&lt;?php endfor ?&gt;'</span>,
+  <span class="php-quote">'while'</span> =&gt; <span class="php-quote">'&lt;?php while (%%): ?&gt;'</span>,
+  <span class="php-quote">'/while'</span> =&gt; <span class="php-quote">'&lt;?php endwhile ?&gt;'</span>,
+  <span class="php-quote">'continueIf'</span> =&gt; <span class="php-quote">'&lt;?php if (%%) continue ?&gt;'</span>,
+  <span class="php-quote">'breakIf'</span> =&gt; <span class="php-quote">'&lt;?php if (%%) break ?&gt;'</span>,
+  <span class="php-quote">'first'</span> =&gt; <span class="php-quote">'&lt;?php if ($iterator-&gt;isFirst(%%)): ?&gt;'</span>,
+  <span class="php-quote">'/first'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'last'</span> =&gt; <span class="php-quote">'&lt;?php if ($iterator-&gt;isLast(%%)): ?&gt;'</span>,
+  <span class="php-quote">'/last'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'sep'</span> =&gt; <span class="php-quote">'&lt;?php if (!$iterator-&gt;isLast(%%)): ?&gt;'</span>,
+  <span class="php-quote">'/sep'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'include'</span> =&gt; <span class="php-quote">'&lt;?php %:macroInclude% ?&gt;'</span>,
+  <span class="php-quote">'extends'</span> =&gt; <span class="php-quote">'&lt;?php %:macroExtends% ?&gt;'</span>,
+  <span class="php-quote">'layout'</span> =&gt; <span class="php-quote">'&lt;?php %:macroExtends% ?&gt;'</span>,
+  <span class="php-quote">'plink'</span> =&gt; <span class="php-quote">'&lt;?php echo %:escape%(%:macroPlink%) ?&gt;'</span>,
+  <span class="php-quote">'link'</span> =&gt; <span class="php-quote">'&lt;?php echo %:escape%(%:macroLink%) ?&gt;'</span>,
+  <span class="php-quote">'ifCurrent'</span> =&gt; <span class="php-quote">'&lt;?php %:macroIfCurrent% ?&gt;'</span>,
+  <span class="php-quote">'/ifCurrent'</span> =&gt; <span class="php-quote">'&lt;?php endif ?&gt;'</span>,
+  <span class="php-quote">'widget'</span> =&gt; <span class="php-quote">'&lt;?php %:macroControl% ?&gt;'</span>,
+  <span class="php-quote">'control'</span> =&gt; <span class="php-quote">'&lt;?php %:macroControl% ?&gt;'</span>,
+  <span class="php-quote">'@href'</span> =&gt; <span class="php-quote">' href=&quot;&lt;?php echo %:escape%(%:macroLink%) ?&gt;&quot;'</span>,
+  <span class="php-quote">'@class'</span> =&gt; <span class="php-quote">'&lt;?php if ($_l-&gt;tmp = trim(implode(&quot; &quot;, array_unique(%:formatArray%)))) echo \' class=&quot;\' . %:escape%($_l-&gt;tmp) . \'&quot;\' ?&gt;'</span>,
+  <span class="php-quote">'@attr'</span> =&gt; <span class="php-quote">'&lt;?php if (($_l-&gt;tmp = (string) (%%)) !== \'\') echo \' @@=&quot;\' . %:escape%($_l-&gt;tmp) . \'&quot;\' ?&gt;'</span>,
+  <span class="php-quote">'attr'</span> =&gt; <span class="php-quote">'&lt;?php echo Nette\\Web\\Html::el(NULL)-&gt;%:macroAttr%attributes() ?&gt;'</span>,
+  <span class="php-quote">'contentType'</span> =&gt; <span class="php-quote">'&lt;?php %:macroContentType% ?&gt;'</span>,
+  <span class="php-quote">'status'</span> =&gt; <span class="php-quote">'&lt;?php Nette\\Environment::getHttpResponse()-&gt;setCode(%%) ?&gt;'</span>,
+  <span class="php-quote">'var'</span> =&gt; <span class="php-quote">'&lt;?php %:macroVar% ?&gt;'</span>,
+  <span class="php-quote">'assign'</span> =&gt; <span class="php-quote">'&lt;?php %:macroVar% ?&gt;'</span>,
+  <span class="php-quote">'default'</span> =&gt; <span class="php-quote">'&lt;?php %:macroDefault% ?&gt;'</span>,
+  <span class="php-quote">'dump'</span> =&gt; <span class="php-quote">'&lt;?php %:macroDump% ?&gt;'</span>,
+  <span class="php-quote">'debugbreak'</span> =&gt; <span class="php-quote">'&lt;?php %:macroDebugbreak% ?&gt;'</span>,
+  <span class="php-quote">'l'</span> =&gt; <span class="php-quote">'{'</span>,
+  <span class="php-quote">'r'</span> =&gt; <span class="php-quote">'}'</span>,
+  <span class="php-quote">'!_'</span> =&gt; <span class="php-quote">'&lt;?php echo %:macroTranslate% ?&gt;'</span>,
+  <span class="php-quote">'_'</span> =&gt; <span class="php-quote">'&lt;?php echo %:escape%(%:macroTranslate%) ?&gt;'</span>,
+  <span class="php-quote">'!='</span> =&gt; <span class="php-quote">'&lt;?php echo %:macroModifiers% ?&gt;'</span>,
+  <span class="php-quote">'='</span> =&gt; <span class="php-quote">'&lt;?php echo %:escape%(%:macroModifiers%) ?&gt;'</span>,
+  <span class="php-quote">'!$'</span> =&gt; <span class="php-quote">'&lt;?php echo %:macroDollar% ?&gt;'</span>,
+  <span class="php-quote">'$'</span> =&gt; <span class="php-quote">'&lt;?php echo %:escape%(%:macroDollar%) ?&gt;'</span>,
+  <span class="php-quote">'?'</span> =&gt; <span class="php-quote">'&lt;?php %:macroModifiers% ?&gt;'</span>,
+)</pre></td>
+			<td> <a href="#$defaultMacros" class="anchor">#</a></td>
+		</tr>
+		<tr data-order="macros" id="$macros">
+			<td align="right" width="1%"><code class="nowrap">
+				 
+				array
+			</code></td>
+
+			<td width="1%"><var>$macros</var></td>
+			<td><pre><span class="php-keyword1">NULL</span></pre></td>
+			<td> <a href="#$macros" class="anchor">#</a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework documentation generated by <a href="http://github.com/nette/apigen">Apigen</a>
+	</div>
+</div>
+</body>
+</html>
